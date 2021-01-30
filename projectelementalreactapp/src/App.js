@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from "react-router-dom"; // this comes from install npm react-router-dom
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"; // this comes from install npm react-router-dom
 // import pages folders
 import Home from './pages/home/Home';
 import About from './pages/about/About';
