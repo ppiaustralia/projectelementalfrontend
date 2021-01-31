@@ -4,7 +4,11 @@ import ReactDOM from 'react-dom';
 class Home extends React.Component {
     render() {
         return (
-            <h1>checkpoint</h1>
+            <div>
+                <h1>Successful</h1>
+            </div>
         );
     }
 }
+
+export default Home;
