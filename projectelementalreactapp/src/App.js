@@ -15,15 +15,14 @@ class App extends React.Component {
         <div>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
+              <li><a href="/projectelementalreactapp/src/pages/home/Home.jsx">Home</a></li>
+              <li><a href="/projectelementalreactapp/src/pages/about/About.jsx">About Us</a></li>
                 <ul>
                   <li>Kabinet Sinergi 2020-2021</li>
                   <li>Vision Mission 2020-2021</li>
-                  <li>Contact</li>
                   <li>AD/ART</li>
                 </ul>
-              <li>Chapters</li>
+              <li><a href="/projectelementalreactapp/src/pages/chapter/Chapter.jsx">Chapters</a></li>
                 <ul>
                   <li>New South Wales - ISA NSW</li>
                   <li>Northern Territory - PPIANT</li>
@@ -33,9 +32,8 @@ class App extends React.Component {
                   <li>Victoria - PPIAVIC</li>
                   <li>Western Australia</li>
                 </ul>
-              <li>Live in OZ</li>
-              <li>Blog</li>
-              <li>Contact</li>
+              <li><a href="/projectelementalreactapp/src/pages/liveinoz/Liveinoz.jsx">Live in OZ</a></li>
+              <li><a href="/projectelementalreactapp/src/pages/contact/Contact.jsx">Contact</a></li>
             </ul>
           </nav>
         </div>
