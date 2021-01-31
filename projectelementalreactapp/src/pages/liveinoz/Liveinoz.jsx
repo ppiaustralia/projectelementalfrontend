@@ -5,7 +5,7 @@ class Liveinoz extends React.Component {
     render() {
         return (
             <div>
-                <h1>Successful</h1>
+                <h1>Successful LiveinOZ</h1>
             </div>
         );
     }

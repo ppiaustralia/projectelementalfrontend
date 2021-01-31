@@ -9,7 +9,6 @@ import Contact from '../src/pages/contact/Contact'
 import LiveInOz from '../src/pages/liveinoz/Liveinoz'
 
 // website nav pane
-
 class App extends React.Component { 
   render() {
     return ( 
@@ -24,7 +23,7 @@ class App extends React.Component {
                   <li>Vision Mission 2020-2021</li>
                   <li>AD/ART</li>
                 </ul>
-                <li><Link to="/chapter">Chapter</Link></li>
+            <li><Link to="/chapter">Chapter</Link></li>
                 <ul>
                   <li>New South Wales - ISA NSW</li>
                   <li>Northern Territory - PPIANT</li>
@@ -34,8 +33,8 @@ class App extends React.Component {
                   <li>Victoria - PPIAVIC</li>
                   <li>Western Australia</li>
                 </ul>
-              <li><Link to="/liveinoz">LiveInOz</Link></li>
-              <li><Link to="/Contact">Contact</Link></li>
+            <li><Link to="/liveinoz">LiveInOz</Link></li>
+            <li><Link to="/Contact">Contact</Link></li>
             </ul>
           </nav>
           <Route exact path="/" component={Home}/>
@@ -45,29 +44,8 @@ class App extends React.Component {
           <Route exact path="/liveinoz" component={LiveInOz}/>
         </div>
       </Router>
-
     );
   }
 }
 
 export default App;
-
-  // navpane
-
-  // Home
-  // About Us
-  //     Kabinet Sinergi 2020-2021
-  //     Vision Mission 2020-2021
-  //     AD/ART
-
-  // Chapters
-  //     New South Wales - ISA NSW
-  //     Northern Territory - PPIANT
-  //     Queensland - PPIA Queensland
-  //     South Australia
-  //     Tasmania - PPIATasmania
-  //     Victoria - PPIAVIC
-  //     Western Australia
-    
-  // Live in Oz
-  // Contact
