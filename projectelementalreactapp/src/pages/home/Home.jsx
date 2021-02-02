@@ -12,7 +12,7 @@ export default class Home extends React.Component {
     render() {
         return(
             <div>
-                <ImageSlider />
+                {/*<ImageSlider />*/}
                 <h3>Chapters</h3>
                 <h3>Latest Update</h3>
             </div>
