@@ -7,11 +7,17 @@
     border-radius: 5px;
     max-height: 580px;
 }
-/* Forces images to stay within the width and height */
-.carousel-item {
+
+.carousel {
     width: 100vw;
     height: 580px;
 }
+
+.responsive {
+    width: auto;
+    height: 580px;
+}
+
 
 /* CSS to change the arrow color to black
 .carousel-control-prev-icon {

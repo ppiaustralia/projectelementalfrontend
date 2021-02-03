@@ -12,7 +12,7 @@ export default class Home extends React.Component {
     render() {
         return(
             <div>
-                {/*<ImageSlider />*/}
+                <ImageSlider />
                 <h3>Chapters</h3>
                 <h3>Latest Update</h3>
             </div>
@@ -30,13 +30,13 @@ export class ImageSlider extends Component {
                         the carousel 
                         */}
                         <Carousel.Item>
-                            <img class="d-block mx-auto img-fluid w-1439" src={dummy1}/>
+                            <img class="d-block mx-auto responsive img-fluid" src={dummy1}/>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img class="d-block mx-auto img-fluid w-1439" src={dummy2}/>
+                            <img class="d-block mx-auto responsive img-fluid" src={dummy2}/>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img class="d-block mx-auto img-fluid w-1439" src={dummy3}/>
+                            <img class="d-block mx-auto responsive img-fluid" src={dummy3}/>
                         </Carousel.Item>
                     </Carousel>
                 </div>
