@@ -1,5 +1,5 @@
 /* Background color and positioning for carousel */
-.background{
+.background {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -8,14 +8,25 @@
     max-height: 580px;
 }
 
+.img-gallery {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
 .carousel {
     width: 100vw;
     height: 580px;
 }
 
-.responsive {
+.responsive-carousel {
     width: auto;
     height: 580px;
+}
+
+.responsive-gallery {
+    width: 171px;
+    height: 180px;
 }
 
 

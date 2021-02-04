@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import ReactDOM from 'react-dom';
 
 import "./Home.css";
@@ -13,7 +17,7 @@ export default class Home extends React.Component {
         return(
             <div>
                 <ImageSlider />
-                <h3>Chapters</h3>
+                <ImageGallery />
                 <h3>Latest Update</h3>
             </div>
         );
@@ -30,16 +34,58 @@ export class ImageSlider extends Component {
                         the carousel 
                         */}
                         <Carousel.Item>
-                            <img class="d-block mx-auto responsive img-fluid" src={dummy1}/>
+                            <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy1}/>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img class="d-block mx-auto responsive img-fluid" src={dummy2}/>
+                            <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy2}/>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img class="d-block mx-auto responsive img-fluid" src={dummy3}/>
+                            <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy3}/>
                         </Carousel.Item>
                     </Carousel>
                 </div>
         );
+    }
+}
+
+export class ImageGallery extends Component {
+    render() {
+        return (
+            <div className = "img-gallery">
+                <div className = "mt-5">
+                    <h2>Chapters</h2>
+                </div>
+                <Container>
+                    <Row className = "mb-4">
+                        <Col>
+                            <Image src={dummy1} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy2} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy3} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy1} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Image src={dummy1} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy2} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy3} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                        <Col>
+                            <Image src={dummy1} className='d-block mx-auto responsive-gallery img-fluid' roundedCircle/>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        )
     }
 }
