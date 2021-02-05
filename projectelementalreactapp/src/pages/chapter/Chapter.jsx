@@ -26,9 +26,10 @@ export default class Chapter extends React.Component {
     }
 }
 
+// Constructor 
 export class Skeleton extends React.Component {
     constructor(props) {
-        super(props);
+        super(props); // always needed
 
         this.state = {
             President: 'Bayu',
@@ -38,12 +39,13 @@ export class Skeleton extends React.Component {
             Website: 'www.ppia-australia.com'
         }
 
-    this.handleEvent = this.handleEvent.bind(this);
-    }
+    // this.handleEvent = this.handleEvent.bind(this);
+    // }
 
-    handleEvent = () => {
-        console.log(this.props);
-    }
+    // handleEvent = () => {
+    //     console.log(this.props);
+    // }
+}
 }
 
 export class Pusat extends React.Component {
