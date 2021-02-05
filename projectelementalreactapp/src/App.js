@@ -8,6 +8,7 @@ import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import LiveInOz from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
+import { FooterContainer } from './containers/footer'
 
 // website nav pane
 function App () { 
@@ -22,6 +23,7 @@ function App () {
          <Route path='/blog' exact component={Blog} />
          <Route path='/contact' exact component={Contact} />
        </Switch>
+       <FooterContainer />
      </Router>
 
       
