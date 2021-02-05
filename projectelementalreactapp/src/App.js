@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link, browserHistory, Switch } from "react-router-dom"; // this comes from install npm react-router-dom
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // this comes from install npm react-router-dom
 import Navbar from './components/Navbar/Navbar';
 import Home from '../src/pages/home/Home';
 import Chapter from '../src/pages/chapter/Chapter';
@@ -18,6 +18,7 @@ function App () {
        <Switch>
          <Route path='/' exact component={Home} />
          <Route path='/about' exact component={About} />
+         <Route path= '/chapter' exact component={Chapter}/>
          <Route path='/liveinoz' exact component={LiveInOz} />
          <Route path='/blog' exact component={Blog} />
          <Route path='/contact' exact component={Contact} />
@@ -30,4 +31,4 @@ function App () {
   
 }
 
-export default App;
+export default App;// 
