@@ -18,9 +18,7 @@ export default class Chapter extends React.Component {
     render() {
         return (
             <div>
-                <Pusat />
-                <Cabang />
-                <Ranting />
+                <PPIA />
             </div>
         );
     }
@@ -45,10 +43,10 @@ export class Skeleton extends React.Component {
     // handleEvent = () => {
     //     console.log(this.props);
     // }
-}
+    }
 }
 
-export class Pusat extends React.Component {
+export class PPIA extends React.Component {
     render() {
         return (
             <div>
@@ -56,27 +54,5 @@ export class Pusat extends React.Component {
                 <h1>Welcome</h1>
             </div> 
         )
-    }
-}
-
-export class Cabang extends React.Component {
-    render() {
-        return (
-            <div>
-                <Image src={logo2} className='d-block mx-auto responsive-gallery img-fluid' />
-                <h1>Welcome</h1>
-            </div>
-        );
-    }
-}
-
-export class Ranting extends React.Component {
-    render() {
-        return (
-            <div className= "box">
-                <Image src={logo3} className='d-block mx-auto responsive-gallery img-fluid' />
-                <h1>Welcome</h1>
-            </div>
-        );
     }
 }
