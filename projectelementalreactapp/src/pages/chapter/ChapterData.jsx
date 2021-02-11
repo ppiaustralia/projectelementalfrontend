@@ -1,5 +1,14 @@
-{
-    
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import './Chapter.css'
+
+// pictures 
+import Logo1 from "../../assets/images/PPIA.jpg";
+import Logo2 from "../../assets/images/PPIA.jpg";
+import Logo3 from "../../assets/images/PPIA.jpg";
+
+export const Data = {
+
     "PPIA-Pusat" : [
         {
             "name"          : "PPI-Australia",
@@ -7,7 +16,8 @@
             "email"         : "publicrelations@ppi-australia.org",
             "instagram"     : "@ppiaustralia",
             "facebook"      : "@ppiaustralia (PPI-Austrlia)",
-            "website"       : "http://www.ppi-australia.org/"
+            "website"       : "http://www.ppi-australia.org/",
+            "logo"          : "logo1"
         }
     ],
 
@@ -48,7 +58,6 @@
                 }
             ]
     },
-
     
     "NSW" : {
         "ISA NSW" : [
@@ -421,4 +430,5 @@
             }
         ]
     }
+
 }
