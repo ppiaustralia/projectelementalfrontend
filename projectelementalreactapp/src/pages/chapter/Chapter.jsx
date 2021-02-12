@@ -1,24 +1,26 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './Chapter.css'
+
 // picture gallery
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-// pictures 
-import logo1 from "../../assets/images/PPIA.jpg";
-import logo2 from "../../assets/images/PPIA.jpg";
-import logo3 from "../../assets/images/PPIA.jpg";
 
-// main component to call all other components
+// pictures 
+import Logo1 from "../../assets/images/PPIA.jpg";
+import Logo2 from "../../assets/images/PPIA.jpg";
+import Logo3 from "../../assets/images/PPIA.jpg";
+
+import Database from "./ChapterData"
 
 export default class Chapter extends React.Component {
 
     render() {
         return (
             <div>
-                <PPIA />
+                <Skeleton />
             </div>
         );
     }
@@ -27,32 +29,38 @@ export default class Chapter extends React.Component {
 // Constructor 
 export class Skeleton extends React.Component {
     constructor(props) {
-        super(props); // always needed
-
+        super(props);
+        
         this.state = {
-            President: 'Bayu',
-            Email: "someone@gmail.com",
-            Instagram: '@ppia_official',
-            Facebook: '@ppia_official (PPIA Official)',
-            Website: 'www.ppia-australia.com'
+            list : [
+                {
+                    "name"          : "PPI-Australia",
+                    "president"     : "James Wieguna",
+                    "email"         : "publicrelations@ppi-australia.org",
+                    "instagram"     : "@ppiaustralia",
+                    "facebook"      : "@ppiaustralia (PPI-Austrlia)",
+                    "website"       : "http://www.ppi-australia.org/",
+                    "logo"          : {Logo1}
+                }
+            ]
         }
-
-    // this.handleEvent = this.handleEvent.bind(this);
-    // }
-
-    // handleEvent = () => {
-    //     console.log(this.props);
-    // }
+        this.handleEvent = this.handleEvent.bind(this);
     }
-}
-
-export class PPIA extends React.Component {
+    
+    handleEvent() {
+        console.log(this.props);
+    }
+    
     render() {
         return (
+        <div>
+            {this.state.list.map(list => (   
             <div>
-                <Image src={logo1} className='d-block mx-auto responsive-gallery img-fluid' />
-                <h1>Welcome</h1>
-            </div> 
-        )
+                <div>{list.name}</div>
+                <img src={list.logo} />
+            </div>
+            ))}
+        </div>
+        );
     }
 }
