@@ -1,10 +1,10 @@
 .sidebar {
     position: fixed;
-    top: 0;
+    top: inherit;
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: peru;
+    background-color: red;
     transition: left 300ms ease-out;
   }
   .sidebar.active {
@@ -32,7 +32,7 @@
     width: 50px;
     position: absolute;
     right: -50px;
-    background-color: peru;
+    background-color: red;
   }
   
   .hamburger:after,
