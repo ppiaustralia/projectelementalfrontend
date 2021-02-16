@@ -13,9 +13,10 @@ import Logo1 from "../../assets/images/PPIA.jpg";
 // import Logo2 from "/src/assets/images/PPIA.jpg"; // doesnt work
 
 // Database
-// import Database from "./ChapterData"
+import ChapterDatabase from "./ChapterDatabase"
 
 export default class Chapter extends React.Component {
+
 
     render() {
         return (
@@ -28,60 +29,10 @@ export default class Chapter extends React.Component {
 
 // Constructor 
 export class Skeleton extends React.Component {
-    constructor(props) {
-        super(props);
-        
-        this.state = {
-            ppia : [
-                {
-                    "name"          : "PPIA",
-                    "president"     : "John Doe",
-                    "email"         : "john-doe@ppi-austraCola.org",
-                    "instagram"     : "@ppiaustraCola",
-                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
-                    "website"       : "http://www.ppi-australicaolaa.org/",
-                    "logo"          : "/src/assets/images/PPIA.jpg"
-                },
-                {
-                    "name"          : "PPIA-2",
-                    "president"     : "John Doe",
-                    "email"         : "john-doe@ppi-austraCola.org",
-                    "instagram"     : "@ppiaustraCola",
-                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
-                    "website"       : "http://www.ppi-austrcaolalia.org/",
-                    "logo"          : "../../assets/images/PPIA.jpg"
-                },
-                {
-                    "name"          : "PPIA-3",
-                    "president"     : "John Doe",
-                    "email"         : "john-doe@ppi-austraCola.org",
-                    "instagram"     : "@ppiaustraCola",
-                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
-                    "website"       : "http://www.ppi-australicaolaa.org/",
-                    "logo"          : "/src/assets/images/PPIA.jpg"
-                },
-                {
-                    "name"          : "PPIA-4",
-                    "president"     : "John Doe",
-                    "email"         : "john-doe@ppi-austraCola.org",
-                    "instagram"     : "@ppiaustraCola",
-                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
-                    "website"       : "http://www.ppi-austrcaolalia.org/",
-                    "logo"          : "../../assets/images/PPIA.jpg"
-                },
-            ]
-        }
-        this.handleEvent = this.handleEvent.bind(this);
-    }
-    
-    handleEvent() {
-        console.log(this.props);
-    }
-    
     render() {
         return (
             <>
-                {this.state.ppia.map(ppia => (   
+                {ChapterDatabase.map(ppia => (   
                     <>
                     <div className="ppia-frame">
                         {/* <div> <img id="logo1" src={process.env.PUBLIC_URL + '/assets/images/PPIA.jpg'} alt="LOGO"/> </div> */}
@@ -96,7 +47,7 @@ export class Skeleton extends React.Component {
                             <p>Website: {ppia.website}</p> 
                         </div>
                     </div>
-                </>
+                    </>
                 ))}
             </>
         );
