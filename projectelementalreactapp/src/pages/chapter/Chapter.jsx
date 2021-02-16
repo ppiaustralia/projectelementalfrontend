@@ -10,10 +10,10 @@ import Col from 'react-bootstrap/Col'
 
 // pictures 
 import Logo1 from "../../assets/images/PPIA.jpg";
-import Logo2 from "../../assets/images/PPIA.jpg";
-import Logo3 from "../../assets/images/PPIA.jpg";
+// import Logo2 from "/src/assets/images/PPIA.jpg"; // doesnt work
 
-import Database from "./ChapterData"
+// Database
+// import Database from "./ChapterData"
 
 export default class Chapter extends React.Component {
 
@@ -32,16 +32,43 @@ export class Skeleton extends React.Component {
         super(props);
         
         this.state = {
-            list : [
+            ppia : [
                 {
-                    "name"          : "PPI-Australia",
-                    "president"     : "James Wieguna",
-                    "email"         : "publicrelations@ppi-australia.org",
-                    "instagram"     : "@ppiaustralia",
-                    "facebook"      : "@ppiaustralia (PPI-Austrlia)",
-                    "website"       : "http://www.ppi-australia.org/",
-                    "logo"          : {Logo1}
-                }
+                    "name"          : "PPIA",
+                    "president"     : "John Doe",
+                    "email"         : "john-doe@ppi-austraCola.org",
+                    "instagram"     : "@ppiaustraCola",
+                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
+                    "website"       : "http://www.ppi-australicaolaa.org/",
+                    "logo"          : "/src/assets/images/PPIA.jpg"
+                },
+                {
+                    "name"          : "PPIA-2",
+                    "president"     : "John Doe",
+                    "email"         : "john-doe@ppi-austraCola.org",
+                    "instagram"     : "@ppiaustraCola",
+                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
+                    "website"       : "http://www.ppi-austrcaolalia.org/",
+                    "logo"          : "../../assets/images/PPIA.jpg"
+                },
+                {
+                    "name"          : "PPIA-3",
+                    "president"     : "John Doe",
+                    "email"         : "john-doe@ppi-austraCola.org",
+                    "instagram"     : "@ppiaustraCola",
+                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
+                    "website"       : "http://www.ppi-australicaolaa.org/",
+                    "logo"          : "/src/assets/images/PPIA.jpg"
+                },
+                {
+                    "name"          : "PPIA-4",
+                    "president"     : "John Doe",
+                    "email"         : "john-doe@ppi-austraCola.org",
+                    "instagram"     : "@ppiaustraCola",
+                    "facebook"      : "@ppiaustraCola (PPI-AustrCola)",
+                    "website"       : "http://www.ppi-austrcaolalia.org/",
+                    "logo"          : "../../assets/images/PPIA.jpg"
+                },
             ]
         }
         this.handleEvent = this.handleEvent.bind(this);
@@ -53,14 +80,25 @@ export class Skeleton extends React.Component {
     
     render() {
         return (
-        <div>
-            {this.state.list.map(list => (   
-            <div>
-                <div>{list.name}</div>
-                <img src={list.logo} />
-            </div>
-            ))}
-        </div>
+            <>
+                {this.state.ppia.map(ppia => (   
+                    <>
+                    <div className="ppia-frame">
+                        {/* <div> <img id="logo1" src={process.env.PUBLIC_URL + '/assets/images/PPIA.jpg'} alt="LOGO"/> </div> */}
+                        <div className = "ppia-image">
+                            <img className="ppia-logo" src= {'/assets/images/PPIA.jpg'} alt= "logo" />
+                        </div>
+                        <div className="ppia-description">
+                            <p className="ppia-title">{ppia.name}</p>
+                            <p>President: {ppia.president}</p> 
+                            <p>Email: {ppia.email}</p> 
+                            <p>Facebook: {ppia.facebook}</p> 
+                            <p>Website: {ppia.website}</p> 
+                        </div>
+                    </div>
+                </>
+                ))}
+            </>
         );
     }
 }
