@@ -8,25 +8,26 @@
     max-height: 580px;
 }
 
-.img-gallery {
+.front-page {
     display: flex;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 
 .carousel {
     width: 100vw;
-    height: 580px;
+    height: 100%;
+    max-height: 580px;
 }
 
 .responsive-carousel {
     width: auto;
-    height: 580px;
+    max-height: 580px;
 }
 
 .responsive-gallery {
-    width: 171px;
-    height: 180px;
+    max-width: 171px;
+    max-height: 180px;
 }
 
 
