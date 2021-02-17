@@ -1,42 +1,44 @@
-export const MenuItems = [
+const MenuItems = [
     {
         title: 'Australia Capitol Territory',
-        path: '/act',
+        path: '/chapter/act',
         cName: 'dropdown-link'
     },
     {
         title: 'New South Wales',
-        path: '/nsw',
+        path: '/chapter/nsw',
         cName: 'dropdown-link'
     },
     {
         title: 'Northern Territory ',
-        path: '/nt',
+        path: '/chapter/nt',
         cName: 'dropdown-link'
     },
     {
         title: 'Queensland',
-        path: '/queensland',
+        path: '/chapter/queensland',
         cName: 'dropdown-link'
     },
     {
         title: 'South Australia',
-        path: '/sa',
+        path: '/chapter/sa',
         cName: 'dropdown-link'
     },
     {
         title: 'Tasmania',
-        path: '/tas',
+        path: '/chapter/tas',
         cName: 'dropdown-link'
     },
     {
         title: 'Victoria',
-        path: '/vic',
+        path: '/chapter/vic',
         cName: 'dropdown-link'
     },
     {
         title: 'Western Australia',
-        path: '/wa',
+        path: '/chapter/wa',
         cName: 'dropdown-link'
     }
 ];
+
+export default MenuItems;

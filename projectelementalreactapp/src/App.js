@@ -27,7 +27,7 @@ function App () {
        <Switch>
          <Route path='/' exact component={Home} />
          <Route path='/about' exact component={About} />
-         <Route path='/chapter' exact component={Chapter} />
+         <Route path='/chapter/:statename' exact component={Chapter} />   {/* the var for the state will be assigned to statename */}
          {/* <Route path= '/Australia-Capital-Territory' exact component={ACT}/>
          <Route path= '/New-South-Wales' exact component={NSW}/>
          <Route path= '/Northern-Territory' exact component={NT}/>

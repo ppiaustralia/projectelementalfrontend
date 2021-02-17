@@ -1,55 +1,47 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './Chapter.css'
 
-// picture gallery
-import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
-// pictures 
-import Logo1 from "../../assets/images/PPIA.jpg";
-// import Logo2 from "/src/assets/images/PPIA.jpg"; // doesnt work
-
-// Database
+// temporary Database
 import ChapterDatabase from "./ChapterDatabase"
 
-export default class Chapter extends React.Component {
+// function Chapter (props) {
+//         return (
+//             <div>
+//                 <Skeleton />
+//             </div>
+//         );
+// }TypeError: statename.toUpper is not a function
 
+function Chapter(props) {
+    // get statename value form url
+    const statename = props.match.params.statename;
+    // add PPIA prefix
+    const PPIA_STATENAME = `PPIA_${statename.toUpperCase()}`;
 
-    render() {
-        return (
-            <div>
-                <Skeleton />
+    // { key1: value1, key2: value2 }
+    function renderPPIA(ppia) {
+        // for each key in the object
+        return Object.keys(ppia)
+        // filter out title
+        .filter(key => key !== "name")
+        .map(key => {
+            let Key = key.charAt(0).toUpperCase() + key.slice(1)
+            return <p>{Key}: {ppia[key]}</p>
+        });
+    }
+    
+    return ChapterDatabase[PPIA_STATENAME].map(ppia => (   
+        <div className="ppia-frame">
+            {/* <div> <img id="logo1" src={process.env.PUBLIC_URL + '/assets/images/PPIA.jpg'} alt="LOGO"/> </div> */}
+            <div className = "ppia-image">
+                <img className="ppia-logo" src= {'/assets/images/PPIA.jpg'} alt= "logo" />
             </div>
-        );
-    }
+            <div className="ppia-description">
+                <p className="ppia-title">{ppia.name}</p>
+                { renderPPIA(ppia) }
+            </div>
+        </div>
+    ));
 }
 
-// Constructor 
-export class Skeleton extends React.Component {
-    render() {
-        return (
-            <>
-                {ChapterDatabase.map(ppia => (   
-                    <>
-                    <div className="ppia-frame">
-                        {/* <div> <img id="logo1" src={process.env.PUBLIC_URL + '/assets/images/PPIA.jpg'} alt="LOGO"/> </div> */}
-                        <div className = "ppia-image">
-                            <img className="ppia-logo" src= {'/assets/images/PPIA.jpg'} alt= "logo" />
-                        </div>
-                        <div className="ppia-description">
-                            <p className="ppia-title">{ppia.name}</p>
-                            <p>President: {ppia.president}</p> 
-                            <p>Email: {ppia.email}</p> 
-                            <p>Facebook: {ppia.facebook}</p> 
-                            <p>Website: {ppia.website}</p> 
-                        </div>
-                    </div>
-                    </>
-                ))}
-            </>
-        );
-    }
-}
+export default Chapter;

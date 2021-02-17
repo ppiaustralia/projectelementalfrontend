@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+.chapter.json
+# ignore it for now
 
 # testing
 /coverage

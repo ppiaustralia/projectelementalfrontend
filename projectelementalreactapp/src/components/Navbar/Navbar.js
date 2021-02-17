@@ -44,7 +44,7 @@ function Navbar () {
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='about' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                     About Us
                 </Link>
             </li>
@@ -53,23 +53,24 @@ function Navbar () {
                 onMouseLeave={onMouseLeave}
             
             >
-                <Link to='chapter' className='nav-links' onClick={closeMobileMenu}>
+                {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
+                <p className='nav-links' onClick={closeMobileMenu}>
                     Chapters <i className='fas fa-caret-down'/>
-                </Link>
+                </p>
                 {dropdown && <Dropdown />}
             </li>
             <li className='nav-item'>
-                <Link to='liveinoz' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/liveinoz' className='nav-links' onClick={closeMobileMenu}>
                     Live in OZ
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='blog' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
                     Blog
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='contact' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                     Contact
                 </Link>
             </li>
