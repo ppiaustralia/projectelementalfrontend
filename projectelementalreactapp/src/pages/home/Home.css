@@ -14,21 +14,15 @@
 .responsive-carousel {
     width: 100%;
     height: auto;
-    object-position: 50% 50%;
 }
 
 .background {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     background-color: #e9ecef;
     max-height: 85vh;
     border-radius: 5px;
 }
 
 .img-gallery {
-    display: flex;
-    align-items: center;
     flex-flow: row wrap;
     padding : 40px;
 }
@@ -39,7 +33,6 @@
 }
 
 .news-cards {
-    display: flex;
     flex-flow: row wrap;
 }
 

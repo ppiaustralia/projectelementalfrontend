@@ -83,7 +83,7 @@ export class NewsCards extends Component {
     render() {
         return (
             <div className = "front-page">
-                <div className = "mt-5 mb-2">
+                <div className = "mt-5 mb-4">
                     <h3>Latest Updates</h3>
                 </div>
                 <div className = 'news-cards'>
