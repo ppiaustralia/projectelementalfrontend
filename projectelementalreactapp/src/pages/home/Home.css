@@ -1,13 +1,3 @@
-/* Background color and positioning for carousel */
-.background {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    max-height: 580px;
-}
-
 .front-page {
     display: flex;
     align-items: center;
@@ -16,20 +6,42 @@
 
 .carousel {
     width: 100vw;
-    height: 100%;
-    max-height: 580px;
+    max-height: 85vh;
+    overflow: hidden;
+    object-position: 50% 50%;
 }
 
 .responsive-carousel {
-    width: auto;
-    max-height: 580px;
+    width: 100%;
+    height: auto;
+    object-position: 50% 50%;
+}
+
+.background {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #e9ecef;
+    max-height: 85vh;
+    border-radius: 5px;
+}
+
+.img-gallery {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding : 40px;
 }
 
 .responsive-gallery {
-    max-width: 171px;
-    max-height: 180px;
+    width: 180px;
+    height: 180px;
 }
 
+.news-cards {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 /* CSS to change the arrow color to black
 .carousel-control-prev-icon {
