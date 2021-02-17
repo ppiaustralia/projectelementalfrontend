@@ -258,7 +258,7 @@ const PPIA_Database = {
         }
     ],
 
-    PPIA_WU : [
+    PPIA_WA : [
         {
             name          :"PPIA WU",
             instagram     : "@ppiawa",

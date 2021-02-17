@@ -54,9 +54,9 @@ function Navbar () {
             
             >
                 {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
-                <p className='nav-links' onClick={closeMobileMenu}>
+                <li className='nav-links' onClick={closeMobileMenu}>
                     Chapters <i className='fas fa-caret-down'/>
-                </p>
+                </li>
                 {dropdown && <Dropdown />}
             </li>
             <li className='nav-item'>

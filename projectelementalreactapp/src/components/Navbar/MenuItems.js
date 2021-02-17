@@ -16,7 +16,7 @@ const MenuItems = [
     },
     {
         title: 'Queensland',
-        path: '/chapter/queensland',
+        path: '/chapter/qld',
         cName: 'dropdown-link'
     },
     {
