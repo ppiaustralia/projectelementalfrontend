@@ -26,7 +26,26 @@ const source_arr = [
     dummy3
 ];
 
-const test = 2;
+const latest_updates =[
+    {
+        img: dummy1,
+        title: "Cat picture 1",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        updated: 3
+    },
+    {
+        img: dummy2,
+        title: "Cat picture 2",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        updated: 5
+    },
+    {
+        img: dummy3,
+        title: "Cat picture 3",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        updated: 4
+    }
+]
 
 export default class Home extends React.Component {
     render() {
@@ -88,42 +107,22 @@ export class NewsCards extends Component {
                 </div>
                 <div className = 'news-cards'>
                     <CardGroup>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant = 'top' src = {dummy1}/>
-                            <Card.Body>
-                                <Card.Title>First Card</Card.Title>
-                                <Card.Text>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className='text-muted'>Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant = 'top' src = {dummy2}/>
-                            <Card.Body>
-                                <Card.Title>Second Card</Card.Title>
-                                <Card.Text>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className='text-muted'>Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant = 'top' src = {dummy3}/>
-                            <Card.Body>
-                                <Card.Title>Third Card</Card.Title>
-                                <Card.Text>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className='text-muted'>Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
+                        {latest_updates.map((news,i) => 
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant = 'top' src = {news.img}/>
+                                <Card.Body>
+                                    <Card.Title>
+                                        {news.title}
+                                    </Card.Title>
+                                    <Card.Text>
+                                        {news.desc}
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className='text-muted'>Last updated {news.updated} mins ago</small>
+                                </Card.Footer>
+                            </Card>
+                        )}
                     </CardGroup>
                 </div>
             </div>

@@ -6,9 +6,8 @@
 
 .carousel {
     width: 100vw;
-    max-height: 85vh;
+    max-height: 86vh;
     overflow: hidden;
-    object-position: 50% 50%;
 }
 
 .responsive-carousel {
@@ -18,7 +17,7 @@
 
 .background {
     background-color: #e9ecef;
-    max-height: 85vh;
+    max-height: 86vh;
     border-radius: 5px;
 }
 
