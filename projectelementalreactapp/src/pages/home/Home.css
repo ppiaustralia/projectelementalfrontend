@@ -31,16 +31,34 @@
     height: 180px;
 }
 
+.news-title {
+    padding-top: 40px;
+    padding-bottom: 58px;
+}
+
 .news-cards {
     flex-flow: row wrap;
+    padding-bottom: 52px;
 }
 
-/* CSS to change the arrow color to black
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+h3 {
+    font-family: Roboto;
+    font-size: 32px;
 }
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+h5 {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 53px;
 }
-*/
+
+.btn-news {
+    background-color: #ed1c24;
+    color: white;
+}
+
+.news-button {
+    padding-bottom: 48px;
+}

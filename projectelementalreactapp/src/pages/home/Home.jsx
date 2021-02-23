@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Carousel, Container, Row, Col, Image, CardGroup, Card} from 'react-bootstrap/';
+import {Carousel, Container, Row, Col, Image, CardGroup, Card, Button} from 'react-bootstrap/';
 import ReactDOM from 'react-dom';
 
 import "./Home.css";
@@ -15,34 +15,57 @@ const image_arr = [
 ];
 
 const source_arr = [
-    dummy1,
-    dummy2,
-    dummy3,
-    dummy1,
-    dummy2,
-    dummy3,
-    dummy1,
-    dummy2,
-    dummy3
+    {
+        img: dummy1,
+        name: "cat1"
+    },
+    {
+        img: dummy2,
+        name: "cat2"
+    },
+    {
+        img: dummy3,
+        name: "cat3"
+    },
+    {
+        img: dummy1,
+        name: "cat1"
+    },
+    {
+        img: dummy2,
+        name: "cat2"
+    },
+    {
+        img: dummy3,
+        name: "cat3"
+    },
+    {
+        img: dummy1,
+        name: "cat1"
+    },
+    {
+        img: dummy2,
+        name: "cat2"
+    }
 ];
 
 const latest_updates =[
     {
         img: dummy1,
         title: "Cat picture 1",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
         updated: 3
     },
     {
         img: dummy2,
         title: "Cat picture 2",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
         updated: 5
     },
     {
         img: dummy3,
         title: "Cat picture 3",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
         updated: 4
     }
 ]
@@ -85,9 +108,10 @@ export class ImageGallery extends Component {
                 <div className="img-gallery">
                     <Container>
                         <Row className="justify-content-md-center">
-                                {source_arr.map((image,i) => 
+                                {source_arr.map((chapter,i) => 
                                     <Col md="auto">
-                                    <Image src={image} className='d-block responsive-gallery img-fluid mx-4' roundedCircle/>
+                                    <Image src={chapter.img} className='d-block responsive-gallery img-fluid mx-4' roundedCircle/>
+                                    <h5>{chapter.name}</h5>
                                     </Col>
                                 )}
                         </Row>
@@ -101,8 +125,8 @@ export class ImageGallery extends Component {
 export class NewsCards extends Component {
     render() {
         return (
-            <div className = "front-page">
-                <div className = "mt-5 mb-4">
+            <div className = "background front-page">
+                <div className = "news-title">
                     <h3>Latest Updates</h3>
                 </div>
                 <div className = 'news-cards'>
@@ -125,6 +149,7 @@ export class NewsCards extends Component {
                         )}
                     </CardGroup>
                 </div>
+                <Button variant = "news" >Read More</Button>
             </div>
         );
     }
