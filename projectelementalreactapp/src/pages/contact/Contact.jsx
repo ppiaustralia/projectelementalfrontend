@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-class Contact extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Successful Contact</h1>
-            </div>
-        );
-    }
+import ContactDatabase from 'ContactDatabase.js'
+import 'Contact.css'
+
+function Contact(props) {
+    
+    return(
+        <p>something</p>
+    )
 }
 
 export default Contact;

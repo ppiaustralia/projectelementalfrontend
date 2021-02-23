@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "G:\\Languages\\Python 3.9.0\\python.exe"
+    "python.pythonPath": "G:\\Languages\\Python 3.9.0\\python.exe",
+    "discord.enabled": true
 }

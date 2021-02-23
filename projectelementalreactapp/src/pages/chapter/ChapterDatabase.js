@@ -2,14 +2,6 @@ const PPIA_Database = {
 
     PPIA_ACT : [
         {
-            name          : "PPI-Australia",
-            president     : "James Wieguna",
-            email         : "publicrelations@ppi-australia.org",
-            instagram     : "@ppiaustralia",
-            facebook      : "@ppiaustralia (PPI-Austrlia)",
-            website       : "http://www.ppi-australia.org/"
-        },
-        {
             name          : "PPIA ACT",
             president     : "Stephany Mutiara Pradipta", 
             email         : "ppia.act@gmail.com",
