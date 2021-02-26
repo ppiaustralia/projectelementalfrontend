@@ -61,6 +61,13 @@
   .menu-icon {
     display: none;
   }
+
+  .fas{
+    z-index: 99999;
+  }
+   fa-caret-down{
+     z-index: 99999;
+   }
   
   @media screen and (max-width: 960px) {
     .fa-caret-down {
