@@ -5,6 +5,7 @@
     list-style: none;
     text-align: start;
     z-index: 99;
+    display: block;
 }
 
 .dropdown-menu li {

@@ -8,9 +8,9 @@ function Sidebar() {
     const showSidebar = () => setSidebar(!sidebar);
     return (
       <nav className={sidebar ? "sidebar active" : "sidebar"}>
-        <button className="hamburger" type="button" onClick={showSidebar}>
+       <button className="hamburger" type="button" onClick={showSidebar}>
           <div></div>
-        </button>
+    </button> 
         <ul onClick={showSidebar}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/services">Services</Link></li>
