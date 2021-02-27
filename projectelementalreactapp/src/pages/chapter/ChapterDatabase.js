@@ -69,8 +69,7 @@ const PPIA_Database = {
 
         {
             name          : "PPIA UTS",
-            email         : "ppia.uts@gmail.com", 
-            email2        : "president@ppia.activateuts.com.au",
+            email         : ["ppia.uts@gmail.com", "president@ppia.activateuts.com.au"],
             facebook      : "@ppiauts (PPIA UTS)",
             instagram     : "@ppia.uts",
             // logo          : "PPIA_UTS.jpeg"
@@ -162,8 +161,7 @@ const PPIA_Database = {
             instagram     : "@swinburneppia",
             facebook      : "@swinburneppia (PPIA Swinburne)",
             website       : "https://www.swinburneppia.com",
-            // logo          : "PPIA_Swinburne.jpeg", 
-            // logo2         : "PPIA_SWINBURNE2.png"
+            // logo          : [ "PPIA_Swinburne.jpeg", "PPIA_SWINBURNE_2.png" ]
         },
 
         {

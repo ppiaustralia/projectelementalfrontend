@@ -1,11 +1,4 @@
 const ContactDatabase = {
-    
-    PPI_Australia : [
-        {
-            name        : "PPI Australia",
-            contact     : ["president@ppi-australia.org", "publicrelations@ppi-australia.org"]
-        }
-    ],
 
     Embassy_ACT : [
         {
@@ -16,7 +9,7 @@ const ContactDatabase = {
         }
     ],
 
-    Embassy_NT : [
+    Consulate_NT : [
         {
             name        : "Consulate General of The Republic of Indonesia for DARWIN, NORTHERN TERRITORY, AUSTRALIA",
             address    : "20 Harry Chan Avenue, Darwin NT 0800",
@@ -25,7 +18,7 @@ const ContactDatabase = {
         }
     ],
 
-    Embassy_NSW_QLD_SA : [
+    Consulate_NSW_QLD_SA : [
         {
             name        : "Consulate General of The Republic of Indonesia for NEW SOUTH WALES, QUEENSLAND, AND SOUTH AUSTRALIA",
             address    : "BASED IN SYDNEY, AUSTRALIA 236-238 Maroubra Rd, Maroubra NSW 2035",
@@ -34,7 +27,7 @@ const ContactDatabase = {
         }
     ],
 
-    Embassy_VIC : [
+    Consulate_VIC : [
         {
             name        : "Consulate General of The Republic of Indonesia for MELBOURNE-VICTORIA, AUSTRALIA",
             address    : "72 Queens Rd, Melbourne VIC 3004",
@@ -43,7 +36,7 @@ const ContactDatabase = {
         }
     ],
 
-    Embassy_WA : [
+    Consulate_WA : [
         {
             name        : "Consulate General of The Republic of Indonesia for PERTH, AUSTRALIA",
             address    : "134 Adelaide Terrace, East Perth WA 6004",
@@ -52,3 +45,5 @@ const ContactDatabase = {
         }
     ]
 }
+
+export default ContactDatabase;
