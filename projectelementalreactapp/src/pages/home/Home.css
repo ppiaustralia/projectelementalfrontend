@@ -4,6 +4,10 @@
     flex-flow: column wrap;
 }
 
+.carousel-height {
+    max-height: 86vh;
+}
+
 .carousel {
     width: 100vw;
     max-height: 86vh;
@@ -17,7 +21,6 @@
 
 .background {
     background-color: #e9ecef;
-    max-height: 86vh;
     border-radius: 5px;
 }
 
@@ -37,12 +40,11 @@
 }
 
 .news-cards {
-    flex-flow: row wrap;
     padding-bottom: 52px;
 }
 
 h3 {
-    font-family: Roboto;
+    font-family: Arial;
     font-size: 32px;
 }
 
@@ -59,6 +61,6 @@ h5 {
     color: white;
 }
 
-.news-button {
+.news {
     padding-bottom: 48px;
 }

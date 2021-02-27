@@ -125,7 +125,7 @@ export class ImageGallery extends Component {
 export class NewsCards extends Component {
     render() {
         return (
-            <div className = "background front-page">
+            <div className = "background front-page news">
                 <div className = "news-title">
                     <h3>Latest Updates</h3>
                 </div>
