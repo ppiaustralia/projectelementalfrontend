@@ -1,0 +1,16 @@
+.page {
+    display: block;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: Arial;
+    text-decoration: none solid rgb(0, 0, 0);
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    font-family: Arial;
+    text-decoration: none solid rgb(33, 37, 41);
+}
