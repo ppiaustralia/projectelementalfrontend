@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import ContactDatabase from 'ContactDatabase.js'
-import 'Contact.css'
 
 function Contact(props) {
     
