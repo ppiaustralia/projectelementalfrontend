@@ -9,11 +9,66 @@ const StyledSection = styled.section`
     text-align: left
     ;
   }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+  }
+  .ul {
+    margin: 0;
+    padding: 0;
+  }
+  .li {
+    list-style: none;
+  }
+  .li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #000000;
+  }
 `;
 
 const MissionVision = () => {
     return (
       <StyledSection className="About Us">
+        <div class='wrapper'>
+          <div class = 'row'>
+            <div class = 'column'>
+            <ul>
+        <li>
+        <h2 className="heading--main">About Us</h2>
+        </li>
+        <li>
+        <h2 className="heading--main">Vision</h2>
+        </li>
+        <li>
+        <h2 className="heading--main">Mission</h2>
+        </li>
+        <li>
+        <h2 className="heading--main">Kabinet Sinergi 2020/2021</h2>
+        </li>
+        <li>
+        <h2 className="heading--main">AD / ART</h2>
+        </li>
+      </ul>
+            </div>
+            <div class = 'double-column'>
         <div className="block_text">
           <div className="aboutUs_info">
             <h1 className="heading--main">About Us</h1>
@@ -50,6 +105,9 @@ const MissionVision = () => {
             Mengembangkan sistem organisasi yang efisien dan peduli.
             </p>
           </div>
+        </div>
+        </div>
+        </div>
         </div>
       </StyledSection>
     );
