@@ -1,9 +1,35 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
+import styled from 'styled-components';
+
+const StyledSection = styled.section`
+  margin: 10rem auto 0 auto;
+  width: 60%;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+  }
+`;
 
 export default function SinglePage(props) {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
+  const [pageNumber, setPageNumber] = useState(1); //setting 1 to show first page
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -25,7 +51,11 @@ export default function SinglePage(props) {
   const { pdf } = props;
 
   return (
-    <>
+    <StyledSection>
+      <div class='wrapper'>
+          <div class = 'row'>
+            <div class = 'column'></div>
+            <div class = 'double-column'>
       <Document
         file={pdf}
         options={{ workerSrc: "/pdf.worker.js" }}
@@ -48,6 +78,9 @@ export default function SinglePage(props) {
           Next
         </button>
       </div>
-    </>
+      </div>
+      </div>
+      </div>
+    </StyledSection>
   );
 }
