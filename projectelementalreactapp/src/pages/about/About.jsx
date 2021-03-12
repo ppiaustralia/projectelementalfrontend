@@ -7,6 +7,7 @@ import "./Pdfreader.css";
 import samplePDF from './sample.pdf'; /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
 import MissionVision from './MissionVision';
+import KabinetSinergi from './KabinetSinergi';
 
 class About extends React.Component {
     render() {
@@ -14,7 +15,7 @@ class About extends React.Component {
             <div>
                 <MissionVision/>
            {/* <Sidebar/> */}
-           <h4>AD / ART</h4>
+           <KabinetSinergi/>
             <SinglePagePDFViewer pdf={samplePDF}/>
             </div>    
         );

@@ -3,8 +3,8 @@ import { Document, Page } from "react-pdf";
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  margin: 10rem auto 0 auto;
-  width: 60%;
+  margin: auto auto 0 auto;
+  width: 50%;
 
   .row {
     display: flex;
@@ -56,6 +56,7 @@ export default function SinglePage(props) {
           <div class = 'row'>
             <div class = 'column'></div>
             <div class = 'double-column'>
+              <h1>AD / ART</h1>
       <Document
         file={pdf}
         options={{ workerSrc: "/pdf.worker.js" }}
