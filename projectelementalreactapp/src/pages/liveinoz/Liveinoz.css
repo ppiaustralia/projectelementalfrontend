@@ -1,5 +1,6 @@
 .page {
     display: block;
+    padding-bottom: 32px;
 }
 
 h1 {
@@ -8,9 +9,51 @@ h1 {
     text-decoration: none solid rgb(0, 0, 0);
 }
 
-h3 {
+h2 {
     text-align: center;
     font-size: 28px;
+    font-weight: bold;
     font-family: Arial;
     text-decoration: none solid rgb(33, 37, 41);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+p {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.title {
+    margin: 35px 35px 35px 35px;
+}
+
+.subtitle {
+    margin-top: 68px;
+}
+
+.entry{
+    margin: auto;
+    width: 73%;
+    padding-top: 80px;
+}
+
+.entry-thumb{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    height: auto;
+}
+
+.entry-text {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    font-size: 28px;
+    padding-top: 3%;
+    padding-left: 20px;
 }
