@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "G:\\Languages\\Python 3.9.0\\python.exe",
-    "discord.enabled": true
+    "discord.enabled": true,
+    "VSCord.enabled": true
 }

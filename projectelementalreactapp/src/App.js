@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // this comes from install npm react-router-dom
 import Navbar from './components/Navbar/Navbar';
 import Home from '../src/pages/home/Home';
-import Chapter from '../src/pages/chapter/Chapter';
+import Chapters from '../src/pages/chapter/Chapter';
 // import ACT from '../src/pages/chapter/ACT';
 // import NSW from '../src/pages/chapter/NSW';
 // import NT from '../src/pages/chapter/NT';
@@ -27,7 +26,7 @@ function App () {
        <Switch>
          <Route path='/' exact component={Home} />
          <Route path='/about' exact component={About} />
-         <Route path='/chapter/:statename' exact component={Chapter} />   {/* the var for the state will be assigned to statename */}
+         <Route path='/chapters/:statename' exact component={Chapters} />   {/* the var for the state will be assigned to statename */}
          {/* <Route path= '/Australia-Capital-Territory' exact component={ACT}/>
          <Route path= '/New-South-Wales' exact component={NSW}/>
          <Route path= '/Northern-Territory' exact component={NT}/>
