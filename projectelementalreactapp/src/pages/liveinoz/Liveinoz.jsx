@@ -9,6 +9,11 @@ function entry(object){
     return(
         <div className = 'entry'>
             <img src = {object.img} className = 'entry-thumb'/>
+            <i class="fas fa-share-alt-square" />
+            <i class="fab fa-facebook-square" />
+            <i class="fab fa-instagram-square" />
+            <i class="fab fa-youtube-square" />
+            <i class="fab fa-twitter-square" />
             <div className = 'entry-text'>
                 <h3>{object.title}</h3>
                 <p>
