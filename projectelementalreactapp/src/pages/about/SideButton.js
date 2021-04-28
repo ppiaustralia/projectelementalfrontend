@@ -33,7 +33,7 @@ flex-direction: column;
 background-color: white;
 ${props => props.fixed && css`
 position: fixed;
-top: 0;
+top: inherit;
 `}
 `
 

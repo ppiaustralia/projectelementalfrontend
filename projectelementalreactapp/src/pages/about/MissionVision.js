@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SideButton from './SideButton';
 
 const StyledSection = styled.section`
-  margin: 10rem auto 0 auto;
+  margin: auto auto 0 auto;
   width: 60%;
 
   .heading--main {
@@ -28,6 +28,7 @@ const StyledSection = styled.section`
     flex-direction: column;
     flex-basis: 100%;
     flex: 3;
+    top: inherit;
   }
   .ul {
     margin: 0;
