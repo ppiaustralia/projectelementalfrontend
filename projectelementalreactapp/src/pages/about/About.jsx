@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Sidebar from './Sidebar';
 import SinglePagePDFViewer from './Pdfreader';
 import "./Pdfreader.css";
 
@@ -14,7 +13,6 @@ class About extends React.Component {
         return (
             <div>
                 <MissionVision/>
-           {/* <Sidebar/> */}
            <KabinetSinergi/>
             <SinglePagePDFViewer pdf={samplePDF}/>
             </div>    
