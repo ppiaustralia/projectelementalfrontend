@@ -6,6 +6,7 @@
     text-align: start;
     z-index: 99;
     display: block;
+    left: auto;
 }
 
 .dropdown-menu li {
