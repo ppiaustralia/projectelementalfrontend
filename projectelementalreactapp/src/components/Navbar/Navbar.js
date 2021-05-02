@@ -52,9 +52,9 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
-            <li className="nav-links" onClick={closeMobileMenu}>
-              Chapters <i className="fas fa-caret-down" />
-            </li>
+            <div className="nav-links" onClick={closeMobileMenu}>
+              Chapters <i className="fas fa-caret-down" /> 
+            </div>
             {dropdown && <Dropdown />}
           </li>
           <li className="nav-item">
