@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import SideButton from './SideButton';
 
 const StyledSection = styled.section`
-  margin: 10rem auto 0 auto;
+  margin: auto auto 0 auto;
   width: 60%;
 
   .heading--main {
@@ -27,6 +28,7 @@ const StyledSection = styled.section`
     flex-direction: column;
     flex-basis: 100%;
     flex: 3;
+    top: inherit;
   }
   .ul {
     margin: 0;
@@ -50,23 +52,7 @@ const MissionVision = () => {
         <div class='wrapper'>
           <div class = 'row'>
             <div class = 'column'>
-            <ul>
-        <li>
-        <h2 className="heading--main">About Us</h2>
-        </li>
-        <li>
-        <h2 className="heading--main">Vision</h2>
-        </li>
-        <li>
-        <h2 className="heading--main">Mission</h2>
-        </li>
-        <li>
-        <h2 className="heading--main">Kabinet Sinergi 2020/2021</h2>
-        </li>
-        <li>
-        <h2 className="heading--main">AD / ART</h2>
-        </li>
-      </ul>
+            <SideButton />
             </div>
             <div class = 'double-column'>
         <div className="block_text">

@@ -7,15 +7,31 @@ import {data_arr} from './database.jsx'
 
 function entry(object){
     return(
-        <div className = 'entry'>
-            <img src = {object.img} className = 'entry-thumb'/>
-            <div className = 'entry-text'>
-                <h3>{object.title}</h3>
-                <p>
-                    {object.description}
-                </p>
-                <Button variant = 'news' style = {{width: '155px'}}>Continue Reading</Button>
+        <div>
+            <div className='page-content'>
+                <img src = {object.img} className = 'entry-thumb'/>
+                <div className = 'entry-text'>
+                    <h3>{object.title}</h3>
+                    <p>{object.description}</p>
+                    <Button variant = 'news' style = {{width: '155px'}}>Continue Reading</Button>
+                </div>
             </div>
+            <div className='share-icons'>
+                <i class="fas fa-share-alt-square" />
+                <i class="fab fa-facebook-square" />
+                <i class="fab fa-instagram-square" />
+                <i class="fab fa-youtube-square" />
+                <i class="fab fa-twitter-square" />
+            </div>
+        </div>
+    );
+};
+
+function subtitle(object){
+    return(
+        <div className = 'subtitle'>
+                <h2>Menjelang Keberangkatan ke Australia</h2>
+                <hr style={{width: '70%', margin: 'auto'}} />
         </div>
     );
 };
@@ -51,5 +67,7 @@ class Liveinoz extends React.Component {
         );
     }
 };
+
+
 
 export default Liveinoz;
