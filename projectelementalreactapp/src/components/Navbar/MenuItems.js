@@ -10,7 +10,7 @@ const MenuItems = [
     cName: "dropdown-link",
   },
   {
-    title: "Northern Territory ",
+    title: "Northern Territory",
     path: "/chapter/nt",
     cName: "dropdown-link",
   },
