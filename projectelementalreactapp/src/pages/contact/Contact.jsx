@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css'
-import ContactDatabase from './ContactDatabase.js'
+import ContactDatabase from './ContactDatabase.json'
 
 function Contact(props) {
     

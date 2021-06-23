@@ -2,7 +2,7 @@ import React from 'react';
 import './Chapter.css'
 
 // temporary Database
-import ChapterDatabase from "./ChapterDatabase"
+import ChapterDatabase from "./ChapterDatabase.json"
 
 // function Chapter (props) {
 //         return (
