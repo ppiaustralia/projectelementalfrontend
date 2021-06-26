@@ -1,12 +1,47 @@
+/* Titles */
+h4 {
+    font-family: Arial;
+    font-size: 32px;
+}
+/* News cards subtitles */
+h5 {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 53px;
+}
+
 .front-page {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
 }
 
-.carousel-height {
-    max-height: 86vh;
+.carousel {
+    width: 100vw;
+    height: 86vh;
 }
+
+/* Code for a centered image in the carousel if the image is too big/small
+
+    Requires a better import system, where a path is imported from database and then changed.
+*/
+/* 
+.wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto auto;
+    object-fit: contain;
+    background-position: 50% 50%; 
+    background-size: cover;
+    background-attachment: scroll;
+} */
 
 .carousel {
     width: 100vw;
@@ -47,18 +82,7 @@
     padding-bottom: 52px;
 }
 
-h3 {
-    font-family: Arial;
-    font-size: 32px;
-}
 
-h5 {
-    font-family: Arial;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 53px;
-}
 
 .btn-news {
     background-color: #ed1c24;
@@ -78,3 +102,11 @@ h5 {
     max-width: 100%;
     overflow: hidden;
 }
+
+.bottompanel{
+    background-color: #ed1c24;
+    width: 100%;
+    height: 133px;
+}
+
+

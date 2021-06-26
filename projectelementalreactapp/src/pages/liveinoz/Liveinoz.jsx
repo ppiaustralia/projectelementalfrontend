@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './Liveinoz.css';
 import {data_arr} from './database.jsx'
 
-function entry(object){
+function render_entry(object){
     return(
         <div>
             <div className='page-content'>
@@ -27,46 +27,61 @@ function entry(object){
     );
 };
 
-function subtitle(object){
+function render_subtitle(object){
     return(
         <div className = 'subtitle'>
-                <h2>Menjelang Keberangkatan ke Australia</h2>
-                <hr style={{width: '70%', margin: 'auto'}} />
+            <h2>{object.heading}</h2>
+            <hr style={{width: '70%', margin: 'auto'}} />
         </div>
     );
 };
 
-class Liveinoz extends React.Component {
-    render() {
-        return (
-            <div className = 'page'>
-                <div className = 'title'>
-                    <h1>Student Guide</h1>
-                    <hr style={{width: '95%', margin: 'auto'}} />
-                </div>
-                <div className = 'subtitle'>
-                    <h2>Menjelang Keberangkatan ke Australia</h2>
-                    <hr style={{width: '70%', margin: 'auto'}} />
-                </div>
-                <div>
-                    {data_arr.map((obj, i) =>
-                        entry(obj)
-                    )}
-                </div>
-                <div className = 'subtitle'>
-                    <h2>Tiba di Australia</h2>
-                    <hr style={{width: '70%', margin: 'auto'}} />
-                </div>
-                <div>
-                    {data_arr.map((obj, i) =>
-                        entry(obj)
-                    )}
-                </div>
-                <hr style={{marginTop: '108px'}} />
+function Liveinoz(props){
+    const page = props.match.params.page;
+    return (
+        <div className = 'page'>
+            <div className = 'title'>
+                <h1>Student Guide</h1>
+                <hr style={{width: '95%', margin: 'auto'}} />
             </div>
-        );
-    }
-};
+            {data_arr.map((obj) => {
+                switch (obj.type){
+                    case 'subtitle':
+                        return render_subtitle(obj);
+                    case 'entry':
+                        return render_entry(obj);
+                    }
+                }
+            )}
+            <hr style={{marginTop: '108px'}} />
+        </div>
+    );
+}
+
+
+
+// class Liveinoz extends React.Component {
+//     render() {
+//         return (
+//             <div className = 'page'>
+//                 <div className = 'title'>
+//                     <h1>Student Guide</h1>
+//                     <hr style={{width: '95%', margin: 'auto'}} />
+//                 </div>
+//                 {data_arr.map((obj) => {
+//                     switch (obj.type){
+//                         case 'subtitle':
+//                             return render_subtitle(obj);
+//                         case 'entry':
+//                             return render_entry(obj);
+//                         }
+//                     }
+//                 )}
+//                 <hr style={{marginTop: '108px'}} />
+//             </div>
+//         );
+//     }
+// };
 
 
 
