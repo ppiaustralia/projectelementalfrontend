@@ -66,4 +66,5 @@ p {
     width: 7%;
     align-content: flex-start;
     justify-content: space-between;
+    z-index: -1;
 }

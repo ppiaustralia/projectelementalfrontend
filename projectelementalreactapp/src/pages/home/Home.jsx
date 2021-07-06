@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {Carousel, Container, Row, Col, Image, Card, Button, CardDeck} from 'react-bootstrap/';
 import ReactDOM from 'react-dom';
 
-import {image_arr, source_arr, update_arr} from './database';
+import {image_arr, source_arr, update_arr} from './database_home';
 // import Appdata from './database';
 
 import "./Home.css";

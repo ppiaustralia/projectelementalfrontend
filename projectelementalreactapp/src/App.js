@@ -14,6 +14,7 @@ import Chapters from '../src/pages/chapter/Chapter';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import LiveInOz from '../src/pages/liveinoz/Liveinoz';
+import ReadMore from './pages/liveinoz/ReadMore';
 import Blog from '../src/pages/blog/Blog';
 import { FooterContainer } from './containers/footer'
 
@@ -36,6 +37,7 @@ function App () {
          <Route path= '/Victoria' exact component={VIC}/>
          <Route path= '/Western-Australia' exact component={WA}/> */}
          <Route path='/liveinoz' exact component={LiveInOz} />
+         <Route path="/liveinoz/:id" exact component={ReadMore} />
          <Route path='/blog' exact component={Blog} />
          <Route path='/contact' exact component={Contact} />
        </Switch>
