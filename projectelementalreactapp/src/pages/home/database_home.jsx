@@ -80,9 +80,9 @@ import dummy3 from "../../assets/images/cat3.jpg";
 import PPIA from "../../assets/images/PPIA.jpg";
 
 export const image_arr = [
-    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy1}/>,
-    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy2}/>,
-    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy3}/>
+    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy1} alt='missing image'/>,
+    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy2} alt='missing image'/>,
+    <img class="d-block mx-auto responsive-carousel img-fluid" src={dummy3} alt='missing image'/>
 ];
 
 export const source_arr = [

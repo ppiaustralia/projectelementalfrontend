@@ -13,7 +13,7 @@ import Chapters from '../src/pages/chapter/Chapter';
 // import WA from '../src/pages/chapter/WA';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
-import Liveinoz, { ReadMore } from './pages/liveinoz/Liveinoz';
+import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 import { FooterContainer } from './containers/footer'
 
