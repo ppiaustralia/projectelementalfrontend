@@ -21,7 +21,7 @@ export default class Liveinoz extends React.Component {
         return (
             <div>
                 <div className='page-content'>
-                    <img src = {object.img} className = 'entry-thumb'/>
+                    <img src = {object.img} className = 'entry-thumb' alt='missing' />
                     <div className = 'entry-text'>
                         <h3>{object.title}</h3>
                         <p>{object.description.slice(0, MAX_CHR)}</p>
@@ -94,7 +94,7 @@ export class ReadMore extends React.Component{
                         </div>
                     </Breadcrumb>
                 </div>
-                <img src = {this.obj.img} className = 'entry-thumb page-content'/>
+                <img src = {this.obj.img} className = 'entry-thumb page-content' alt='missing'/>
                 <div className='page-content'>
                     {this.obj.description}
                 </div>

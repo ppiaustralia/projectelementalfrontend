@@ -21,36 +21,11 @@ h5 {
 .carousel {
     width: 100vw;
     height: 86vh;
-}
-
-/* Code for a centered image in the carousel if the image is too big/small
-
-    Requires a better import system, where a path is imported from database and then changed.
-*/
-/* 
-.wrap {
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel img {
-    position: fixed;
-    top: 0; left: 0; bottom: 0; right: 0;
-    margin: auto auto;
-    object-fit: contain;
-    background-position: 50% 50%; 
-    background-size: cover;
-    background-attachment: scroll;
-} */
-
-.carousel {
-    width: 100vw;
-    max-height: 86vh;
     overflow: hidden;
 }
 
 .responsive-carousel {
-    display: block;
+    vertical-align: 50%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
