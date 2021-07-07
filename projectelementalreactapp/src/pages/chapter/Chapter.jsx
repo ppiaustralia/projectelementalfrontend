@@ -17,6 +17,7 @@ function Chapter(props) {
     const statename = props.match.params.statename;
     // add PPIA prefix
     const PPIA_STATENAME = `PPIA_${statename.toUpperCase()}`;
+    
 
     // { key1: value1, key2: value2 }
     function renderPPIA(ppia) {
@@ -28,13 +29,16 @@ function Chapter(props) {
             let Key = key.charAt(0).toUpperCase() + key.slice(1)
             return <p>{Key}: {ppia[key]}</p>
         });
+        
     }
+
+    // console.log(statename);
     
     return ChapterDatabase[PPIA_STATENAME].map(ppia => (   
         <div className="ppia-frame">
             {/* <div> <img id="logo1" src={process.env.PUBLIC_URL + '/assets/images/PPIA.jpg'} alt="LOGO"/> </div> */}
             <div className = "ppia-image">
-                <img className="ppia-logo" src= {'/assets/images/PPIA.jpg'} alt= "logo" />
+                <img className="ppia-logo" src={ppia.logo} alt="logo" />
             </div>
             <div className="ppia-description">
                 <p className="ppia-title">{ppia.name}</p>
@@ -42,6 +46,7 @@ function Chapter(props) {
             </div>
         </div>
     ));
+
 }
 
 export default Chapter;
