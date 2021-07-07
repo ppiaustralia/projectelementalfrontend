@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // this comes from install npm react-router-dom
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from '../src/pages/home/Home';
 import Chapters from '../src/pages/chapter/Chapter';
@@ -13,14 +13,11 @@ import Chapters from '../src/pages/chapter/Chapter';
 // import WA from '../src/pages/chapter/WA';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
-import LiveInOz from '../src/pages/liveinoz/Liveinoz';
-import ReadMore from './pages/liveinoz/ReadMore';
+import Liveinoz, { ReadMore } from './pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 import { FooterContainer } from './containers/footer'
 
-// website nav pane
 function App () { 
-  
     return ( 
      <Router>
        <Navbar />
@@ -36,16 +33,13 @@ function App () {
          <Route path= '/Tasmania' exact component={TA}/>
          <Route path= '/Victoria' exact component={VIC}/>
          <Route path= '/Western-Australia' exact component={WA}/> */}
-         <Route path='/liveinoz' exact component={LiveInOz} />
+         <Route path='/liveinoz' exact component={Liveinoz} />
          <Route path="/liveinoz/:id" exact component={ReadMore} />
          <Route path='/blog' exact component={Blog} />
          <Route path='/contact' exact component={Contact} />
        </Switch>
        <FooterContainer />
      </Router>
-
-      
-      
     );
   
 }
