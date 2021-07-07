@@ -7,21 +7,15 @@ import {image_arr, source_arr, update_arr} from './database_home';
 
 import "./Home.css";
 
-export default class Home extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.state = Appdata.data;
-    // }
-    render() {
-        return (
-            <div>
-                <ImageSlider />
-                <ImageGallery />
-                <NewsCards />
-                <BottomPanel />
-            </div>
-        )
-    }
+export default function Home(props) {
+    return (
+        <div>
+            <ImageSlider />
+            <ImageGallery />
+            <NewsCards />
+            <BottomPanel />
+        </div>
+    )
 }
 
 function ImageSlider(props) {
