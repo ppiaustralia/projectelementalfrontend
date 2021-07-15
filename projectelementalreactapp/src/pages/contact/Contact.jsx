@@ -1,41 +1,35 @@
-import React from 'react';
-import './Contact.css'
-import ContactDatabase from './ContactDatabase.json'
+import React from "react";
 
-function Contact(props) {
-    
-    // function renderContact(ppia) {
-    //     return Object.keys(ppia)
-    //     .filter(key => key !== "name")
-    //     .map( key => {
-    //         let Key = key.charAt(0).toUpperCase() + key.slice(1)
-    //         return <p>{Key}: {ppia[key]}</p>
-    //     });
-    // }
+import "./Contact.css";
+import ContactDatabase from "./ContactDatabase.json";
+import Embassy from "./Embassy";
+import ConsulatesCard from "./ConsulatesCard";
+import PPIA from "./PPIA";
 
-    return (
+function Contact() {
+  const contacts = ContactDatabase;
+
+  return (
+    <div className="container mt-3">
+      <div>
+        <PPIA data={contacts.PPIAustralia} />
+      </div>
+      <div>
+        <h3>
+          The information below are the lists of our embassy and consulates that
+          are located in Australia
+        </h3>
         <div>
-            <h1>Contact</h1> {/* title */}
-            <div>
-                {/* call PPIAustralia */}
-                
-
-            </div>
-            <div>
-                <h3>The information below are the lists of our embassy and consulates that are located in Australia</h3>
-                <div>
-                    <h1>Embassy</h1> {/* title */}
-                    <h3>the lists of consulate general in Australia</h3> 
-                    {/* call Embassy */}
-                    
-
-                    {/* call everything with Consulate */}
-                    
-
-                </div>
-            </div>
+          <Embassy data={contacts.Embassy} />
         </div>
-    );
+        <div>
+          {contacts.Consulate.map((element) => {
+            return <ConsulatesCard data={element} />;
+          })}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
