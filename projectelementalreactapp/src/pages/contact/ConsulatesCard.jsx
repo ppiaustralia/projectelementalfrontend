@@ -8,7 +8,7 @@ function ConsulatesCard(data) {
   }
   return (
     <div className="card p-3 pb-0 mt-3">
-      <h4>{info.title}</h4>
+      <h1>{info.title}</h1>
       <ul className="list-unstyled">
         {Object.entries(info).map(([key, value]) => {
           if (key !== "title") {
