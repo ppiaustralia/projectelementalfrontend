@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { withRouter } from "react-router";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "../src/pages/home/Home";
 import Chapter from "../src/pages/chapter/Chapter";
@@ -24,7 +25,11 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
-        <Route path="/chapter/:statename" exact component={Chapter} />
+        <Route
+          path="/chapter/:statename"
+          exact
+          component={withRouter(Chapter)}
+        />
         {/*the var for the state will be assigned to statename*/}
         {/* <Route path= '/Australia-Capital-Territory' exact component={ACT}/>
          <Route path= '/New-South-Wales' exact component={NSW}/>
