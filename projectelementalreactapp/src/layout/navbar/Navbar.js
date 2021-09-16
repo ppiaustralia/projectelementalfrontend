@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import styles from  "./Navbar.module.css";
 import Dropdown from "./Dropdown";
 
 function Navbar() {
@@ -28,51 +28,51 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
-        <Link to="/" className="navbar-logo">
+      <nav className={styles.navbar}>
+        <Link to="/" className={styles['navbar-logo']}>
           PPIA
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
+        <div className={styles['menu-icon']} onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+        <ul className={click ? `${styles['nav-menu']} ${styles.active}` : `${styles['nav-menu']}`}>
+          <li className={styles['nav-item']}>
+            <Link to="/" className={styles['nav-links']} onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+          <li className={styles['nav-item']}>
+            <Link to="/about" className={styles['nav-links']} onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
           <li
-            className="nav-item"
+            className={styles['nav-item']}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
-            <div className="nav-links" onClick={closeMobileMenu}>
+            <div className={styles['nav-links']} onClick={closeMobileMenu}>
               Chapters <i className="fas fa-caret-down" /> 
               {dropdown && <Dropdown />}
             </div>
           </li>
-          <li className="nav-item">
+          <li className={styles['nav-item']}>
             <Link
               to="/liveinoz"
-              className="nav-links"
+              className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
               Live in OZ
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/blog" className="nav-links" onClick={closeMobileMenu}>
+          <li className={styles['nav-item']}>
+            <Link to="/blog" className={styles['nav-links']} onClick={closeMobileMenu}>
               Blog
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+          <li className={styles['nav-item']}>
+            <Link to="/contact" className={styles['nav-links']} onClick={closeMobileMenu}>
               Contact
             </Link>
           </li>
@@ -83,3 +83,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//className="(\w*-\w*)"
+//className={styles['$1']}

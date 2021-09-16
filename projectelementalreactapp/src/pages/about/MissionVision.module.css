@@ -1,0 +1,41 @@
+.main-section {
+    margin: auto auto 0 auto;
+    width: 60%;
+}
+
+.heading--main {
+    text-align: left;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+}
+.ul {
+    margin: 0;
+    padding: 0;
+}
+.li {
+    list-style: none;
+}
+.li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #000000;
+}

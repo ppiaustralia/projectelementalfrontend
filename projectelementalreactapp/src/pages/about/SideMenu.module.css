@@ -1,0 +1,10 @@
+.button {
+    border: none;
+    padding: 5px 10px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}

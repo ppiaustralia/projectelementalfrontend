@@ -1,4 +1,4 @@
-.dropdown-menu {
+.dropdownMenu {
     width: 200px;
     position: absolute;
     top: 80px;
@@ -7,27 +7,32 @@
     z-index: 99;
     display: block;
     left: auto;
+    border: 2px solid white;
+    background: black;
+    padding:1em
+
 }
 
-.dropdown-menu li {
+.dropdownMenu li.states{
     background: #000000;
     cursor: pointer;
+    padding: 0.25em;
+    width:100%
 }
 
-.dropdown-menu li:hover {
+.dropdownMenu li:hover {
     background: #ed1c24;
 
 }
 
-.dropdown-menu.clicked {
+.dropdownMenu.clicked {
     display:none;
 }
 
-.dropdown-link {
+.dropdownLink {
     display: block;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: #fff;
-    padding: 16px;
 }
