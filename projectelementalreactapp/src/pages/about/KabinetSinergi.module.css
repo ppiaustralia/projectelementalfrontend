@@ -1,0 +1,27 @@
+.main-section {
+    margin: auto auto 0 auto;
+    width: 100%;
+}
+
+.heading--main {
+    text-align: left;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+}

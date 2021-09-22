@@ -8,25 +8,23 @@
     display: block;
     left: auto;
     border: 2px solid white;
-    background: black;
-    padding:1em
-
+    background: #ed1c24;
+    padding: 0.5em;
 }
 
-.dropdownMenu li.states{
-    background: #000000;
+.dropdownMenu li.states {
+    background: #ed1c24;
     cursor: pointer;
     padding: 0.25em;
-    width:100%
+    width: 100%;
 }
 
 .dropdownMenu li:hover {
     background: #ed1c24;
-
 }
 
 .dropdownMenu.clicked {
-    display:none;
+    display: none;
 }
 
 .dropdownLink {
