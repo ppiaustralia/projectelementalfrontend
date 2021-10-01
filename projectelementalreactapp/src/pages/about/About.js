@@ -8,16 +8,14 @@ inside the app. Otherwise you can use the external link of the pdf file*/
 import MissionVision from "./MissionVision"
 import KabinetSinergi from "./KabinetSinergi"
 
-class About extends React.Component {
-    render() {
-        return (
-            <div>
-                <MissionVision />
-                <KabinetSinergi />
-                <SinglePagePDFViewer pdf={samplePDF} />
-            </div>
-        )
-    }
+function About() {
+    return (
+        <div>
+            <MissionVision />
+            <KabinetSinergi />
+            <SinglePagePDFViewer pdf={samplePDF} />
+        </div>
+    )
 }
 
 export default About

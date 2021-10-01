@@ -52,49 +52,45 @@ const source_arr = [
     },
 ]
 
-export default class KabinetSinergi extends React.Component {
-    render() {
-        return (
-            <div>
-                <ImageGallery />
-            </div>
-        )
-    }
+export default function KabinetSinergi() {
+    return (
+        <div>
+            <ImageGallery />
+        </div>
+    )
 }
 
-export class ImageGallery extends Component {
-    render() {
-        return (
-            <div className={styles["main-section"]}>
-                <div className={styles["wrapper"]}>
-                    <div className={styles["row"]}>
-                        <div className={styles["column"]}></div>
-                        <div className={styles["double-column"]}>
-                            <div className={styles["front-page"]}>
-                                <div className={styles["mt-5"]}>
-                                    <h3>Information Technology</h3>
-                                </div>
-                                <div className={styles["img-gallery"]}>
-                                    <Container>
-                                        <Row className={styles["-center"]}>
-                                            {source_arr.map((kabinet, i) => (
-                                                <Col md={3}>
-                                                    <Image
-                                                        src={kabinet.img}
-                                                        className={`d-block responsive-gallery img-fluid mx-4`}
-                                                        roundedCircle
-                                                    />
-                                                    <h5>{kabinet.name}</h5>
-                                                </Col>
-                                            ))}
-                                        </Row>
-                                    </Container>
-                                </div>
+export function ImageGallery() {
+    return (
+        <div className={styles["main-section"]}>
+            <div className={styles["wrapper"]}>
+                <div className={styles["row"]}>
+                    <div className={styles["column"]}></div>
+                    <div className={styles["double-column"]}>
+                        <div className={styles["front-page"]}>
+                            <div className={styles["mt-5"]}>
+                                <h3>Information Technology</h3>
+                            </div>
+                            <div className={styles["img-gallery"]}>
+                                <Container>
+                                    <Row className={styles["-center"]}>
+                                        {source_arr.map((kabinet, i) => (
+                                            <Col md={3}>
+                                                <Image
+                                                    src={kabinet.img}
+                                                    className={`d-block responsive-gallery img-fluid mx-4`}
+                                                    roundedCircle
+                                                />
+                                                <h5>{kabinet.name}</h5>
+                                            </Col>
+                                        ))}
+                                    </Row>
+                                </Container>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }

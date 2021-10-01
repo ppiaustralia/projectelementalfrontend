@@ -14,28 +14,26 @@ import {
 import { image_data, chapters_data, news_data } from "./database_home";
 import "./Home.css";
 
-export default class Home extends React.Component {
-  image_slider() {
+export default function Home() {
     return (
-      <div className="background">
-        <Carousel>
-          {image_data.map((image) => (
-            <Carousel.Item>
-              <img
-                class="d-block mx-auto responsive-carousel img-fluid"
-                src={image}
-                alt="missing"
-              />
-              ,
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
-    );
-  }
-  chapters_gallery() {
-    return (
-      <div className="front-page">
+      <>
+      {/* image_slider */}
+        <div className="background">
+          <Carousel>
+            {image_data.map((image) => (
+              <Carousel.Item>
+                <img
+                  class="d-block mx-auto responsive-carousel img-fluid"
+                  src={image}
+                  alt="missing"
+                />
+                ,
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+        {/* chapters_gallery */}
+        <div className="front-page">
         <div className="mt-5">
           <h4>Chapters</h4>
         </div>
@@ -58,10 +56,7 @@ export default class Home extends React.Component {
           </Container>
         </div>
       </div>
-    );
-  }
-  news_cards() {
-    return (
+      {/* news_cards */}
       <div className="background front-page news">
         <div className="news-title">
           <h4>Latest Updates</h4>
@@ -94,19 +89,8 @@ export default class Home extends React.Component {
           </Button>
         </Link>
       </div>
+      {/* bottom_panel */}
+      <div className="front-page bottompanel">UPCOMING EVENTS</div>;
+      </>
     );
-  }
-  bottom_panel() {
-    return <div className="front-page bottompanel">UPCOMING EVENTS</div>;
-  }
-  render() {
-    return (
-      <div>
-        {this.image_slider()}
-        {this.chapters_gallery()}
-        {this.news_cards()}
-        {this.bottom_panel()}
-      </div>
-    );
-  }
 }
