@@ -1,7 +1,9 @@
 import React from "react";
-import { Carousel } from "react-bootstrap/";
+
 import { image_data } from "../database_home";
 import styles from "./ImageSlider.module.css";
+
+import { Carousel } from "react-bootstrap/";
 
 export default function ImageSlider() {
     return (
@@ -9,7 +11,7 @@ export default function ImageSlider() {
         <div className={styles.background}>
 
           <Carousel>
-            {image_data.map((image) => (
+            {image_data.map(image => (
               <Carousel.Item>
                 <img
                   class="d-block mx-auto responsive-carousel img-fluid"

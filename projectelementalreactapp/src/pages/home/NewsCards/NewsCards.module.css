@@ -1,0 +1,35 @@
+.background {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.front-page {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.news {
+  padding-bottom: 48px;
+}
+
+.news-title {
+  padding-top: 40px;
+  padding-bottom: 58px;
+}
+
+.news-cards {
+  text-decoration: none;
+  padding-bottom: 52px;
+}
+
+.card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 194px;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
