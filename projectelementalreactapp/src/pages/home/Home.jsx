@@ -13,12 +13,15 @@ import {
 
 import { image_data, chapters_data, news_data } from "./database_home";
 import "./Home.css";
+import ImageSlider from "./ImageSlider/ImageSlider";
 
 export default function Home() {
     return (
       <>
+
       {/* image_slider */}
-        <div className="background">
+      <ImageSlider />
+        {/* <div className="background">
           <Carousel>
             {image_data.map((image) => (
               <Carousel.Item>
@@ -31,7 +34,9 @@ export default function Home() {
               </Carousel.Item>
             ))}
           </Carousel>
-        </div>
+        </div> */}
+
+
         {/* chapters_gallery */}
         <div className="front-page">
         <div className="mt-5">
@@ -56,6 +61,7 @@ export default function Home() {
           </Container>
         </div>
       </div>
+
       {/* news_cards */}
       <div className="background front-page news">
         <div className="news-title">
@@ -83,6 +89,7 @@ export default function Home() {
             ))}
           </CardDeck>
         </div>
+
         <Link to="/blog">
           <Button variant="news" style={{ width: "116px" }}>
             Read More
