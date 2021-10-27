@@ -18,11 +18,9 @@ export default function ChaptersGallery() {
   useEffect( () => {
     axios.get(`https://ppia-backend.herokuapp.com/user/ppia/`)
     .then(data => {
-      console.log(data.data);
       setBranchList(
         data.data.filter( (eachPPIAObj) => eachPPIAObj.level === 1 )
       )
-      console.log(branchList);
     })
     .catch(err => {console.log(err)});
   }, [branchList])
@@ -53,20 +51,6 @@ export default function ChaptersGallery() {
                 </Col>
               )
             })}
-            {/* {chapters_data.map((chapter, i) => (
-
-              <Col md="auto">
-                <Link to={chapter.path}>
-                  <Image
-                    src={chapter.img}
-                    className={`d-block ${styles["responsive-gallery"]} img-fluid mx-4`}
-                    roundedCircle
-                  />
-                </Link>
-                <h5>{chapter.title}</h5>
-              </Col>
-
-            ))} */}
           </Row>
         </Container>
       </div>
