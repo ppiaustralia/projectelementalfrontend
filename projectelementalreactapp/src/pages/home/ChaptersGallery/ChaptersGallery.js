@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import { chapters_data } from "../database_home";
 import styles from "./ChaptersGallery.module.css";
+import axios from "axios";
 
 import {
   Container,
@@ -11,6 +11,21 @@ import {
 } from "react-bootstrap/";
 
 export default function ChaptersGallery() {
+
+  const [branchList, setBranchList] = useState([]);
+  const chapterBaseLink = "https://chapterslogo.s3.us-east-2.amazonaws.com/";
+
+  useEffect( () => {
+    axios.get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+    .then(data => {
+      console.log(data.data);
+      setBranchList(
+        data.data.filter( (eachPPIAObj) => eachPPIAObj.level === 1 )
+      )
+      console.log(branchList);
+    })
+    .catch(err => {console.log(err)});
+  }, [branchList])
   return (
 
     <div className={styles["front-page"]}>
@@ -22,7 +37,23 @@ export default function ChaptersGallery() {
       <div className={styles["img-gallery"]}>
         <Container>
           <Row className="justify-content-md-center">
-            {chapters_data.map((chapter, i) => (
+            {branchList.map((branch, i) => {
+              
+              console.log(branch);
+              return (
+                <Col md="auto">
+                  <Link to={`chapter/${branch.state}`}>
+                    <Image
+                      src={`${chapterBaseLink}${branch.image}`}
+                      className={`d-block ${styles["responsive-gallery"]} img-fluid mx-4`}
+                      roundedCircle
+                    />
+                  </Link>
+                  <h5>{branch.title}</h5>
+                </Col>
+              )
+            })}
+            {/* {chapters_data.map((chapter, i) => (
 
               <Col md="auto">
                 <Link to={chapter.path}>
@@ -35,7 +66,7 @@ export default function ChaptersGallery() {
                 <h5>{chapter.title}</h5>
               </Col>
 
-            ))}
+            ))} */}
           </Row>
         </Container>
       </div>
