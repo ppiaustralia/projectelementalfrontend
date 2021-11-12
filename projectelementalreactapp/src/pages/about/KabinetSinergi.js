@@ -37,18 +37,26 @@ const source_arr = [
     {
         img: dummy1,
         name: "cat1",
+        position: 'IT Officer',
+        university: 'University of New South Wales'
     },
     {
         img: dummy2,
         name: "cat2",
+        position: 'Community Welfare Officer',
+        university: 'University of Sydney'
     },
     {
         img: dummy3,
         name: "cat3",
+        position: 'IT Officer',
+        university: 'University of Melbourne'
     },
     {
         img: dummy1,
-        name: "cat1",
+        name: "cat4",
+        position: 'IT Officer',
+        university: 'University of Technology Sydney'
     },
 ]
 
@@ -62,35 +70,63 @@ export default function KabinetSinergi() {
 
 export function ImageGallery() {
     return (
-        <div className={styles["main-section"]}>
-            <div className={styles["wrapper"]}>
-                <div className={styles["row"]}>
-                    <div className={styles["column"]}></div>
-                    <div className={styles["double-column"]}>
-                        <div className={styles["front-page"]}>
-                            <div className={styles["mt-5"]}>
-                                <h3>Information Technology</h3>
-                            </div>
-                            <div className={styles["img-gallery"]}>
-                                <Container>
-                                    <Row className={styles["-center"]}>
-                                        {source_arr.map((kabinet, i) => (
-                                            <Col md={3}>
-                                                <Image
-                                                    src={kabinet.img}
-                                                    className={`d-block responsive-gallery img-fluid mx-4`}
-                                                    roundedCircle
-                                                />
-                                                <h5>{kabinet.name}</h5>
-                                            </Col>
-                                        ))}
-                                    </Row>
-                                </Container>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className={styles.container}>
+            <h3>Information Technology</h3>
+            <div className={styles.cardContainer}>
+                {
+                    source_arr.map(member => {
+                        return <MemberCard member={member}/>
+                    })
+                }
             </div>
         </div>
     )
 }
+
+export function MemberCard({member}) {
+    return (
+        <Card className={`${styles.memberCard} px-4 py-2`}>
+            <Image src={source_arr[0].img} className={`${styles.cardImage} fluid me-4 my-2`} roundedCircle />
+            <Card.Body className={`ps-0`}>
+                <Card.Title>{member.name}</Card.Title>
+                <Card.Subtitle>{member.position}</Card.Subtitle>
+                <Card.Text>{member.university}</Card.Text>
+            </Card.Body>
+        </Card>
+    )
+}
+
+// export function ImageGallery() {
+//     return (
+//         <div className={styles["main-section"]}>
+//             <div className={styles["wrapper"]}>
+//                 <div className={styles["row"]}>
+//                     <div className={styles["column"]}></div>
+//                     <div className={styles["double-column"]}>
+//                         <div className={styles["front-page"]}>
+//                             <div className={styles["mt-5"]}>
+//                                 <h3>Information Technology</h3>
+//                             </div>
+//                             <div className={styles["img-gallery"]}>
+//                                 <Container>
+//                                     <Row className={styles["-center"]}>
+//                                         {source_arr.map((kabinet, i) => (
+//                                             <Col md={3}>
+//                                                 <Image
+//                                                     src={kabinet.img}
+//                                                     className={`d-block responsive-gallery img-fluid mx-4`}
+//                                                     roundedCircle
+//                                                 />
+//                                                 <h5>{kabinet.name} yo</h5>
+//                                             </Col>
+//                                         ))}
+//                                     </Row>
+//                                 </Container>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
