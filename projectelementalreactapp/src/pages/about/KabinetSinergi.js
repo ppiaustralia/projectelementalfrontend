@@ -63,15 +63,22 @@ const source_arr = [
 export default function KabinetSinergi() {
     return (
         <div>
-            <ImageGallery />
+            <Carousel>
+                <Carousel.Item>
+                    <Division />
+                </Carousel.Item>
+            </Carousel>
         </div>
     )
 }
 
-export function ImageGallery() {
+export function Division() {
     return (
         <div className={styles.container}>
-            <h3>Information Technology</h3>
+            <div className={styles.divisionContainer}>
+                <h3>Information Technology</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
             <div className={styles.cardContainer}>
                 {
                     source_arr.map(member => {
