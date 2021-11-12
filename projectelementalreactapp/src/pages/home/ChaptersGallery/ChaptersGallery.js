@@ -1,45 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { chapters_data } from "../database_home";
-import styles from "./ChaptersGallery.module.css";
+import React, { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import { chapters_data } from "../database_home"
+import styles from "./ChaptersGallery.module.css"
+import axios from "axios"
 
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-} from "react-bootstrap/";
+import { Container, Row, Col, Image } from "react-bootstrap/"
 
 export default function ChaptersGallery() {
-  return (
+    const [branchList, setBranchList] = useState([])
 
-    <div className={styles["front-page"]}>
+    const ChBaseLink = "https://chapterslogo.s3.us-east-2.amazonaws.com/"
 
-      <div className="mt-5">
-        <h4>Chapters</h4>
-      </div>
+    useEffect(() => {
+        axios
+            .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+            .then((data) => {
+                setBranchList(
+                    data.data.filter((eachData) => eachData.level === 1)
+                )
+                console.log(branchList)
+            })
+    }, [])
 
-      <div className={styles["img-gallery"]}>
-        <Container>
-          <Row className="justify-content-md-center">
-            {chapters_data.map((chapter, i) => (
+    return (
+        <div className={styles["front-page"]}>
+            <div className="mt-5">
+                <h4>Chapters</h4>
+            </div>
 
-              <Col md="auto">
-                <Link to={chapter.path}>
-                  <Image
-                    src={chapter.img}
-                    className={`d-block ${styles["responsive-gallery"]} img-fluid mx-4`}
-                    roundedCircle
-                  />
-                </Link>
-                <h5>{chapter.title}</h5>
-              </Col>
-
-            ))}
-          </Row>
-        </Container>
-      </div>
-
-    </div>
-  )
+            <div className={styles["img-gallery"]}>
+                <Container>
+                    <Row className="justify-content-md-center">
+                        {chapters_data.map((chapter, i) => (
+                            <Col md="auto">
+                                <Link to={chapter.path}>
+                                    <Image
+                                        src={chapter.img}
+                                        className={`d-block ${styles["responsive-gallery"]} img-fluid mx-4`}
+                                        roundedCircle
+                                    />
+                                </Link>
+                                <h5>{chapter.title}</h5>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </div>
+        </div>
+    )
 }
