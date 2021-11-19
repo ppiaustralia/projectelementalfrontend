@@ -10,6 +10,7 @@ import Loading from "../../components/Loading"
 function Chapter(props) {
     const [branch, setBranch] = useState([])
     const [twigs, setTwigs] = useState([])
+    const chapterBaseLink = "https://chapterslogo.s3.us-east-2.amazonaws.com/"
 
     // get statename value form url
     const statename = props.match.params.statename
@@ -37,9 +38,13 @@ function Chapter(props) {
                     <Loading />
                 </>
             ) : (
-                <Branch data={branch} />
+                <Branch data={branch} chBaseLink={chapterBaseLink} />
             )}
-            {twigs.length < 1 ? <></> : <Twigs data={twigs} />}
+            {twigs.length < 1 ? (
+                <></>
+            ) : (
+                <Twigs data={twigs} chBaseLink={chapterBaseLink} />
+            )}
         </div>
     )
 }
