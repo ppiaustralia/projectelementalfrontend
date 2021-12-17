@@ -62,13 +62,14 @@ const source_arr = [
 
 export default function KabinetSinergi() {
     return (
-        <div>
-            <Carousel>
-                <Carousel.Item>
-                    <Division />
-                </Carousel.Item>
-            </Carousel>
-        </div>
+        <Carousel className="carousel-dark" width="50vw">
+            <Carousel.Item>
+                <Division />
+            </Carousel.Item>
+            <Carousel.Item>
+                <Division />
+            </Carousel.Item>
+        </Carousel>
     )
 }
 

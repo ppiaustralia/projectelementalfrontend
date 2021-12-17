@@ -18,11 +18,11 @@ h5 {
   flex-flow: column wrap;
 }
 
-.carousel {
+/* .carousel {
   width: 100vw;
   height: 86vh;
   overflow: hidden;
-}
+} */
 
 .responsive-carousel {
   vertical-align: 50%;

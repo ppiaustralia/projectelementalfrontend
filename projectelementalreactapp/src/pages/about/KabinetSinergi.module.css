@@ -44,6 +44,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 10rem;
 }
 
 .memberCard {

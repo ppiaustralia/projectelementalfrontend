@@ -11,6 +11,7 @@ import Liveinoz, { ReadMore } from "../src/pages/liveinoz/Liveinoz"
 import Blog from "../src/pages/blog/Blog"
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from "./layout/newFooter/Footer"
+
 function App() {
     return (
         <Router>
