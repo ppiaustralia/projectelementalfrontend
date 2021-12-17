@@ -1,14 +1,9 @@
-import React, {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
-import styles from "./ChaptersGallery.module.css";
-import axios from "axios";
+import React, { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import styles from "./ChaptersGallery.module.css"
+import axios from "axios"
 
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-} from "react-bootstrap/";
+import { Container, Row, Col, Image } from "react-bootstrap/"
 
 export default function ChaptersGallery() {
 
