@@ -44,7 +44,8 @@ export default function ChaptersGallery() {
                     <Image
                       src={`${chapterBaseLink}${branch.image}`}
                       className={`d-block ${styles["responsive-gallery"]} img-fluid mx-4`}
-                      roundedCircle
+                      // roundedCircle
+                      style={{ objectFit: 'contain' }}
                     />
                   </Link>
                   <h5>{branch.title}</h5>
