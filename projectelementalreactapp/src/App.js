@@ -9,6 +9,7 @@ import About from "../src/pages/about/About"
 import Contact from "../src/pages/contact/Contact"
 import Liveinoz, { ReadMore } from "../src/pages/liveinoz/Liveinoz"
 import Blog from "../src/pages/blog/Blog"
+import Scholarship from "../src/pages/scholarship/Scholarship"
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from "./layout/newFooter/Footer"
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/liveinoz/:id" exact component={ReadMore} />
                 <Route path="/blog" exact component={Blog} />
                 <Route path="/contact" exact component={Contact} />
+                {/* <Route path="/scholarship" exact component={Scholarship} /> */}
             </Switch>
             <Footer />
         </Router>
