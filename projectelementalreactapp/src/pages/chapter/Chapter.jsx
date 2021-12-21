@@ -19,14 +19,28 @@ function Chapter(props) {
         //when statename changes, setBranch and twigs to empty to trigger loading icon
         setBranch([])
         setTwigs([])
-        axios
-            .get(
-                `https://ppia-backend.herokuapp.com/user/ppia/?state=${statename}`
-            )
-            .then((data) => {
-                setBranch(data.data.filter((eachData) => eachData.level === 1))
-                setTwigs(data.data.filter((eachData) => eachData.level === 2))
-            })
+        if (statename == "all") {
+            axios
+                .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+                .then((data) => {
+                    setBranch(
+                        data.data.filter((eachData) => eachData.level === 1)
+                    )
+                })
+        } else {
+            axios
+                .get(
+                    `https://ppia-backend.herokuapp.com/user/ppia/?state=${statename}`
+                )
+                .then((data) => {
+                    setBranch(
+                        data.data.filter((eachData) => eachData.level === 1)
+                    )
+                    setTwigs(
+                        data.data.filter((eachData) => eachData.level === 2)
+                    )
+                })
+        }
     }, [statename])
 
     // const filteredData = receivedData.filter(data => data.parent = "ISA NSW")

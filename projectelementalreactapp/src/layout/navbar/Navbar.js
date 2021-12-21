@@ -74,7 +74,13 @@ function Navbar() {
                             className={styles["nav-links"]}
                             onClick={closeMobileMenu}
                         >
-                            Chapters <i className="fas fa-caret-down" />
+                            <Link
+                                to="/chapter/all"
+                                className={styles["nav-links"]}
+                                onClick={closeMobileMenu}
+                            >
+                                Chapters <i className="fas fa-caret-down" />
+                            </Link>
                             {dropdown && <Dropdown />}
                         </div>
                     </li>
