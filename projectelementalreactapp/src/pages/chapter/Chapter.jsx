@@ -19,7 +19,6 @@ function Chapter(props) {
         //when statename changes, setBranch and twigs to empty to trigger loading icon
         setBranch([])
         setTwigs([])
-
         axios
             .get(
                 `https://ppia-backend.herokuapp.com/user/ppia/?state=${statename}`
