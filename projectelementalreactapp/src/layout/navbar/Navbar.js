@@ -111,6 +111,26 @@ function Navbar() {
                             Contact
                         </Link>
                     </li>
+                    <li
+                        className={styles["nav-item"]}
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                        >
+                        <div
+                            className={styles["nav-links"]}
+                            onClick={closeMobileMenu}
+                        >
+                            <Link
+                                to="/opportunities/all"
+                                className={styles["nav-links"]}
+                                onClick={closeMobileMenu}
+                            >
+                                Opportunities <i className="fas fa-caret-down" />
+                                {/* currently should contain Scholarship & Careers */}
+                            </Link>
+                            {dropdown && <Dropdown />}
+                        </div>
+                        </li>
                 </ul>
             </nav>
         </>

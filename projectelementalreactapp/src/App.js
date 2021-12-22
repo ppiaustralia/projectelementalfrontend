@@ -28,7 +28,8 @@ function App() {
                 <Route path="/liveinoz/:id" exact component={ReadMore} />
                 <Route path="/blog" exact component={Blog} />
                 <Route path="/contact" exact component={Contact} />
-                {/* <Route path="/scholarship" exact component={Scholarship} /> */}
+                <Route path="/opportunities/:page" exact component={Scholarship} />
+                {/* <Route <NoFound/> /> */}
             </Switch>
             <Footer />
         </Router>
@@ -36,3 +37,16 @@ function App() {
 }
 
 export default App
+
+// create opportunities function
+    // page 1 scholarships page
+        // Main Page
+        // Government
+        // University
+        // Testimony
+
+    // page 2 Careers page
+        // Main Page
+            // Filter Function
+        // Job Postings
+            // Job Unavailable
