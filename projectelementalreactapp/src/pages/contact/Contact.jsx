@@ -53,13 +53,13 @@ function Contact() {
                                 <Loading/>
                             </>
                         ):(
-                            <Embassy data = {embassies} />
+                            <Embassy embassy = {embassies} emBaseLink = {baseURL} />
                         )
                     }
                 </div>
                 <div>
                     {consulates.map((element) => {
-                        return <ConsulatesCard data={element} />
+                        return <ConsulatesCard consulate={element} conBaseLink = {baseURL} />
                     })}
                 </div>
             </div>
