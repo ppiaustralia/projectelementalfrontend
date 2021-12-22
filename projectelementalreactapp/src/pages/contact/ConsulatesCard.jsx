@@ -1,19 +1,25 @@
-import React from "react";
+import React from 'react';
+import ContactDatabase from './ContactDatabase.json';
 
-function ConsulatesCard(data) {
-  const info = data.data;
-
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+function ConsulatesCard() {
   return (
-    <div className="card p-3 pb-0 mt-3">
-      <h1>{info.title}</h1>
-      <ul className="list-unstyled">
-        {Object.entries(info).map(([key, value]) => {
-          if (key !== "title") {
-            return <li>{`${capitalizeFirstLetter(key)} : ${value}`}</li>;
-          }
+    <div className="card p-3 ">
+      <p className="mb-0">Contact Lists: </p>
+      <ul>
+        {ContactDatabase.Consulate.map((contact) => {
+          return (
+            <li>
+              {
+                <React.Fragment>
+                  <h3>{contact.title}</h3>
+                  <p>name : {contact.name}</p>
+                  <p>Address : {contact.address}</p>
+                  <p>Number : {contact.number}</p>
+                  <p>Website : {contact.website}</p>
+                </React.Fragment>
+              }
+            </li>
+          );
         })}
       </ul>
     </div>

@@ -1,5 +1,44 @@
-.background {
+.container {
     background-color: #e9ecef;
-    border-radius: 5px;
+    display: flex;
+    padding: 2em;
+}
+.welcome {
+    flex: 1;
+    padding: 1em;
+    width: 80%;
 }
 
+.welcomeSubtitle {
+    font-style: italic;
+}
+.containerCarousel {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-carousel {
+    vertical-align: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.imageContainer {
+    min-height: 300px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carouselImage {
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+}
+.carousel {
+    max-width: 40vw;
+}
