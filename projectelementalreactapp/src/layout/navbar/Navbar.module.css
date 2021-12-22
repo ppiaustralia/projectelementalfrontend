@@ -1,9 +1,5 @@
 .navbar {
-    background: linear-gradient(
-        90deg,
-        rgb(237, 28, 36) 0%,
-        rgb(237, 28, 36, 1) 100%
-    );
+    background: #ff2020;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -24,6 +20,13 @@
     font-size: 2rem;
 }
 
+.navbar-logo:hover {
+    color: #fff;
+}
+.ppiaLogo {
+    width: 150px;
+    height: 150px;
+}
 .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -47,13 +50,14 @@
 }
 
 .nav-links {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    background-color: #800020;
+    background-color: lightsalmon;
+    color: #fff;
     border-radius: 1em;
     transition: all 0.2s ease-out;
 }
