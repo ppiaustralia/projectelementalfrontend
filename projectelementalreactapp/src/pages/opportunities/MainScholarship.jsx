@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { UniversityUniversity as University } from './UniversityScholarship';
-import { GovernmentScholarship as Government } from './GovernmentScholarship';
-
+import { UniversityScholarship as University } from './pages/UniversityScholarship';
+import { GovernmentScholarship as Government } from './pages/GovernmentScholarship';
+import Testimony from './pages/Testimony';
 import Button from '../../components/Button';
+
 export default function MainScholarship() {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function MainScholarship() {
       <div></div>
 
       {/* 2nd layout -> testimonies  */}
-      <div></div>
+      <Testimony />
 
       {/* 3rd layout -> submit interest */}
       <div>
@@ -20,7 +21,7 @@ export default function MainScholarship() {
           Do you want to share your experience and help others? Submit your
           scholarship testimony by clicking the link below
         </p>
-        <Button>Submit Scholarship</Button>
+        <Button /> {/* link: https://forms.gle/g6r35XqLNfKz7Apr5 */}
       </div>
     </div>
   );
