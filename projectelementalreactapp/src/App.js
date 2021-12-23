@@ -13,7 +13,7 @@ import Opportunities from '../src/pages/opportunities/Opportunities';
 // import Scholarship from '../src/pages/scholarship/Scholarship';
 // import Career from '../src/pages/career/Career';
 // import { FooterContainer } from "./layout/footer/footer";
-import NotFound404 from '../src/pages/404/PageUnavailable.jsx';
+import { PageUnavailable as PageNotFound404 } from '../src/pages/404/PageUnavailable.jsx';
 import Footer from './layout/newFooter/Footer';
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
           <Route path="/opportunities/scholarship"exact component={Scholarship}  />
           <Route path="/opportunities/career" exact component ={Career} />
         */}
-        <Route path="*" exact={true} component={NotFound404} />
+        <Route path="*" exact={true} component={PageNotFound404} />
       </Switch>
       <Footer />
     </Router>
