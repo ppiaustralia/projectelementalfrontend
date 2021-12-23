@@ -8,8 +8,8 @@ import {
   Link
 } from 'react-router-dom';
 
-import { MainScholarship as Scholarship } from './MainScholarship';
-import { MainCareer as Career } from './MainCareer';
+import Scholarship from './MainScholarship';
+import Career from './MainCareer';
 
 import React from 'react';
 

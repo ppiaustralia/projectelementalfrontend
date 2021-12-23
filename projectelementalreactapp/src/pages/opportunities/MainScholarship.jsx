@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { UniversityScholarship as University } from './pages/UniversityScholarship';
-import { GovernmentScholarship as Government } from './pages/GovernmentScholarship';
+import UniversityScholarship from './pages/UniversityScholarship';
+import GovernmentScholarship from './pages/GovernmentScholarship';
 import Testimony from './pages/Testimony';
 import Button from '../../components/Button';
 
