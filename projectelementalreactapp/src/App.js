@@ -9,7 +9,9 @@ import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
-import Scholarship from '../src/pages/scholarship/Scholarship';
+import Opportunities from '../src/pages/opportunities/Opportunities';
+// import Scholarship from '../src/pages/scholarship/Scholarship';
+// import Career from '../src/pages/career/Career';
 // import { FooterContainer } from "./layout/footer/footer";
 import NotFound404 from '../src/pages/404/PageUnavailable.jsx';
 import Footer from './layout/newFooter/Footer';
@@ -29,7 +31,11 @@ function App() {
         <Route path="/liveinoz/:id" exact component={ReadMore} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/opportunities/:page" exact component={Scholarship} />
+        <Route path="/opportunities" exact component={Opportunities} />
+        {/* In react-router-v4 you don't nest <Routes />. Instead, you put them inside another <Component />.
+          <Route path="/opportunities/scholarship"exact component={Scholarship}  />
+          <Route path="/opportunities/career" exact component ={Career} />
+        */}
         <Route path="*" exact={true} component={NotFound404} />
       </Switch>
       <Footer />
@@ -38,16 +44,3 @@ function App() {
 }
 
 export default App;
-
-// create opportunities function
-// page 1 scholarships page
-// Main Page
-// Government
-// University
-// Testimony
-
-// page 2 Careers page
-// Main Page
-// Filter Function
-// Job Postings
-// Job Unavailable
