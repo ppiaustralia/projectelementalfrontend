@@ -8,7 +8,7 @@ import {
   Link
 } from 'react-router-dom';
 
-import Scholarship from './MainScholarship';
+import Scholarship from './Scholarship';
 import Career from './MainCareer';
 
 import React from 'react';
