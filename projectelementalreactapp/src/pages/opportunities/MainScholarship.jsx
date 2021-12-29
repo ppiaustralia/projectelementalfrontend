@@ -2,6 +2,7 @@ import React from 'react';
 
 import FullScholarship from './pages/FullScholarship';
 import PartialScholarship from './pages/PartialScholarship';
+import ExchangeProgram from './pages/ExchangeProgram';
 import Testimony from './pages/Testimony';
 import { CardScholarship as Cards } from './components/CardScholarship';
 
