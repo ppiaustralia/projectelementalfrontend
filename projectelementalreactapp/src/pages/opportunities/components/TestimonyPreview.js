@@ -1,13 +1,17 @@
 import React from 'react';
 import 'TestimonyPreview.module.css';
 
-function TestimonyPreview() {
+function TestimonyPreview(props) {
   return (
     <div>
-      <h1>
-        make a box i guess lmao, with arrows and animation, for consistency,
-        check homepage carousel
-      </h1>
+      <h1>TESTIMONIES</h1>
+      <p>Check out how some of our associates got their scholarship</p>
+      <div>
+        {/* Carousel */}
+        {props.image}
+        {props.image}
+        {props.image}
+      </div>
     </div>
   );
 }

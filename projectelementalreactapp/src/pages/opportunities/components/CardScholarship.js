@@ -1,10 +1,17 @@
 import React from 'react';
 import 'CardScholarship.module.css';
+import { Link } from 'react-router-dom';
 
-function CardScholarship() {
+function CardScholarship(props) {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+      <Link to={props.link}>
+        <div>
+          <p>Read More</p>
+        </div>
+      </Link>
     </div>
   );
 }

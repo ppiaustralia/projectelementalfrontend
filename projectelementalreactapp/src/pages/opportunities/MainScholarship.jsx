@@ -1,15 +1,23 @@
 import React from 'react';
 
-import UniversityScholarship from './pages/UniversityScholarship';
-import GovernmentScholarship from './pages/GovernmentScholarship';
+import FullScholarship from './pages/FullScholarship';
+import PartialScholarship from './pages/PartialScholarship';
 import Testimony from './pages/Testimony';
+import { CardScholarship as Cards } from './components/CardScholarship';
+
 import Button from '../../components/Button';
 
 export default function MainScholarship() {
   return (
     <div>
       {/* 1st layout -> 3 boxes */}
-      <div></div>
+      <div>
+        <h2>
+          Are you an Indonesian who want to pursue higher education or join
+          exchange programs in Australia with a scholarship
+        </h2>
+        <p>Check out our tips below</p>
+      </div>
 
       {/* 2nd layout -> testimonies  */}
       <Testimony />
