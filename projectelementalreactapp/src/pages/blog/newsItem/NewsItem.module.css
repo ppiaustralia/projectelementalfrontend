@@ -1,0 +1,15 @@
+.newsItemCont {
+    border: 1px solid black;
+    width: 50%;
+    padding: 1em;
+}
+
+.coverImageCont {
+    width: 100%;
+}
+.newsText {
+    background: blanchedalmond;
+}
+.newsTitle {
+    font-size: 24px;
+}
