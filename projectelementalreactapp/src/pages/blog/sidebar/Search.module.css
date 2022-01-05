@@ -1,4 +1,25 @@
+.searchCont {
+    padding: 0.5em;
+}
 .searchTitle {
     padding-bottom: 0;
     margin-bottom: 0.25em;
+}
+.searchForm {
+    display: flex;
+    flex-direction: row;
+}
+.newsSearchBar {
+    border: 3px solid lightgrey;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-right: 0.25em;
+    flex: 5;
+}
+
+.searchButton {
+    background-color: #ff2020;
+    border: 3px solid lightgray;
+    border-radius: 0.5em;
+    flex: 1;
 }

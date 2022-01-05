@@ -9,7 +9,30 @@
 }
 .newsText {
     background: blanchedalmond;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 .newsTitle {
     font-size: 24px;
+    color: #ff2020;
+}
+
+.newsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid lightsteelblue;
+}
+.newsDate {
+    color: lightgray;
+}
+.newsFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.5em;
 }

@@ -4,7 +4,7 @@ import SmallNewsItem from "./SmallNewsItem"
 function RecentPost() {
     return (
         <div className={s.recentPostCont}>
-            Recent Post
+            <strong> Recent Post</strong>
             <SmallNewsItem />
             <SmallNewsItem />
             <SmallNewsItem />
