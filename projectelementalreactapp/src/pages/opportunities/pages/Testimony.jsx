@@ -3,7 +3,7 @@ import React from 'react';
 import Testimonial from './database/Testimony.json';
 // import '../database/TestimonyPic';
 
-import { TestimonyPreview as Testimony } from './components/TestimonyPreview';
+import TestimonyPreview from './components/TestimonyPreview';
 
 function Testimony() {
   return (
@@ -12,7 +12,7 @@ function Testimony() {
       <p>Check out how some of our associates got their scholarship</p>
       <div>
         {/* map inside the box  */}
-        <Testimony>yes</Testimony>
+        <TestimonyPreview />
       </div>
     </div>
   );

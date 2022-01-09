@@ -1,19 +1,16 @@
 import React from 'react';
 import 'TestimonyPreview.module.css';
+import { TestimonyPic as Pictures } from '../database/TestimonyPic';
 
-function TestimonyPreview(props) {
+function TestimonyPreview() {
   return (
     <div>
       <div>
-        <h1>TESTIMONIES</h1>
-        <p>Check out how some of our associates got their scholarship</p>
-      </div>
-
-      <div>
-        {/* Carousel */}
-        {props.image}
-        {props.image}
-        {props.image}
+        {Pictures.map((data, i) => {
+          <div>
+            <img alt={i}>{data.Pictures}</img>
+          </div>;
+        })}
       </div>
     </div>
   );

@@ -3,10 +3,17 @@ import { Scholarship as FullScholarshipDB } from '../database/Scholarship.json';
 
 function FullScholarship() {
   return (
-    <div>
-      {/* mapping */}
-      <p>HelloWorld</p>
-    </div>
+    <>
+      <div>
+        {FullScholarshipDB.map((data, i) => (
+          <div key={i}>
+            <p>{data.scholarship.Full.name}</p>
+            <p>{data.scholarship.Full.details}</p>
+            <p>{data.scholarship.Full.url}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

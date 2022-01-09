@@ -1,12 +1,13 @@
 import React from 'react';
 
-import FullScholarship from './pages/FullScholarship';
-import PartialScholarship from './pages/PartialScholarship';
-import ExchangeProgram from './pages/ExchangeProgram';
+// import FullScholarship from './pages/FullScholarship';
+// import PartialScholarship from './pages/PartialScholarship';
+// import ExchangeProgram from './pages/ExchangeProgram';
 import Testimony from './pages/Testimony';
 import { CardScholarship as Cards } from './components/CardScholarship';
 
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 export default function Scholarship() {
   return (
@@ -19,6 +20,9 @@ export default function Scholarship() {
           with Full or Partial Scholarship?
         </h4>
         <p>Check out our tips below</p>
+        <div>
+          <Cards />
+        </div>
       </div>
 
       {/* 2nd layout -> testimonies  */}
