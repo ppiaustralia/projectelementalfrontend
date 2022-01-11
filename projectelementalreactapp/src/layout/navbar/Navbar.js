@@ -1,28 +1,34 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import Dropdown from './Dropdown';
+import DropdownChapter from './DropdownChapter';
+import DropdownScholarship from './DropdownScholarship';
 
 function Navbar() {
   const [click, setclick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  const [scholarshipDropdown, setScholarshipDropdown] = useState(false);
+  const [chapterDropdown, setChapterDropdown] = useState(false);
 
   const handleClick = () => setclick(!click);
   const closeMobileMenu = () => setclick(false);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setScholarshipDropdown(false);
+      setChapterDropdown(false);
     } else {
-      setDropdown(true);
+      setScholarshipDropdown(true);
+      setChapterDropdown(false);
     }
   };
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setScholarshipDropdown(false);
+      setChapterDropdown(false);
     } else {
-      setDropdown(false);
+      setScholarshipDropdown(true);
+      setChapterDropdown(false);
     }
   };
 
@@ -78,7 +84,7 @@ function Navbar() {
               >
                 Chapters <i className="fas fa-caret-down" />
               </Link>
-              {dropdown && <Dropdown />}
+              {chapterDropdown && <DropdownChapter />}
             </div>
           </li>
           <li className={styles['nav-item']}>
@@ -121,7 +127,7 @@ function Navbar() {
               >
                 Opportunities <i className="fas fa-caret-down" />
               </Link>
-              {dropdown && <Dropdown />}
+              {scholarshipDropdown && <DropdownScholarship />}
             </div>
           </li>
         </ul>
