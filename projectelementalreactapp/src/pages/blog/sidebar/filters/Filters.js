@@ -3,7 +3,7 @@ import s from "./Filters.module.css"
 function Filters() {
     return (
         <div className={s.filterCont}>
-            <strong> Filters</strong>
+            <strong>Filters</strong>
         </div>
     )
 }
