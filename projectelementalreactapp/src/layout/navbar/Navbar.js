@@ -2,33 +2,43 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import DropdownChapter from './DropdownChapter';
-import DropdownScholarship from './DropdownScholarship';
+import DropdownOpportunities from './DropdownOpportunities';
 
 function Navbar() {
   const [click, setclick] = useState(false);
-  const [scholarshipDropdown, setScholarshipDropdown] = useState(false);
+  const [opportunitiesDropdown, setDropdownOpportunities] = useState(false);
   const [chapterDropdown, setChapterDropdown] = useState(false);
 
   const handleClick = () => setclick(!click);
   const closeMobileMenu = () => setclick(false);
 
-  const onMouseEnter = () => {
+  const onMouseEnterOpportunities = () => {
     if (window.innerWidth < 960) {
-      setScholarshipDropdown(false);
+      setDropdownOpportunities(false);
+    } else {
+      setDropdownOpportunities(true);
+    }
+  };
+  const onMouseEnterChapter = () => {
+    if (window.innerWidth < 960) {
       setChapterDropdown(false);
     } else {
-      setScholarshipDropdown(true);
+      setChapterDropdown(true);
+    }
+  };
+  const onMouseLeaveChapter = () => {
+    if (window.innerWidth < 960) {
+      setChapterDropdown(false);
+    } else {
       setChapterDropdown(false);
     }
   };
 
-  const onMouseLeave = () => {
+  const onMouseLeaveOpportunities = () => {
     if (window.innerWidth < 960) {
-      setScholarshipDropdown(false);
-      setChapterDropdown(false);
+      setDropdownOpportunities(false);
     } else {
-      setScholarshipDropdown(true);
-      setChapterDropdown(false);
+      setDropdownOpportunities(false);
     }
   };
 
@@ -72,8 +82,8 @@ function Navbar() {
           </li>
           <li
             className={styles['nav-item']}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            onMouseEnter={onMouseEnterChapter}
+            onMouseLeave={onMouseLeaveChapter}
           >
             {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
             <div className={styles['nav-links']} onClick={closeMobileMenu}>
@@ -116,8 +126,8 @@ function Navbar() {
           </li>
           <li
             className={styles['nav-item']}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            onMouseEnter={onMouseEnterOpportunities}
+            onMouseLeave={onMouseLeaveOpportunities}
           >
             <div className={styles['nav-links']} onClick={closeMobileMenu}>
               <Link
@@ -127,7 +137,7 @@ function Navbar() {
               >
                 Opportunities <i className="fas fa-caret-down" />
               </Link>
-              {scholarshipDropdown && <DropdownScholarship />}
+              {opportunitiesDropdown && <DropdownOpportunities />}
             </div>
           </li>
         </ul>
