@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scholarship as FullScholarshipDB } from '../database/Scholarship.json';
+import FullScholarshipDB from '../database/Scholarship.json';
 
 function FullScholarship() {
   return (

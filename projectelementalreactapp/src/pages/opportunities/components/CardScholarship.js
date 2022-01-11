@@ -1,5 +1,5 @@
 import React from 'react';
-import 'CardScholarship.module.css';
+// import 'CardScholarship.module.css';
 import { Link } from 'react-router-dom';
 
 function CardScholarship() {

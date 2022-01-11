@@ -9,9 +9,7 @@ import {
 } from 'react-router-dom';
 
 import Scholarship from './Scholarship';
-import Career from './MainCareer';
-
-import React from 'react';
+// import Career from './MainCareer';
 
 function Opportunities() {
   let { path, url } = useRouteMatch();
@@ -19,11 +17,11 @@ function Opportunities() {
   return (
     <div>
       <Link to={`${url}/scholarship`}>Scholarship</Link>
-      <Link to={`${url}/career`}>Career</Link>
+      {/* <Link to={`${url}/career`}>Career</Link> */}
 
       <Switch>
         <Route path={`${path}/:scholarship`} component={Scholarship} />
-        <Route path={`${path}/:career`} component={Career} />
+        {/* <Route path={`${path}/:career`} component={Career} /> */}
       </Switch>
     </div>
   );

@@ -4,7 +4,7 @@ import React from 'react';
 // import PartialScholarship from './pages/PartialScholarship';
 // import ExchangeProgram from './pages/ExchangeProgram';
 import Testimony from './pages/Testimony';
-import { CardScholarship as Cards } from './components/CardScholarship';
+import Cards from './components/CardScholarship';
 
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';

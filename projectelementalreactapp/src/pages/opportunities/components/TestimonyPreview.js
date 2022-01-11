@@ -1,6 +1,6 @@
 import React from 'react';
 import 'TestimonyPreview.module.css';
-import { TestimonyPic as Pictures } from '../database/TestimonyPic';
+import Pictures from '../database/TestimonyPic';
 
 function TestimonyPreview() {
   return (
