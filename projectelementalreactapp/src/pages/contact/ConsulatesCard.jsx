@@ -1,22 +1,37 @@
 import React from "react";
+import "./Card.css"
+import { Image } from "react-bootstrap"
+
 
 function ConsulatesCard(data) {
-  const info = data.data;
+  console.log(data);
+  /*
+  Not sure what this is for - Daniel
 
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+  */
+  // const { address, name, phone, website }
+
+  const{address, name, phone, website, image} =data.consulate;
+
   return (
-    <div className="card p-3 pb-0 mt-3">
-      <h1>{info.title}</h1>
-      <ul className="list-unstyled">
-        {Object.entries(info).map(([key, value]) => {
-          if (key !== "title") {
-            return <li>{`${capitalizeFirstLetter(key)} : ${value}`}</li>;
-          }
-        })}
-      </ul>
-    </div>
+    <div className="card">
+            <div className = "imageContainer">
+                <Image
+                    src = {data.conBaseLink + image}
+                    className="logo"
+                />
+
+            </div>
+            <div className = "infoContainer">
+                <h3 className="m-2"> {name}</h3>
+                <p>{`Address: ${address}`}</p>
+                <p>{`Phone: ${phone}`}</p>
+                <p>{`Website ${website}`}</p>
+            </div>
+        </div>
   );
 }
 
