@@ -1,7 +1,10 @@
 import React from "react"
 import Social from "../social/Social"
 import s from "./NewsItem.module.css"
-function NewsItem() {
+function NewsItem(props) {
+    const { title, tag, content, publish_date, image, slug, is_deleted } =
+        props.newsContent
+    const previewContent = content.slice(0, 100)
     return (
         <div className={s.newsItemCont}>
             <div className={s.coverImageCont}>
@@ -12,13 +15,8 @@ function NewsItem() {
                 />
             </div>
             <div className={s.newsText}>
-                <div className={s.newsTitle}>Title of PPIA News blog</div>
-                <p>
-                    Subtitle Lorem ipsum dolor sit amet.Contrary to popular
-                    belief, Lorem Ipsum is not simply random text. It has roots
-                    in a piece of classical Latin literature from 45 BC, making
-                    it over 2000 years old.
-                </p>
+                <div className={s.newsTitle}>{title}</div>
+                <div dangerouslySetInnerHTML={{ __html: content }}></div>
                 <div className={s.newsInfo}>
                     <span className={s.newsDate}>20th April 1969</span>
                     <span>Education Sport News</span>

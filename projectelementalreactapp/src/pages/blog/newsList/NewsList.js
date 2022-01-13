@@ -1,13 +1,13 @@
 import React from "react"
 import NewsItem from "../newsItem/NewsItem"
 import s from "./NewsList.module.css"
-function NewsList() {
+function NewsList(props) {
+    const { news } = props
     return (
         <div className={s.newsListCont}>
-            <NewsItem />
-            <NewsItem />
-            <NewsItem />
-            <NewsItem />
+            {news.map((eachNews) => (
+                <NewsItem newsContent={eachNews} />
+            ))}
         </div>
     )
 }
