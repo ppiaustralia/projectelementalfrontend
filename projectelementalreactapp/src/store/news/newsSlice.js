@@ -20,7 +20,7 @@ import axios from "axios"
 export const newsSlice = createSlice({
     name: "news",
     initialState: {
-        news: {},
+        news: [],
         loading: false,
         error: "",
     },

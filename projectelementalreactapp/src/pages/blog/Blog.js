@@ -14,9 +14,7 @@ import Sidebar from "./sidebar/Sidebar"
 function Blog() {
     //contain all the state. lets think about redux for the blog
     const news = useSelector((state) => state.news.news)
-    console.log(news)
     const loading = useSelector((state) => state.news.loading)
-    console.log(loading)
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(setLoadingTrue())
@@ -28,7 +26,6 @@ function Blog() {
                 dispatch(setLoadingFalse())
             })
     }, [])
-    console.log(news)
     return (
         <div className={s.blogContainer}>
             <div className={s.title}>
