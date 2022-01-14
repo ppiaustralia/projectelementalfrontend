@@ -39,3 +39,19 @@
     display: block;
     color: #000000;
 }
+
+.container {
+    margin: 2rem 3rem 2rem 3rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.heading1 {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #ed1c24;
+}
+
+.aboutCont {
+    text-align: center;
+    margin: 0 10rem 0 10rem;
+}
