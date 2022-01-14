@@ -1,16 +1,16 @@
 .front-page {
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
 .img-gallery {
-  flex-flow: row wrap;
-  padding: 40px;
+    flex-flow: row wrap;
+    padding: 40px;
 }
 
 .responsive-gallery {
-  width: 180px;
-  height: 180px;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
 }
-

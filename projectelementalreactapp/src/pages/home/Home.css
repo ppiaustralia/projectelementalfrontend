@@ -1,15 +1,15 @@
 /* Titles */
 h4 {
-  font-family: Arial;
-  font-size: 32px;
+    font-family: Arial;
+    font-size: 32px;
 }
 /* News cards subtitles */
 h5 {
-  font-family: Arial;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 53px;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 53px;
 }
 
 .front-page {
@@ -33,51 +33,51 @@ h5 {
 }
 
 .background {
-  background-color: #e9ecef;
-  border-radius: 5px;
+    background-color: #e9ecef;
+    border-radius: 5px;
 }
 
 .img-gallery {
-  flex-flow: row wrap;
-  padding: 40px;
+    flex-flow: row wrap;
+    padding: 40px;
 }
 
 .responsive-gallery {
-  width: 180px;
-  height: 180px;
+    width: 180px;
+    height: 180px;
 }
 
 .news-title {
-  padding-top: 40px;
-  padding-bottom: 58px;
+    padding-top: 40px;
+    padding-bottom: 58px;
 }
 
 .news-cards {
-  text-decoration: none;
-  padding-bottom: 52px;
+    text-decoration: none;
+    padding-bottom: 52px;
 }
 
 .btn-news {
-  background-color: #ed1c24;
-  color: white;
+    background-color: #ed1c24;
+    color: white;
 }
 
 .news {
-  padding-bottom: 48px;
+    padding-bottom: 48px;
 }
 
 .card-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 194px;
-  width: auto;
-  max-width: 100%;
-  overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 194px;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .bottompanel {
-  background-color: #ed1c24;
-  width: 100%;
-  height: 133px;
+    background-color: #ed1c24;
+    width: 100%;
+    height: 133px;
 }
