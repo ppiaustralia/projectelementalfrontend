@@ -67,16 +67,18 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    color: white;
+    margin-bottom: 5rem;
 }
 
 .redBg {
-    background-color: #ed1c24;
+    background-color: rgb(75, 75, 75);
     width: 100%;
-
+    padding: 3rem 4rem 3rem 4rem;
 }
 
 .blackBg {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
     width: 100%;
-
+    padding: 3rem 4rem 3.7rem 4rem;
 }

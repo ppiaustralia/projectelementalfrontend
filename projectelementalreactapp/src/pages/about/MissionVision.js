@@ -51,17 +51,25 @@ const MissionVision = () => {
             </div>
             <div className={styles.missionVisionCont}>
                 <div className={styles.redBg}>
-                <p>
+                    <h1>VISION</h1>
                     Mewujudkan Perhimpunan Pelajar
                     Indonesia-Australia (PPIA) sebagai
                     organisasi yang berkontribusi membangun
                     generasi muda Indonesia yang peduli,
                     mandiri, kreatif dan inovatif untuk kemajuan
                     bangsa dan negara.
-                </p>
                 </div>
                 <div className={styles.blackBg}>
-                    BLACK
+                    <h1>MISSION</h1>
+                    Membangun rasa kepedulian dan kontribusi
+                    positif kepada masyarakat Indonesia di
+                    Australia terutama para mahasiswa. Membangun
+                    platform berasas kekeluargaan yang
+                    memberikan kesempatan bagi
+                    mahasiswa-mahasiswa Indonesia untuk
+                    memperluas koneksi mereka dari berbagai kota
+                    Australia. Mengembangkan sistem organisasi
+                    yang efisien dan peduli.
                 </div>
             </div>
         </div>
