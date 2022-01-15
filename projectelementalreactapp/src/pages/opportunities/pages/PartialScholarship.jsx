@@ -5,15 +5,16 @@ function PartialScholarship() {
   return (
     <>
       <div>
-        {PartialScholarshipDB.map((data, i) => (
+        {PartialScholarshipDB.scholarship.map((data, i) => (
           <div key={i}>
-            <p>{data.scholarship.Partial.name}</p>
-            <p>{data.scholarship.Partial.details}</p>
-            <p>{data.scholarship.Partial.url}</p>
+            <p>{data.Partial.name}</p>
+            <p>{data.Partial.details}</p>
+            <p>{data.Partial.url}</p>
           </div>
         ))}
       </div>
     </>
+  );
 }
 
 export default PartialScholarship;

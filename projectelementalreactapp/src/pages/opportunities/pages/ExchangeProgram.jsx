@@ -5,12 +5,12 @@ function ExchangeProgram() {
   return (
     <>
       <div>
-        {Exchange.map((data, i) => (
+        {Exchange.exchange.map((data, i) => (
           <div key={i}>
-            <p>{data.exchange.name}</p>
-            <p>{data.exchange.description}</p>
-            <p>{data.exchange.link}</p>
-            <p>{data.exchange.youtube}</p>
+            <p>{data.name}</p>
+            <p>{data.description}</p>
+            <p>{data.link}</p>
+            <p>{data.youtube}</p>
           </div>
         ))}
       </div>
