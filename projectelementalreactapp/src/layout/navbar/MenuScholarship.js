@@ -1,12 +1,12 @@
 const MenuScholarship = [
   {
     title: 'Scholarships',
-    path: '/scholarships',
+    path: '/opportunities/scholarship',
     cName: 'dropdownLink'
   },
   {
     title: 'Career',
-    path: '/career',
+    path: '/opportunities/career',
     cName: 'dropdownLink'
   }
 ];

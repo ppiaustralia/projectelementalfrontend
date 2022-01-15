@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useRouteMatch } from 'react-router-dom';
 
 // import FullScholarship from './pages/FullScholarship';
 // import PartialScholarship from './pages/PartialScholarship';
@@ -10,6 +11,7 @@ import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
 
 export default function Scholarship() {
+  // let { path, url } = useRouteMatch();
   return (
     <div>
       {/* 1st layout -> 3 boxes */}
@@ -21,6 +23,7 @@ export default function Scholarship() {
         </h4>
         <p>Check out our tips below</p>
         <div>
+          {/* three different boxes */}
           <Cards />
         </div>
       </div>

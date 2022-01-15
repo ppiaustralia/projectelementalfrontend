@@ -14,8 +14,9 @@ import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
-import Opportunities from '../src/pages/opportunities/Opportunities';
-// import Scholarship from '../src/pages/scholarship/Scholarship';
+// import Opportunities from '../src/pages/opportunities/Opportunities';
+import Scholarship from '../src/pages/opportunities/Scholarship';
+// import DifferentScholarships from '../src/pages/opportunities/DifferentScholarships';
 // import Career from '../src/pages/career/Career';
 // import { FooterContainer } from "./layout/footer/footer";
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
@@ -38,10 +39,16 @@ function App() {
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact" exact component={Contact} />
         <Route
-          path="/opportunities"
+          path="/opportunities/scholarship"
           exact
-          component={withRouter(Opportunities)}
+          component={Scholarship}
         />
+        {/* <Route
+          path="/opportunities/scholarship/:type"
+          exact
+          component={withRouter{DifferentScholarships}}
+        /> */}
+
         {/* In react-router-v4 you don't nest <Routes />. Instead, you put them inside another <Component />.
           <Route path="/opportunities/scholarship"exact component={Scholarship}  />
           <Route path="/opportunities/career" exact component ={Career} />
