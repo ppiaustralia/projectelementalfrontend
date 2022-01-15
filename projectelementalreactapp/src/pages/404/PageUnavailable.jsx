@@ -6,7 +6,7 @@ function PageUnavailable() {
   return (
     <div>
       <h1>404 not Found</h1>
-      <Button>Return to Homepage</Button>
+      <h5>The link you are looking for cannot be found.</h5>
     </div>
   );
 }

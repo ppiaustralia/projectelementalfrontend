@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
 import { withRouter } from 'react-router';
 import Home from '../src/pages/home/Home';
 import Navbar from './layout/navbar/Navbar';
@@ -32,12 +37,19 @@ function App() {
         <Route path="/liveinoz/:id" exact component={ReadMore} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/opportunities" exact component={Opportunities} />
+        <Route
+          path="/opportunities"
+          exact
+          component={withRouter(Opportunities)}
+        />
         {/* In react-router-v4 you don't nest <Routes />. Instead, you put them inside another <Component />.
           <Route path="/opportunities/scholarship"exact component={Scholarship}  />
           <Route path="/opportunities/career" exact component ={Career} />
         */}
-        <Route path="*" exact={true} component={PageUnavailable} />
+        <Route component={PageUnavailable} />
+        {/* <Route path="*" component={PageUnavailable} /> */}
+        {/* <Route path="/404" component={PageUnavailable} /> */}
+        {/* <Redirect to="/404" /> */}
       </Switch>
       <Footer />
     </Router>
