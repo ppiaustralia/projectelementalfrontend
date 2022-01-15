@@ -15,6 +15,7 @@ import Opportunities from '../src/pages/opportunities/Opportunities';
 // import { FooterContainer } from "./layout/footer/footer";
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 import Footer from './layout/newFooter/Footer';
+
 function App() {
   return (
     <Router>
