@@ -4,8 +4,11 @@ import { image_data } from "../database_home"
 import styles from "./ImageSlider.module.css"
 
 import { Carousel } from "react-bootstrap/"
+import { useSelector } from "react-redux"
+import Loading from "../../../components/Loading"
 
 export default function ImageSlider() {
+    const slideshow = useSelector((state) => state.slideshow.slideshow)
     return (
         <div className={styles.container}>
             <div className={styles.welcome}>
@@ -18,17 +21,21 @@ export default function ImageSlider() {
             </div>
             <div className={styles.containerCarousel}>
                 <Carousel className={styles.carousel}>
-                    {image_data.map((image) => (
-                        <Carousel.Item>
-                            <div className={styles.imageContainer}>
-                                <img
-                                    class={styles.carouselImage}
-                                    src={image}
-                                    alt="missing"
-                                />
-                            </div>
-                        </Carousel.Item>
-                    ))}
+                    {slideshow ? (
+                        slideshow.map((item) => (
+                            <Carousel.Item>
+                                <div className={styles.imageContainer}>
+                                    <img
+                                        class={styles.carouselImage}
+                                        src={`${item.image}`}
+                                        alt="missing"
+                                    />
+                                </div>
+                            </Carousel.Item>
+                        ))
+                    ) : (
+                        <Loading />
+                    )}
                 </Carousel>
             </div>
         </div>

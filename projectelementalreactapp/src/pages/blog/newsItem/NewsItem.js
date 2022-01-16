@@ -1,6 +1,7 @@
 import React from "react"
 import Social from "../social/Social"
 import s from "./NewsItem.module.css"
+import ReactHtmlParser from "react-html-parser"
 import moment from "moment"
 
 function NewsItem(props) {
@@ -20,7 +21,7 @@ function NewsItem(props) {
             </div>
             <div className={s.newsText}>
                 <div className={s.newsTitle}>{title}</div>
-                <div dangerouslySetInnerHTML={{ __html: content }}></div>
+                <div>{ReactHtmlParser(content)}</div>
                 <div className={s.newsInfo}>
                     <span className={s.newsDate}>{parsedDate}</span>
                     <span>Education Sport News</span>

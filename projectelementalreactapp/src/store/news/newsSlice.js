@@ -4,7 +4,6 @@ import {
     PayloadAction,
     createSelector,
 } from "@reduxjs/toolkit"
-import axios from "axios"
 
 // export const fetchNews = createAsyncThunk("setNews", async (_, thunkAPI) => {
 //     try {

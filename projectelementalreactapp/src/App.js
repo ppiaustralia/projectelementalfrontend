@@ -11,12 +11,14 @@ import Blog from "../src/pages/blog/Blog"
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from "./layout/newFooter/Footer"
 import { useSelector, useDispatch } from "react-redux"
+import axios from "axios"
+
 import {
     setNews,
     setLoadingTrue,
     setLoadingFalse,
 } from "./store/news/newsSlice"
-import axios from "axios"
+import { setSlideshow } from "./store/slideshow/slideshowSlice"
 
 function App() {
     const dispatch = useDispatch()
@@ -25,13 +27,17 @@ function App() {
         axios
             .get(`https://ppia-backend.herokuapp.com/feed/articles/`)
             .then((data) => {
-                console.log(data.data)
                 dispatch(setNews(data.data))
                 dispatch(setLoadingFalse())
             })
     }, [])
-    const news = useSelector((state) => state.news.news)
-    const loading = useSelector((state) => state.news.loading)
+    useEffect(() => {
+        axios
+            .get(`https://ppia-backend.herokuapp.com/slideshow/`)
+            .then((data) => {
+                dispatch(setSlideshow(data.data))
+            })
+    }, [])
     return (
         <Router>
             <Navbar />
