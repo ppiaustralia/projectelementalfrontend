@@ -10,23 +10,10 @@ function Footer() {
                     <h2 className={styles["ft-title"]}>About</h2>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
-                                PPIA
-                            </a>
-                        </li>
-                        <li>
-                            <a className={styles["ft-a"]} href="#">
-                                The Biggest Overseas
-                            </a>
-                        </li>
-                        <li>
-                            <a className={styles["ft-a"]} href="#">
-                                Indonesia Student
-                            </a>
-                        </li>
-                        <li>
-                            <a className={styles["ft-a"]} href="#">
-                                Association
+                            <a className={styles["ft-a"]} href="./about">
+                                PPIA The Biggest Overseas 
+                                <br/>
+                                Indonesia Student Association
                             </a>
                         </li>
                     </ul>
@@ -35,22 +22,22 @@ function Footer() {
                     <h2 className={styles["ft-title"]}>Useful Links</h2>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <a className={styles["ft-a"]} href="./about">
                                 Kabinet Impact 2021 - 2022
                             </a>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <a className={styles["ft-a"]} href="./about">
                                 AD / ART
                             </a>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <a className={styles["ft-a"]} href="./about">
                                 Konsulat Indonesia
                             </a>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <a className={styles["ft-a"]} href="./about">
                                 Events
                             </a>
                         </li>
@@ -60,7 +47,7 @@ function Footer() {
                     <h2 className={styles["ft-title"]}>Contact</h2>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <a className={styles["ft-a"]} href="./contact">
                                 Help
                             </a>
                         </li>
@@ -83,7 +70,7 @@ function Footer() {
                     className={`${styles["ft-social-list"]} ${styles["ft-ul"]}`}
                 >
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/PPIAustralia/">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
@@ -93,7 +80,7 @@ function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/ppiaustralia_/">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
@@ -103,12 +90,12 @@ function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/ppi-australia/">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/c/PPIAustraliaOfficial">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>

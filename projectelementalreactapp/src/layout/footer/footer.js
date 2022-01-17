@@ -8,9 +8,9 @@ export function FooterContainer() {
                 <Footer.Row>
                 <Footer.Column>
                     <Footer.Title>PPIA</Footer.Title>
-                    <Footer.Link href='#'>The Biggest Overseas</Footer.Link>
-                    <Footer.Link href='#'>Indonesia Student</Footer.Link>
-                    <Footer.Link href='#'>Association</Footer.Link>
+                    <Footer.Link href='#'>  The Biggest Overseas Indonesia Student Association</Footer.Link>
+                    <Footer.Link href='#'>  The Biggest Overseas Indonesia Student Association</Footer.Link>
+                    <Footer.Link href='#'>  The Biggest Overseas Indonesia Student Association</Footer.Link>
                 </Footer.Column> 
                 <Footer.Column>
                     <Footer.Title>Membership App</Footer.Title>
@@ -19,7 +19,7 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Title>Useful Links</Footer.Title>
-                    <Footer.Link href='#'>Kabinet Sinergi 2020-2021</Footer.Link>
+                    <Footer.Link href='#'>mencoba mengganti</Footer.Link>
                     <Footer.Link href='#'>AD / ART</Footer.Link>
                     <Footer.Link href='#'>Konsulate Indonesia</Footer.Link>
                 </Footer.Column>

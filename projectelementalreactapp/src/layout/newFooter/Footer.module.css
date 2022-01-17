@@ -31,7 +31,7 @@
 .ft-a:hover {
     text-decoration: underline;
     color: #ed1c24;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .ft-ul {
@@ -59,12 +59,12 @@
 }
 
 .ft-social {
-    padding: 0 1.875rem 1.25rem;
+    padding: 0 0.875rem 1.25rem;
 }
 .ft-social-list {
     display: flex;
     justify-content: center;
-    border-top: 1px #777 solid;
+    border-top: 1px rgb(88, 88, 88) solid;
     padding-top: 1.25rem;
 }
 .ft-social-list li {
