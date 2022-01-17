@@ -1,6 +1,7 @@
 import React from "react"
 // import "./Footer.css"
 import styles from "./Footer.module.css"
+import {image} from "react"
 
 function Footer() {
     return (

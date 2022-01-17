@@ -89,3 +89,7 @@
 .ft-legal-list li:nth-last-child(2) {
     flex: 1; /* same as flex-grow: 1; */
 }
+i:hover {
+    color: rgb(0, 0, 0);
+    transition: 600ms;
+}
