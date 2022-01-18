@@ -13,9 +13,23 @@ h5 {
 }
 
 .front-page {
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* .carousel {
+  width: 100vw;
+  height: 86vh;
+  overflow: hidden;
+} */
+
+.responsive-carousel {
+  vertical-align: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
 }
 
 .background {
