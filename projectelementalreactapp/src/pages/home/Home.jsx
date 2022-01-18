@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux"
 import LatestUpdate from "./latestUpdate/LatestUpdate"
 export default function Home() {
     const news = useSelector((state) => state.news.news)
+
     return (
         <>
             <ImageSlider />
