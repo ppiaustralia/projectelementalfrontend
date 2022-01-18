@@ -4,6 +4,13 @@
     padding-bottom: 0.625rem;
 }
 
+.ft-logo{
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+}
+
 .ft-body {
     display: flex;
     min-height: 40vh;
@@ -59,17 +66,17 @@
 }
 
 .ft-social {
-    padding: 0 0.875rem 1.25rem;
+    padding: 0 0.875rem 0.25rem;
 }
 .ft-social-list {
     display: flex;
     justify-content: center;
     border-top: 1px rgb(88, 88, 88) solid;
-    padding-top: 1.25rem;
+    padding-top: 0.25rem;
 }
 .ft-social-list li {
     margin: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .ft-legal {

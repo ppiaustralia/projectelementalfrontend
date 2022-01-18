@@ -8,7 +8,10 @@ function Footer() {
         <div className={styles["ft-body"]}>
             <section className={styles["ft-main"]}>
                 <div className={styles["ft-main-item"]}>
+                    <ul className = {styles["ft-logo"]}>
+                    </ul>
                     <h2 className={styles["ft-title"]}>About</h2>
+
                     <ul className={styles["ft-ul"]}>
                         <li>
                             <a className={styles["ft-a"]} href="./about">
