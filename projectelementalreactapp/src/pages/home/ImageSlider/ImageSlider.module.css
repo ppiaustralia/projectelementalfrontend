@@ -2,6 +2,7 @@
     background-color: #e9ecef;
     display: flex;
     padding: 2em;
+    min-height: 50vh;
 }
 .welcome {
     flex: 1;
@@ -18,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
 }
 
 .responsive-carousel {
@@ -29,7 +31,7 @@
 }
 .imageContainer {
     min-height: 300px;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,5 +42,16 @@
     object-fit: contain;
 }
 .carousel {
-    max-width: 40vw;
+    max-width: 100%;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item {
+    max-height: 100vh;
+    min-width: 100%;
 }

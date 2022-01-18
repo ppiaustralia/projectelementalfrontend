@@ -2,10 +2,12 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { news_data } from "../database_home"
 import styles from "./NewsCards.module.css"
-
 import { Card, Button, CardDeck } from "react-bootstrap/"
+import { useSelector } from "react-redux"
 
 export default function NewsCards() {
+    const news = useSelector((state) => state.news.news)
+    const loading = useSelector((state) => state.news.loading)
     return (
         <div
             className={`${styles.background} ${styles["front-page"]} ${styles.news}`}
