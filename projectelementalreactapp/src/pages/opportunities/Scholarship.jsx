@@ -16,12 +16,8 @@ export default function Scholarship() {
     <div>
       {/* 1st layout -> 3 boxes */}
       <div>
-        <h4>
-          Are you an Indonesian who want to pursue higher education or join
-          exchange programs in Australia with a scholarship? Or an University
-          with Full or Partial Scholarship?
-        </h4>
-        <p>Check out our tips below</p>
+        <h3>Interested to study at Australia?</h3>
+        <p>Check out some of the options listed</p>
         <div>
           {/* three different boxes */}
           <Cards />

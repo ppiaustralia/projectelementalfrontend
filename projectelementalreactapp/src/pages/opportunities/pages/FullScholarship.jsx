@@ -1,22 +1,21 @@
 import React from 'react';
-import ScholarshipDB from '../database/Scholarship.json';
+import FullDB from '../database/FullScholarship.json';
 
 function FullScholarship() {
+  // var test = FullDB.scholarship;
+  // console.log(test);
+
   return (
     <>
-      {ScholarshipDB.scholarship.map((data, i) => {
-        return (
+      <div>
+        {FullDB.Full.map((data) => (
           <div>
-            {
-              <div key={i}>
-                <p>name: {data.Full.name}</p>
-                <p>details:{data.Full.details}</p>
-                <p>url: {data.Full.url}</p>
-              </div>
-            }
+            <p>{data.name}</p>
+            <p>{data.details}</p>
+            <p>{data.url}</p>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </>
   );
 }

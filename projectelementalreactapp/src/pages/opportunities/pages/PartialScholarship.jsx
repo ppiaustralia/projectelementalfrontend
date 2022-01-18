@@ -1,15 +1,15 @@
 import React from 'react';
-import PartialScholarshipDB from '../database/Scholarship.json';
+import PartialDB from '../database/PartialScholarship.json';
 
 function PartialScholarship() {
   return (
     <>
       <div>
-        {PartialScholarshipDB.scholarship.map((data, i) => (
-          <div key={i}>
-            <p>{data.Partial.name}</p>
-            <p>{data.Partial.details}</p>
-            <p>{data.Partial.url}</p>
+        {PartialDB.Partial.map((data) => (
+          <div>
+            <p>{data.name}</p>
+            <p>{data.details}</p>
+            <p>{data.url}</p>
           </div>
         ))}
       </div>
