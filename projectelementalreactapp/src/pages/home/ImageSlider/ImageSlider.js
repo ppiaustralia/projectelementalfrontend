@@ -12,6 +12,7 @@ export default function ImageSlider() {
     const slideshow = useSelector((state) => state.slideshow.slideshow)
     return (
         <div className={styles.container}>
+            <span className={styles.backgroundImage} />
             <div className={styles.welcome}>
                 <h2>PPI Australia (PPIA)</h2>
                 <p className={styles.welcomeSubtitle}>

@@ -19,10 +19,11 @@
 .newsDeck {
     display: flex;
     flex-direction: row;
-    height: 60%;
 }
 
 .moreButton {
+    display: flex;
+    justify-content: center;
     color: #ec2027;
     background-color: white;
     padding-top: 0.5em;
@@ -30,10 +31,15 @@
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 1em;
-    width: 10vw;
+    width: 15vw;
     margin: 0;
+    text-decoration: none;
+    margin-bottom: 1em;
 }
-
+.moreButton:hover {
+    background-color: #ec2027;
+    color: white;
+}
 @media screen and (max-width: 960px) {
     .newsDeck {
         display: flex;

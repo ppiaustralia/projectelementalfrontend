@@ -22,8 +22,8 @@ export default function LatestUpdate() {
                 ))}
             </div>
 
-            <Link to="/blog">
-                <button className={styles.moreButton}>Read More</button>
+            <Link to="/blog" className={styles.moreButton}>
+                <span>Read More</span>
             </Link>
         </div>
     )
