@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react"
 
 import "./Contact.css"
-import ContactDatabase from "./ContactDatabase.json"
 import Embassy from "./Embassy"
 import ConsulatesCard from "./ConsulatesCard"
 import PPIA from "./PPIA"
 import axios from "axios"
 import Loading from "../../components/Loading"
+import TestCard from "./TestCard"
 
 function Contact() {
     const [consulates, setConsulate] = useState([])
@@ -37,15 +37,11 @@ function Contact() {
             })
     },[])
     return (
-        <div className="container mt-3">
+        <div className="container ">
             <div>
                 <PPIA />
             </div>
             <div>
-                <h3>
-                    The information below are the lists of our embassy and
-                    consulates that are located in Australia
-                </h3>
                 <div>
                     {
                         embassies.length<1 ? (
@@ -63,6 +59,7 @@ function Contact() {
                     })}
                 </div>
             </div>
+            {/* <TestCard /> */}
         </div>
     )
 }
