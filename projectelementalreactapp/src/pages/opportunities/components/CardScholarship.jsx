@@ -4,6 +4,7 @@ import {
   Link,
   useRouteMatch,
   Switch,
+  Routes,
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
@@ -60,20 +61,20 @@ function CardScholarship() {
       })}
 
       <div>
-        <Switch>
+        <Routes>
           <Route
             path={'/opportunities/scholarship/full-scholarship'}
-            component={FullScholarship}
+            element={FullScholarship}
           />
           <Route
             path={'/opportunities/scholarship/partial-scholarship'}
-            component={PartialScholarship}
+            element={PartialScholarship}
           />
           <Route
             path={'/opportunities/scholarship/exchange'}
-            component={Exchange}
+            element={Exchange}
           />
-        </Switch>
+        </Routes>
       </div>
 
       {/* <h3>{props.title}</h3>
