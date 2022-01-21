@@ -44,6 +44,7 @@ function Footer() {
                             <a className={styles["ft-a"]} href="./about">
                                 Events
                             </a>
+                            
                         </li>
                     </ul>
                 </div>
