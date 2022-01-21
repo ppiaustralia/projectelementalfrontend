@@ -1,0 +1,4 @@
+.newsListCont {
+    display: flex;
+    flex-wrap: wrap;
+}

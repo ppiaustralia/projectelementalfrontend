@@ -1,0 +1,20 @@
+.socialUl {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 0 !important;
+    margin-bottom: 0;
+}
+.socialList {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+li {
+    padding-left: 0.25em;
+}
+.fab {
+    color: black;
+}
+a {
+    color: black;
+}

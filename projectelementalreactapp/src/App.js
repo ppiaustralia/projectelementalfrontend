@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -8,6 +9,12 @@ import {
 import { withRouter } from 'react-router';
 import Home from '../src/pages/home/Home';
 import Navbar from './layout/navbar/Navbar';
+=======
+import React, { useEffect } from "react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from "../src/pages/home/Home"
+import Navbar from "./layout/navbar/Navbar"
+>>>>>>> erick-blog
 
 import Chapter from '../src/pages/chapter/Chapter';
 import About from '../src/pages/about/About';
@@ -19,6 +26,7 @@ import Scholarship from '../src/pages/opportunities/Scholarship';
 import CardScholarship from '../src/pages/opportunities/components/CardScholarship';
 // import Career from '../src/pages/career/Career';
 // import { FooterContainer } from "./layout/footer/footer";
+<<<<<<< HEAD
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 import Footer from './layout/newFooter/Footer';
 
@@ -61,6 +69,52 @@ function App() {
       <Footer />
     </Router>
   );
+=======
+import Footer from "./layout/newFooter/Footer"
+import { useSelector, useDispatch } from "react-redux"
+import axios from "axios"
+
+import {
+    setNews,
+    setLoadingTrue,
+    setLoadingFalse,
+} from "./store/news/newsSlice"
+import { setSlideshow } from "./store/slideshow/slideshowSlice"
+
+function App() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setLoadingTrue())
+        axios
+            .get(`https://ppia-backend.herokuapp.com/feed/articles/`)
+            .then((data) => {
+                dispatch(setNews(data.data))
+                dispatch(setLoadingFalse())
+            })
+    }, [])
+    useEffect(() => {
+        axios
+            .get(`https://ppia-backend.herokuapp.com/slideshow/`)
+            .then((data) => {
+                dispatch(setSlideshow(data.data))
+            })
+    }, [])
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="chapter/:statename" element={<Chapter />} />
+                <Route path="liveinoz" element={<Liveinoz />} />
+                <Route path="liveinoz/:id" element={<ReadMore />} />
+                <Route path="blog" element={<Blog />} />
+                <Route path="contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+        </Router>
+    )
+>>>>>>> erick-blog
 }
 
 export default App;
