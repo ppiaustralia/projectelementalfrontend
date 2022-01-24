@@ -56,8 +56,7 @@
 }
 
 .nav-links:hover {
-    background-color: lightsalmon;
-    color: #fff;
+    background-color: #ffffff;
     border-radius: 1em;
     transition: all 0.2s ease-out;
 }

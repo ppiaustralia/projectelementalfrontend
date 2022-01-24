@@ -1,0 +1,31 @@
+import React from "react";
+
+import styles from "./Membership.module.css";
+
+import {Container, Row, Col, Button} from "react-bootstrap/";
+
+export default function Membership() {
+    return (
+        <div className={`${styles.background} ${styles["front-page"]}`}>
+            <Container direction="horizontal">
+                <Row>
+                    <Col style={{marginTop: "20px", marginBottom: "20px"}}>
+                        <p className={styles.text}><b>Ready to be a <span style={{color:"red"}}>member*</span></b></p>
+                        <p className={styles.text}>Download our App NOW</p>
+                    </Col>
+
+                    <Col style={{marginTop: "20px"}}>
+                        <Row>
+                            <Button type="button" className={styles.buttonDecoration} style={{backgroundColor: "black"}}>Apple App Store</Button>
+                            <Button type="button" className={styles.buttonDecoration} style={{backgroundColor: "red"}}>Android Play Store</Button>                        
+                        </Row>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <p className={styles.sideNote}>*it's free to register</p>
+                </Row>
+            </Container>
+        </div>
+    )
+}

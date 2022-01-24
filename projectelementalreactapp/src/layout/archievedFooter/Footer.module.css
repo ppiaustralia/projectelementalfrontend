@@ -1,11 +1,7 @@
-.ft-PPIA {
-    color: #000;
-}
-
 .ft-title {
-    color: #000;
+    color: #ed1c24;
     font-size: 1.375rem;
-    /* padding-bottom: 0.625rem; */
+    padding-bottom: 0.625rem;
 }
 
 .ft-body {
@@ -92,11 +88,4 @@
 /* one before the last child */
 .ft-legal-list li:nth-last-child(2) {
     flex: 1; /* same as flex-grow: 1; */
-}
-
-.ft-vertical {
-    border-left: 2px solid black;
-    height: 200px;
-    position:absolute;
-    left: 30%;
 }
