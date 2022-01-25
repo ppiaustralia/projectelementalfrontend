@@ -1,72 +1,102 @@
-import React from "react"
-// import "./Footer.css"
 import styles from "./Footer.module.css"
-import {image} from "react"
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Footer() {
     return (
         <div className={styles["ft-body"]}>
             <section className={styles["ft-main"]}>
                 <div className={styles["ft-main-item"]}>
-                    <ul className = {styles["ft-logo"]}>
-                    </ul>
+                <Link to="/" className={styles["ft-logo"]}>
+                    <img
+                        src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
+                        alt="PPIA logo"
+                        className={styles.ppiaLogo}
+                    />
+                </Link>
                     <h2 className={styles["ft-title"]}>About</h2>
-
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="./about">
+                            <Link
+                                to = "/about"
+                                className={styles["ft-link"]}
+                                >
                                 PPIA The Biggest Overseas 
                                 <br/>
                                 Indonesia Student Association
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
                 <div className={styles["ft-main-item"]}>
                     <h2 className={styles["ft-title"]}>Useful Links</h2>
+                    <div className={styles["ft-main-content"]}>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="./about">
-                                Kabinet Impact 2021 - 2022
-                            </a>
+                        <Link
+                                to = "/about"
+                                className={styles["ft-link"]}
+                                >
+                                Kabinet PPIA 2021-2022
+                            </Link>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="./about">
-                                AD / ART
-                            </a>
+                        <Link
+                                to = "/about"
+                                className={styles["ft-link"]}
+                                >
+                                AD/ART
+                            </Link>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="./about">
+                            <Link
+                                to = "/contact"
+                                className={styles["ft-link"]}
+                                >
                                 Konsulat Indonesia
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="./about">
+                            <Link
+                                to = "/about"
+                                className={styles["ft-link"]}
+                                >
                                 Events
-                            </a>
-                            
+                            </Link>
                         </li>
                     </ul>
+                    </div>
                 </div>
                 <div className={styles["ft-main-item"]}>
                     <h2 className={styles["ft-title"]}>Contact</h2>
+                    <div className={styles["ft-main-content"]}>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <a className={styles["ft-a"]} href="./contact">
+                            <Link
+                                to = "/contact"
+                                className={styles["ft-link"]}
+                                >
                                 Help
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <Link
+                                to = "/"
+                                className={styles["ft-link"]}
+                                >
                                 Sponsor
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className={styles["ft-a"]} href="#">
+                            <Link
+                                to = "/"
+                                className={styles["ft-link"]}
+                                >
                                 Advertise
-                            </a>
+                            </Link>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </section>
 
@@ -87,11 +117,6 @@ function Footer() {
                     <li>
                         <a href="https://www.instagram.com/ppiaustralia_/">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li>

@@ -5,10 +5,12 @@
 }
 
 .ft-logo{
-    background-color: lightgrey;
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
+    color: #fff;
+    justify-self: start;
+}
+.ppiaLogo {
+    width: 150px;
+    height: 150px;
 }
 
 .ft-body {
@@ -22,28 +24,27 @@
     color: #bbb;
     line-height: 1.5;
 }
-.container {
-    flex: 1; /* same as flex-grow: 1; */
-}
 
 .ft-main {
-    padding: 1.25rem 1.875rem;
+    padding: 0.75rem 1.4rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.ft-a {
+.ft-link {
     text-decoration: none;
     color: #000;
 }
-.ft-a:hover {
+.ft-link:hover {
     text-decoration: underline;
     color: #ed1c24;
     font-weight: 400;
 }
 
 .ft-ul {
+    margin: auto;
     list-style: none;
     padding-left: 0;
+    
 }
 .ft-ul li {
     padding: 0.25em;
@@ -52,6 +53,10 @@
 .ft-main-item {
     padding: 1.25rem;
     min-width: 12.5rem /*200px*/;
+}
+
+.ft-main-content{
+    line-height: 250%;
 }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
@@ -66,19 +71,17 @@
 }
 
 .ft-social {
-    padding: 0 0.875rem 0.25rem;
-}
+    padding: 0 1.25rem 1.25rem;}
 .ft-social-list {
     display: flex;
     justify-content: center;
     border-top: 1px rgb(88, 88, 88) solid;
-    padding-top: 0.25rem;
+    padding-top: 1.25rem;
 }
 .ft-social-list li {
-    margin: 0.5rem;
-    font-size: 1.75rem;
+    margin: 1rem;
+    font-size: 1.25rem;
 }
-
 .ft-legal {
     padding: 0.9375rem 1.875rem;
     background-color: #a01218;
@@ -97,6 +100,5 @@
     flex: 1; /* same as flex-grow: 1; */
 }
 i:hover {
-    color: rgb(0, 0, 0);
-    transition: 600ms;
+    color: rgb(255, 0, 0);
 }
