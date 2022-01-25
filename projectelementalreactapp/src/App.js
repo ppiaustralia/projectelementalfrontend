@@ -1,6 +1,5 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import { withRouter } from "react-router"
+import React, { useEffect } from "react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "../src/pages/home/Home"
 import Navbar from "./layout/navbar/Navbar"
 
@@ -11,24 +10,57 @@ import Liveinoz, { ReadMore } from "../src/pages/liveinoz/Liveinoz"
 import Blog from "../src/pages/blog/Blog"
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from "./layout/newFooter/Footer"
+import { useSelector, useDispatch } from "react-redux"
+import axios from "axios"
+
+import {
+    setNews,
+    setLoadingTrue,
+    setLoadingFalse,
+} from "./store/news/newsSlice"
+import { setSlideshow } from "./store/slideshow/slideshowSlice"
+import { setChapters } from "./store/chapters/chaptersSlice"
 
 function App() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setLoadingTrue())
+        axios
+            .get(`https://ppia-backend.herokuapp.com/feed/articles/`)
+            .then((data) => {
+                dispatch(setNews(data.data))
+                dispatch(setLoadingFalse())
+            })
+    }, [])
+    useEffect(() => {
+        axios
+            .get(`https://ppia-backend.herokuapp.com/slideshow/`)
+            .then((data) => {
+                dispatch(setSlideshow(data.data))
+            })
+    }, [])
+    useEffect(() => {
+        axios
+            .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+            .then((data) => {
+                dispatch(setChapters(data.data))
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }, [])
     return (
         <Router>
             <Navbar />
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/about" exact component={About} />
-                <Route
-                    path="/chapter/:statename"
-                    exact
-                    component={withRouter(Chapter)}
-                />
-                <Route path="/liveinoz" exact component={Liveinoz} />
-                <Route path="/liveinoz/:id" exact component={ReadMore} />
-                <Route path="/blog" exact component={Blog} />
-                <Route path="/contact" exact component={Contact} />
-            </Switch>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="chapter/:statename" element={<Chapter />} />
+                <Route path="liveinoz" element={<Liveinoz />} />
+                <Route path="liveinoz/:id" element={<ReadMore />} />
+                <Route path="blog" element={<Blog />} />
+                <Route path="contact" element={<Contact />} />
+            </Routes>
             <Footer />
         </Router>
     )

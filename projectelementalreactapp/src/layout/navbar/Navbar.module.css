@@ -1,5 +1,5 @@
 .navbar {
-    background: #ff2020;
+    background: #EC2027;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -18,14 +18,14 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 .navbar-logo:hover {
     color: #fff;
 }
 .ppiaLogo {
-    width: 150px;
-    height: 150px;
+    height: 80px;
 }
 .fa-firstdraft {
     margin-left: 0.5rem;
@@ -39,8 +39,10 @@
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
     margin-right: 2rem;
+    margin-bottom: 0;
 }
 
 .nav-item {
@@ -50,14 +52,14 @@
 }
 
 .nav-links {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    background-color: lightsalmon;
-    color: #fff;
+    color: #ffa6a6;
+    size: 1.5em;
     border-radius: 1em;
     transition: all 0.2s ease-out;
 }
@@ -123,9 +125,7 @@ fa-caret-down {
 
     .navbar-logo {
         position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
+        /* left: 0; */
     }
 
     .menu-icon {
@@ -152,7 +152,7 @@ fa-caret-down {
         width: 80%;
         background: #fff;
         text-decoration: none;
-        color: #fff;
+        color: rgb(123, 63, 63);
         font-size: 1.5rem;
     }
 

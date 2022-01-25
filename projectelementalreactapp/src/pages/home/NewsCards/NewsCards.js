@@ -1,57 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { news_data } from "../database_home";
-import styles from "./NewsCards.module.css";
+import React from "react"
+import s from "./NewsCards.module.css"
+import moment from "moment"
+function NewsCards(props) {
+    const imageURL = "https://ppiamedia.s3.us-east-2.amazonaws.com/"
+    const { title, tag, content, publish_date, image, slug, is_deleted } =
+        props.newsContent
+    const parsedDate = moment(publish_date).format("LLL")
 
-import {
-  Card,
-  Button,
-  CardDeck,
-} from "react-bootstrap/";
-
-export default function NewsCards() {
-
-  return (
-    <div className={`${styles.background} ${styles["front-page"]} ${styles.news}`}>
-
-      <div className={styles["news-title"]}>
-        <h4>Latest Updates</h4>
-      </div>
-
-      <div className={styles["news-cards"]}>
-        <CardDeck style={{ display: "flex", flexDirection: "row" }}>
-          {news_data.map((news, i) => (
-
-            <div>
-              <Card style={{ width: "18rem", flex: 1, maxWidth: "90%" }}>
-                
-                <Link to={news.path}>
-                  <Card.Img
-                    variant="top"
-                    src={news.img}
-                    className={styles["card-img"]}
-                  />
-                </Link>
-
-                <Card.Body>
-                  <Card.Title>{news.title}</Card.Title>
-                  <Card.Subtitle>{news.date}</Card.Subtitle>
-                  <Card.Text>{news.desc}</Card.Text>
-                </Card.Body>
-                
-              </Card>
+    return (
+        <div className={s.newsCardCont}>
+            <img
+                className={s.cardImage}
+                src={`${imageURL}${image}`}
+                alt="title"
+            />
+            <div className={s.verticalInfo}>
+                <div className={s.title}>{title}</div>
+                <div className={s.date}>{parsedDate}</div>
             </div>
-
-          ))}
-        </CardDeck>
-      </div>
-
-      <Link to="/blog">
-        <Button variant="news" style={{ width: "116px" }}>
-          Read More
-        </Button>
-      </Link>
-
-    </div>
-  )
+        </div>
+    )
 }
+
+export default NewsCards
