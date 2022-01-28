@@ -1,11 +1,10 @@
 .ft-title {
     color: #ed1c24;
     font-size: 1.375rem;
-    padding-bottom: 0.625rem;
+    padding-bottom: 0.3rem;
 }
 
 .ft-logo{
-    color: #fff;
     justify-self: start;
 }
 .ppiaLogo {
@@ -15,18 +14,17 @@
 
 .ft-body {
     display: flex;
-    min-height: 40vh;
+    height: 10vh;
     flex-direction: column;
     margin: 0;
     margin-top: 2em;
     padding: 0;
     background-color: #fff;
     color: #bbb;
-    line-height: 1.5;
 }
 
 .ft-main {
-    padding: 0.75rem 1.4rem;
+    padding: 0.75rem 0.75rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -51,12 +49,12 @@
     padding-left: 0;
 }
 .ft-main-item {
-    padding: 1.25rem;
+    padding: 0.5rem;
     min-width: 12.5rem /*200px*/;
 }
 
 .ft-main-content{
-    line-height: 250%;
+    line-height: 220%;
 }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
@@ -71,20 +69,23 @@
 }
 
 .ft-social {
-    padding: 0 1.25rem 1.25rem;}
+    border-top: 1px rgb(88, 88, 88) solid;
+    padding: auto;
+    padding-bottom: 00.5rem;
+}
 .ft-social-list {
     display: flex;
     justify-content: center;
-    border-top: 1px rgb(88, 88, 88) solid;
-    padding-top: 1.25rem;
+    padding-top: 0.10rem;
 }
 .ft-social-list li {
-    margin: 1rem;
+    margin-top: 00.5rem;
+    margin-left: 2rem;
     font-size: 1.25rem;
 }
 .ft-legal {
     padding: 0.9375rem 1.875rem;
-    background-color: #a01218;
+    background-color: #ed1c24;
 }
 .ft-legal-list {
     width: 100%;
