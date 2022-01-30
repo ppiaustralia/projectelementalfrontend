@@ -9,11 +9,7 @@ function NewsCards(props) {
 
     return (
         <div className={s.newsCardCont}>
-            <img
-                className={s.cardImage}
-                src={`${imageURL}${image}`}
-                alt="title"
-            />
+            <img className={s.cardImage} src={`${image}`} alt="title" />
             <div className={s.verticalInfo}>
                 <div className={s.title}>{title}</div>
                 <div className={s.date}>{parsedDate}</div>
