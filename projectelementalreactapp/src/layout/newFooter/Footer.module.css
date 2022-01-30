@@ -9,7 +9,8 @@
 }
 .ppiaLogo {
     width: 150px;
-    height: 150px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .ft-body {
@@ -54,7 +55,7 @@
 }
 
 .ft-main-content{
-    line-height: 220%;
+    line-height: 175%;
 }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
