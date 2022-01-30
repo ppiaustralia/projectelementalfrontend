@@ -13,8 +13,6 @@ export default function Home() {
             <ImageSlider />
             <ChaptersGallery />
             <LatestUpdate />
-            {/* bottom_panel */}
-            {/* <div className="front-page bottompanel">UPCOMING EVENTS</div>; */}
         </>
     )
 }
