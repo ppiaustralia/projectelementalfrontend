@@ -7,95 +7,77 @@ function Footer() {
         <div className={styles["ft-body"]}>
             <section className={styles["ft-main"]}>
                 <div className={styles["ft-main-item"]}>
-                <Link to="/" className={styles["ft-logo"]}>
-                    <img
-                        src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
-                        alt="PPIA logo"
-                        className={styles.ppiaLogo}
-                    />
-                </Link>
                     <h2 className={styles["ft-title"]}>About</h2>
                     <ul className={styles["ft-ul"]}>
                         <li>
-                            <Link
-                                to = "/about"
-                                className={styles["ft-link"]}
-                                >
-                                PPIA The Biggest Overseas 
-                                <br/>
+                            <Link to="/about" className={styles["ft-link"]}>
+                                PPIA The Biggest Overseas
+                                <br />
                                 Indonesia Student Association
                             </Link>
                         </li>
                     </ul>
+                    <Link to="/" className={styles["ft-logo"]}>
+                        <img
+                            src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
+                            alt="PPIA logo"
+                            className={styles.ppiaLogo}
+                        />
+                    </Link>
                 </div>
                 <div className={styles["ft-main-item"]}>
                     <h2 className={styles["ft-title"]}>Useful Links</h2>
                     <div className={styles["ft-main-content"]}>
-                    <ul className={styles["ft-ul"]}>
-                        <li>
-                        <Link
-                                to = "/about"
-                                className={styles["ft-link"]}
+                        <ul className={styles["ft-ul"]}>
+                            <li>
+                                <Link to="/about" className={styles["ft-link"]}>
+                                    Kabinet PPIA 2021-2022
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about" className={styles["ft-link"]}>
+                                    AD/ART
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/contact"
+                                    className={styles["ft-link"]}
                                 >
-                                Kabinet PPIA 2021-2022
-                            </Link>
-                        </li>
-                        <li>
-                        <Link
-                                to = "/about"
-                                className={styles["ft-link"]}
-                                >
-                                AD/ART
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to = "/contact"
-                                className={styles["ft-link"]}
-                                >
-                                Konsulat Indonesia
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to = "/about"
-                                className={styles["ft-link"]}
-                                >
-                                Events
-                            </Link>
-                        </li>
-                    </ul>
+                                    Konsulat Indonesia
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about" className={styles["ft-link"]}>
+                                    Events
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className={styles["ft-main-item"]}>
                     <h2 className={styles["ft-title"]}>Contact</h2>
                     <div className={styles["ft-main-content"]}>
-                    <ul className={styles["ft-ul"]}>
-                        <li>
-                            <Link
-                                to = "/contact"
-                                className={styles["ft-link"]}
+                        <ul className={styles["ft-ul"]}>
+                            <li>
+                                <Link
+                                    to="/contact"
+                                    className={styles["ft-link"]}
                                 >
-                                Help
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to = "/"
-                                className={styles["ft-link"]}
-                                >
-                                Sponsor
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to = "/"
-                                className={styles["ft-link"]}
-                                >
-                                Advertise
-                            </Link>
-                        </li>
-                    </ul>
+                                    Help
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className={styles["ft-link"]}>
+                                    Sponsor
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className={styles["ft-link"]}>
+                                    Advertise
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
