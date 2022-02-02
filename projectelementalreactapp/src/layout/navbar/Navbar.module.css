@@ -1,5 +1,5 @@
 .navbar {
-    background: #ffffff;
+    background: #ff2020;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -50,14 +50,13 @@
 }
 
 .nav-links {
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    color: #ff2020;
-    size: 1.5em;
+    background-color: #ffffff;
     border-radius: 1em;
     transition: all 0.2s ease-out;
 }
@@ -152,7 +151,7 @@ fa-caret-down {
         width: 80%;
         background: #fff;
         text-decoration: none;
-        color: rgb(123, 63, 63);
+        color: #fff;
         font-size: 1.5rem;
     }
 

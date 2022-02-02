@@ -1,0 +1,26 @@
+.background {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.text {
+    font-size: 20px;
+    text-align: center;
+    text-indent: 5px;
+    margin-bottom: 1px;
+}
+
+.buttonDecoration {
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    padding: 10px; 
+    margin: 10px;
+}
+
+.sideNote {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
