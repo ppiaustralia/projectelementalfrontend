@@ -33,7 +33,7 @@ function Navbar() {
                 <Link to="/" className={styles["navbar-logo"]}>
                     <img
                         // src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
-                        src = {logo}
+                        src={logo}
                         alt="PPIA logo"
                         className={styles.ppiaLogo}
                     />
