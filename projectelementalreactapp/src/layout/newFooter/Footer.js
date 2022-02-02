@@ -1,5 +1,6 @@
 import React from "react"
 // import "./Footer.css"
+import { Link } from "react-router-dom"
 import styles from "./Footer.module.css"
 
 import {Container, Row, Col} from "react-bootstrap/"
@@ -10,8 +11,13 @@ function Footer() {
             <Container>
                 <Row>
                     <Col lg={2} className={styles["ft-PPIA"]}>
-                        <h2>PPI AUSTRALIA</h2>
-                        <h2>(PPIA)</h2>
+                        <Link to="/" className={styles["ft-logo"]}>
+                            <img
+                                src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
+                                alt="PPIA logo"
+                                className={styles.ppiaLogo}
+                            />
+                         </Link>
                         <p>2010 - 2020</p>
                         <p>Privacy - Terms</p>   
                     </Col>
@@ -39,21 +45,38 @@ function Footer() {
                                 <div className={styles["ft-main-item"]}>
                                     <p className={styles["ft-title"]}><b>Get To Know Us</b></p>
                                     <ul className={styles["ft-ul"]}>
-                                        <li>
-                                            <a className={styles["ft-a"]} href="#">
-                                                Impact Cabinet 2021/22
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className={styles["ft-a"]} href="#">
-                                                AD / ART
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className={styles["ft-a"]} href="#">
-                                                Indonesia Consulate
-                                            </a>
-                                        </li>
+                                    <li>
+                                        <Link
+                                            to = "/about"
+                                            className={styles["ft-link"]}
+                                            >
+                                                Kabinet PPIA 2021-2022
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to = "/about"
+                                            className={styles["ft-link"]}
+                                        >
+                                            AD/ART
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to = "/contact"
+                                            className={styles["ft-link"]}
+                                        >
+                                            Konsulat Indonesia
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to = "/about"
+                                            className={styles["ft-link"]}
+                                        >
+                                            Events
+                                        </Link>
+                                    </li>
                                     </ul>
                                 </div>
 
