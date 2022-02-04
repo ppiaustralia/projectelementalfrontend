@@ -13,9 +13,9 @@ import NewsList from "./newsList/NewsList"
 import Sidebar from "./sidebar/Sidebar"
 
 function Blog() {
-    //contain all the state. lets think about redux for the blog
     const news = useSelector((state) => state.news.news)
     const loading = useSelector((state) => state.news.loading)
+    let chunkSize = 6
     return (
         <div className={s.blogContainer}>
             <div className={s.title}>
@@ -26,7 +26,11 @@ function Blog() {
                     <Sidebar />
                 </div>
                 <div className={s.blogNews}>
-                    {loading ? <Loading /> : <NewsList news={news} />}
+                    {loading ? (
+                        <Loading />
+                    ) : (
+                        <NewsList news={news} chunkSize={chunkSize} />
+                    )}
                 </div>
             </div>
         </div>
