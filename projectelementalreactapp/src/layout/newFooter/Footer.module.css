@@ -29,9 +29,11 @@
 .ft-body {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(253, 188, 188);
     color: #bbb;
     line-height: 1.5;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     flex: 1; /* same as flex-grow: 1; */
