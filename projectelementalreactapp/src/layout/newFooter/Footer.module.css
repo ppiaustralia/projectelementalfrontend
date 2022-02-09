@@ -28,11 +28,7 @@
 }
 .ft-body {
     display: flex;
-    min-height: 40vh;
     flex-direction: column;
-    margin: 0;
-    margin-top: 2em;
-    padding: 0;
     background-color: #fff;
     color: #bbb;
     line-height: 1.5;

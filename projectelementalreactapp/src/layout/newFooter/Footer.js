@@ -19,7 +19,17 @@ function Footer() {
                             />
                          </Link>
                         <p>2010 - 2020</p>
-                        <p>Privacy - Terms</p>   
+                        <li>
+                            <a className={styles["ft-a"]} href="#">
+                                    Terms &amp; Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a className={styles["ft-a"]} href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+
                     </Col>
                     <Col lg={1}>
                         <div className={styles["ft-vertical"]}></div>
@@ -80,6 +90,39 @@ function Footer() {
                                     </ul>
                                 </div>
 
+
+                                <div className={styles["ft-main-item"]}>
+                                    <p className={styles["ft-title"]}>
+                                       <b> Important Link </b>
+                                    </p>
+                                    <ul className={styles["ft-ul"]}>
+                                    <li>
+                                        <Link
+                                            to = "/contact"
+                                            className={styles["ft-link"]}
+                                            >
+                                                Embassy
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to = "/contact"
+                                            className={styles["ft-link"]}
+                                            >
+                                                Consulate
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to = "/contact"
+                                            className={styles["ft-link"]}
+                                            >
+                                                Sponsorship
+                                        </Link>
+                                    </li>
+                                    </ul>
+                                </div>  
+
                                 <div className={styles["ft-main-item"]}>
                                     <p className={styles["ft-title"]}><b>Our Social Media</b></p>
                                     <Row>
@@ -127,61 +170,6 @@ function Footer() {
                         </section>
                     </Col>
                         
-                </Row>
-                <Row>
-                    <section className={styles["ft-social"]}>
-                            <ul
-                                className={`${styles["ft-social-list"]} ${styles["ft-ul"]}`}
-                            >
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                    </section>
-                </Row>
-                <Row>
-                    <section className={styles["ft-legal"]}>
-                            <ul className={`${styles["ft-legal-list"]} ${styles["ft-ul"]}`}>
-                                <li>
-                                    <a className={styles["ft-a"]} href="#">
-                                        Terms &amp; Conditions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className={styles["ft-a"]} href="#">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>&copy;Copyright PPIA</li>
-                            </ul>
-                    </section>
                 </Row>
             </Container>
         </div>
