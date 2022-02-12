@@ -1,10 +1,14 @@
+/* eslint-disable */
+/* eslint-disable no-alert, no-console */
+
 import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Switch, //not used anymore
   Redirect,
-  Routes
+  Routes,
+  Navigate
 } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
@@ -26,6 +30,9 @@ import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 // import Opportunities from '../src/pages/opportunities/Opportunities';
 import Scholarship from '../src/pages/opportunities/Scholarship';
+// import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
+// import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
+// import Exchange from '../src/pages/opportunities/pages/ExchangeProgram';
 import CardScholarship from '../src/pages/opportunities/components/CardScholarship';
 import { setSlideshow } from './store/slideshow/slideshowSlice';
 // import Career from '../src/pages/career/Career';
@@ -53,6 +60,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="chapter/:statename" element={<Chapter />} />
@@ -60,20 +68,34 @@ function App() {
         <Route path="liveinoz/:id" element={<ReadMore />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="/opportunities/scholarship" element={Scholarship} />
+        <Route path="/opportunities/scholarship" element={<Scholarship />} />
         <Route
-          path="/opportunities/scholarship/:types"
-          element={CardScholarship}
+          path="/opportunities/scholarship/:options"
+          element={<CardScholarship />}
         />
 
-        {/* In react-router-v4 you don't nest <Routes />. Instead, you put them inside another <Component />.
-          <Route path="/opportunities/scholarship"exact component={Scholarship}  />
-          <Route path="/opportunities/career" exact component ={Career} />
+        {/* temporarily 
+        <Route
+          path="/opportunities/scholarship/full-scholarship"
+          element={<FullScholarship />}
+        />
+        <Route
+          path="/opportunities/scholarship/partial-scholarship"
+          element={<PartialScholarship />}
+        />
+        <Route
+          path="/opportunities/scholarship/exchange"
+          element={<Exchange />}
+        />
         */}
-        <Route element={PageUnavailable} />
-        {/* <Route path="*" component={PageUnavailable} /> */}
-        {/* <Route path="/404" component={PageUnavailable} /> */}
-        {/* <Redirect to="/404" /> */}
+
+        <Route path="*" element={<PageUnavailable />} />
+
+        {/* 
+          previous router versions:
+          <Route component ={PageUnavailable} /> 
+          <Route path="/404" component={PageUnavailable} />
+          <Redirect to="/404" /> */}
       </Routes>
       <Footer />
     </Router>
@@ -81,3 +103,5 @@ function App() {
 }
 
 export default App;
+
+{/* prettier-ignore */}

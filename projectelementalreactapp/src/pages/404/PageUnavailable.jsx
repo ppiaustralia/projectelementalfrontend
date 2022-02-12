@@ -3,6 +3,8 @@ import './PageUnavailable.module.css';
 import Button from '../../components/Button';
 
 function PageUnavailable() {
+  console.log('test');
+
   return (
     <div>
       <h1>404 not Found</h1>

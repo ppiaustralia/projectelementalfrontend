@@ -1,17 +1,20 @@
 import React from 'react';
 // import { useRouteMatch } from 'react-router-dom';
+import { useMatch, useParams } from 'react-router-dom';
 
 // import FullScholarship from './pages/FullScholarship';
 // import PartialScholarship from './pages/PartialScholarship';
 // import ExchangeProgram from './pages/ExchangeProgram';
-import Testimony from './pages/Testimony';
+import Testimony from './components/Testimony';
 import Cards from './components/CardScholarship';
 
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
 
 export default function Scholarship() {
-  // let { path, url } = useRouteMatch();
+  // let { path, url } = useMatch();
+  // const { options } = useParams();
+
   return (
     <div>
       {/* 1st layout -> 3 boxes */}
@@ -39,6 +42,8 @@ export default function Scholarship() {
     </div>
   );
 }
+
+// create CardScholarship inside here
 
 /*
   Scholarship
