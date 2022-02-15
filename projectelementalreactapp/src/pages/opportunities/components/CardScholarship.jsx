@@ -13,6 +13,8 @@ import FullScholarship from '../pages/FullScholarship';
 import PartialScholarship from '../pages/PartialScholarship';
 import Exchange from '../pages/ExchangeProgram';
 
+import styles from './CardScholarship.module.css';
+
 function CardScholarship() {
   // let { path, url } = useRouteMatch();
   // const types = props.match.params.types; // copy link url
@@ -31,34 +33,44 @@ function CardScholarship() {
     {
       id: 2,
       title: 'Partial Scholarship',
-      path: '/opportunities/scholarship/partial-scholarship',
+      path: `/opportunities/scholarship/partial-scholarship`,
       desc: 'lorem ipsum dolor site amet'
     },
     {
       id: 3,
       title: 'Exchange Program',
-      path: '/opportunities/scholarship/exchange',
+      path: `/opportunities/scholarship/exchange`,
       desc: 'lorem ipsum dolor site amet'
     }
   ];
 
   return (
     <>
-      <div className="card__scholarship">
-        <div className="card__scholarship__title">
-          <h1>Interested to study at Australia?</h1>
-        </div>
-        <div className="card__scholarship__subtitle">
-          <h3>Check out some of the options listed here</h3>
+      <div className={styles.card__scholarship}>
+        <div className={styles.card__scholarship__left}></div>
+        <div className={styles.card__scholarship__right}>
+          <h1 className={styles.card__scholarship__title}>
+            Interested to study at Australia?
+          </h1>
+          <h2 className={styles.card__scholarship__subtitle}>
+            Check out some of the options listed below
+          </h2>
         </div>
       </div>
 
       {pages.map((data) => (
-        <div className="card__scholarship" key={data.id}>
-          <p className="card__scholarship__name">{data.title}</p>
-          <p className="card__scholarship__desc">{data.desc}</p>
-          <p className="card__scholarship__button">
-            <Link to={data.path}>Read More</Link>
+        <div className={styles.card__blog} key={data.id}>
+          <h3 className={styles.card__blog__name}>{data.title}</h3>
+          <p className={styles.card__blog__desc}>{data.desc}</p>
+          <p className={styles.card__blog__button}>
+            <Link
+              onLick={(e) => {
+                e.preventDefault();
+              }}
+              to={data.path}
+            >
+              Read More
+            </Link>
           </p>
         </div>
       ))}

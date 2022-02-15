@@ -7,6 +7,7 @@ import { useMatch, useParams } from 'react-router-dom';
 // import ExchangeProgram from './pages/ExchangeProgram';
 import Testimony from './components/Testimony';
 import Cards from './components/CardScholarship';
+import SubmitScholarship from './components/SubmitScholarship';
 
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
@@ -19,25 +20,17 @@ export default function Scholarship() {
     <div>
       {/* 1st layout -> 3 boxes */}
       <div>
-        <h3>Interested to study at Australia?</h3>
-        <p>Check out some of the options listed</p>
-        <div>
-          {/* three different boxes */}
-          <Cards />
-        </div>
+        <Cards />
       </div>
 
       {/* 2nd layout -> testimonies  */}
-      <Testimony />
+      <div>
+        <Testimony />
+      </div>
 
       {/* 3rd layout -> submit interest */}
       <div>
-        <h3>Are you in a scholarship programme?</h3>
-        <p>
-          Do you want to share your experience and help others? Submit your
-          scholarship testimony by clicking the link below
-        </p>
-        <Button /> {/* link: https://forms.gle/g6r35XqLNfKz7Apr5 */}
+        <SubmitScholarship />
       </div>
     </div>
   );

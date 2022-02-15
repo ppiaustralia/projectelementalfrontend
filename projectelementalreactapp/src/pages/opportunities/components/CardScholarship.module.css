@@ -1,0 +1,81 @@
+.card__scholarship {
+  position: absolute;
+  left: 9.38%;
+  right: 9.38%;
+  top: 6%;
+  bottom: 47.56%;
+  width: 73.125rem;
+  height: 23.188rem;
+
+  background: black;
+  color: white;
+}
+
+.card__scholarship__left {
+  left: 0%;
+  right: 65.81%;
+  width: 25rem;
+  height: 23.188rem;
+
+  background: #222222;
+}
+
+.card__scholarship__right {
+  position: absolute;
+  left: 34.19%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 48.125rem;
+  height: 23.188rem;
+
+  background: #000000;
+}
+
+.card__scholarship__title {
+  position: absolute;
+  left: 10.13%;
+  right: 25.97%;
+  top: 24.32%;
+  bottom: 41.89%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #ffffff;
+}
+
+.card__scholarship__subtitle {
+  position: absolute;
+  left: 10.13%;
+  right: 51.69%;
+  top: 79.73%;
+  bottom: 13.24%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+
+.card__blog {
+  display: inline-block;
+  position: relative;
+  padding: 30px;
+  width: 376px;
+  height: 290px;
+  left: 8.438rem;
+  right: 8.438rem;
+
+  margin-top: 420px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+
+  background: #f2f2f2;
+}

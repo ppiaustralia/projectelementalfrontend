@@ -1,0 +1,23 @@
+.scholarship__container {
+  left: 0%;
+  right: 0%;
+  width: auto;
+  top: 1582px;
+
+  margin: 125px 0;
+  width: 100%;
+
+  align-items: center;
+  align-content: center;
+}
+
+.scholarship__submit {
+  margin: 0 509px;
+  margin-top: 335px;
+  margin-bottom: 150px;
+  padding: 3px 0;
+
+  height: 237px;
+
+  text-align: center;
+}
