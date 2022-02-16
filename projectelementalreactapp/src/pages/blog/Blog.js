@@ -2,6 +2,7 @@ import axios from "axios"
 import React, { Component, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import Loading from "../../components/Loading"
+import ScrollToTop from "../../components/ScrollToTop"
 import {
     setNews,
     setLoadingTrue,
