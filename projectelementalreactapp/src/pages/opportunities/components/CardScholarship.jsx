@@ -28,20 +28,23 @@ function CardScholarship() {
     {
       id: 1,
       title: 'Full Scholarship',
-      path: `/opportunities/scholarship/full-scholarship`,
-      desc: 'lorem ipsum dolor site amet'
+      path: '/opportunities/scholarship/full-scholarship',
+      component: FullScholarship
+      // desc: 'lorem ipsum dolor site amet'
     },
     {
       id: 2,
       title: 'Partial Scholarship',
-      path: `/opportunities/scholarship/partial-scholarship`,
-      desc: 'lorem ipsum dolor site amet'
+      path: '/opportunities/scholarship/partial-scholarship',
+      component: PartialScholarship
+      // desc: 'lorem ipsum dolor site amet'
     },
     {
       id: 3,
       title: 'Exchange Program',
-      path: `/opportunities/scholarship/exchange`,
-      desc: 'lorem ipsum dolor site amet'
+      path: '/opportunities/scholarship/exchange',
+      component: Exchange
+      // desc: 'lorem ipsum dolor site amet'
     }
   ];
 
@@ -66,22 +69,15 @@ function CardScholarship() {
           <h3 className={styles.cardBlogName}>{data.title}</h3>
           {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
           <p className={styles.cardBlogButton}>
-            <Link
-              onLick={(e) => {
-                e.preventDefault();
-              }}
-              to={data.path}
-            >
-              Read More
-            </Link>
+            <Link to={data.path}>Read More</Link>
           </p>
         </div>
       ))}
 
       {/* <div>
-        <Link to={`${types}/full-scholarship`}>Read More</Link>
-        <Link to={`${types}/partial-scholarship`}>Read More</Link>
-        <Link to={`${types}/exchange`}>Read More</Link>
+        <Link to={'${types}/full-scholarship'}>Read More</Link>
+        <Link to={'${types}/partial-scholarship'}>Read More</Link>
+        <Link to={'${types}/exchange'}>Read More</Link>
       </div> */}
 
       <div>

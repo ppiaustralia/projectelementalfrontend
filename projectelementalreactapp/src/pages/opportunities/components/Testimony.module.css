@@ -4,7 +4,7 @@
 }
 
 .testimony__carousel {
-  display: inline-flex;
+  display: block;
   position: relative;
 
   margin-left: 500px;
@@ -17,6 +17,12 @@
 
   /* margin: 44px 0; */
 
-  background: black;
+  /* background: black; */
+  border-radius: 8px;
+}
+
+img {
+  height: 512px;
+  width: 897px;
   border-radius: 8px;
 }
