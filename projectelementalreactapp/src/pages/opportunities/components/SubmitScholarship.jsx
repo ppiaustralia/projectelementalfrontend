@@ -5,8 +5,8 @@ import styles from './SubmitScholarship.module.css';
 function SubmitScholarship() {
   return (
     <div>
-      <div className={styles.scholarship__container}>
-        <div className={styles.scholarship__submit}>
+      <div className={styles.scholarshipContainer}>
+        <div className={styles.scholarshipSubmit}>
           <h3>
             <b>Are you in a scholarship programme?</b>
           </h3>

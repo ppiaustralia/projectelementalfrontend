@@ -1,22 +1,21 @@
 .testimony {
-  margin-left: 135px;
   margin-top: 238px;
-  margin-bottom: 258px;
+  margin-bottom: 128px;
 }
 
-.testimony .testimony__carousel {
-  display: block;
-  position: absolute;
+.testimony__carousel {
+  display: inline-flex;
+  position: relative;
 
-  left: 30.83%;
-  right: 9.38%;
-  top: 900px;
-  bottom: 7.33%;
+  margin-left: 500px;
+  margin-top: -300px;
+  /* right: 200px; */
+  /* margin-bottom: 300px; */
 
   height: 512px;
   width: 897px;
 
-  margin: 44px 0;
+  /* margin: 44px 0; */
 
   background: black;
   border-radius: 8px;

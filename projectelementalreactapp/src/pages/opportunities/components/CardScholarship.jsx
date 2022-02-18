@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+
 import FullScholarship from '../pages/FullScholarship';
 import PartialScholarship from '../pages/PartialScholarship';
 import Exchange from '../pages/ExchangeProgram';
@@ -46,23 +47,25 @@ function CardScholarship() {
 
   return (
     <>
-      <div className={styles.card__scholarship}>
-        <div className={styles.card__scholarship__left}></div>
-        <div className={styles.card__scholarship__right}>
-          <h1 className={styles.card__scholarship__title}>
+      <div className={styles.cardScholarship}>
+        <div className={styles.cardScholarshipLeft}></div>
+        <div className={styles.cardScholarshipRight}>
+          <h1 className={styles.cardScholarshipTitle}>
             Interested to study at Australia?
           </h1>
-          <h2 className={styles.card__scholarship__subtitle}>
-            Check out some of the options listed below
+          <h2 className={styles.cardScholarshipSubtitle}>
+            Check out some of the options listed below. Alternatively, you can
+            download PPI Australia 2021-2022 Scholar Programs Booklet by
+            clicking <u>on the box on the left.</u>
           </h2>
         </div>
       </div>
 
       {pages.map((data) => (
-        <div className={styles.card__blog} key={data.id}>
-          <h3 className={styles.card__blog__name}>{data.title}</h3>
-          <p className={styles.card__blog__desc}>{data.desc}</p>
-          <p className={styles.card__blog__button}>
+        <div className={styles.cardBlog} key={data.id}>
+          <h3 className={styles.cardBlogName}>{data.title}</h3>
+          {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
+          <p className={styles.cardBlogButton}>
             <Link
               onLick={(e) => {
                 e.preventDefault();

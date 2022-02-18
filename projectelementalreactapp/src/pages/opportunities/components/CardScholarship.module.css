@@ -1,81 +1,56 @@
-.card__scholarship {
-  position: absolute;
-  left: 9.38%;
-  right: 9.38%;
-  top: 6%;
-  bottom: 47.56%;
-  width: 73.125rem;
-  height: 23.188rem;
+.cardScholarship {
+  /* background: black; */
+  /* margin: 2rem 0; */
+  /* margin-left: 8rem; */
+  display: flex;
+}
+
+.cardScholarshipLeft {
+  background: grey;
+
+  width: 400px;
+  height: 350px;
+}
+
+.cardScholarshipRight {
+  padding-left: 120px;
+
+  height: 350px;
+  width: 68%;
 
   background: black;
   color: white;
 }
 
-.card__scholarship__left {
-  left: 0%;
-  right: 65.81%;
-  width: 25rem;
-  height: 23.188rem;
-
-  background: #222222;
-}
-
-.card__scholarship__right {
-  position: absolute;
-  left: 34.19%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  width: 48.125rem;
-  height: 23.188rem;
-
-  background: #000000;
-}
-
-.card__scholarship__title {
-  position: absolute;
-  left: 10.13%;
-  right: 25.97%;
-  top: 24.32%;
-  bottom: 41.89%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.cardScholarshipTitle {
   font-size: 48px;
-  line-height: 56px;
-
-  color: #ffffff;
+  margin-top: 35px;
+  width: 650px;
 }
 
-.card__scholarship__subtitle {
-  position: absolute;
-  left: 10.13%;
-  right: 51.69%;
-  top: 79.73%;
-  bottom: 13.24%;
+.cardScholarshipSubtitle {
+  font-size: 22px;
+  width: 450px;
+  margin-top: 45px;
+}
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.cardBlog {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 376px;
+  height: 135px;
+  margin: 3rem;
+
+  background: lightgrey;
+}
+
+.cardBlogName {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.cardBlogButton {
   font-size: 18px;
-  line-height: 25px;
-
-  color: #ffffff;
-}
-
-.card__blog {
-  display: inline-block;
-  position: relative;
-  padding: 30px;
-  width: 383px;
-  height: 290px;
-  left: 8.438rem;
-  right: 8.438rem;
-
-  margin-top: 450px;
-  margin-bottom: 80px;
-  margin-left: 10px;
-
-  background: #f2f2f2;
+  margin-left: 16px;
 }
