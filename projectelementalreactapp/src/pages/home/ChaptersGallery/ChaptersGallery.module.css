@@ -1,19 +1,44 @@
 .front-page {
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .img-gallery {
-    flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  display: inline-grid;
+  display: -ms-inline-grid; /* IE Browser */
+
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .responsive-gallery {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  /* border-width: 100px; */
+  /* padding: 100px; */
 }
 .chaptersTitle {
-    margin-top: 1em;
-    font-size: 32px;
+  margin-top: 1em;
+  font-size: 32px;
+}
+
+.chaptersName {
+  display: inline-block;
+  font-size: 12px;
+  color: black;
+
+  width: 0.2px;
+  display: inherit;
+
+  margin-bottom: 30px;
 }
