@@ -34,6 +34,12 @@ export default function ChaptersGallery() {
               );
             })}
           </Row>
+          <p className={styles.description}>
+            PPIA comprises of 8 state-level organisations
+            <i>(or PPIA Chapters)</i>
+            and 33 university-level organisations
+            <i>(or PPIA Branches)</i>
+          </p>
         </Container>
       </div>
     </div>
