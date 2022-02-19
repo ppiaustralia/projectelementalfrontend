@@ -1,11 +1,11 @@
 .newsCardCont {
   display: flex;
   flex-direction: column;
-  width: 23vw;
+  width: 19vw;
 
   text-align: center;
 
-  margin: 0 0.5em;
+  margin: 0 1em;
   background-color: white;
   margin-bottom: 1em;
 }

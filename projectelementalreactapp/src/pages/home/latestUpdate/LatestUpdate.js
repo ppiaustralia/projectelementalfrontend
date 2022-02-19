@@ -13,7 +13,7 @@ export default function LatestUpdate() {
   return (
     <div className={`${styles.background} ${styles['front-page']}`}>
       <div className={styles['news-title']}>
-        <p>PPIA Latest Updates on News or Blogs</p>
+        <p>Preview on PPIA Latest Updates</p>
       </div>
 
       <div className={styles.newsDeck}>
@@ -23,7 +23,7 @@ export default function LatestUpdate() {
       </div>
 
       <Link to="/blog" className={styles.moreButton}>
-        <span>Read PPIA News & Blogs</span>
+        <span>Read PPIA News, Events, & Blogs</span>
       </Link>
     </div>
   );

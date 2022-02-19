@@ -25,13 +25,13 @@
 
 .cardScholarshipTitle {
   font-size: 48px;
-  margin-top: 55px;
+  margin-top: 40px;
   width: 650px;
 }
 
 .cardScholarshipSubtitle {
   font-size: 22px;
-  width: 590px;
+  width: 550px;
   margin-top: 40px;
 }
 
@@ -40,10 +40,11 @@
   display: inline-flex;
   flex-direction: column;
   width: 376px;
-  height: 135px;
+  height: 105px;
   margin: 2rem;
 
-  padding: 2rem;
+  justify-content: center;
+  justify-items: center;
 
   background: lightgrey;
 }

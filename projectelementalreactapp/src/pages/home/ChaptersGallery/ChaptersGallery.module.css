@@ -41,12 +41,13 @@
   width: 0.2px;
   display: inherit;
 
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .description {
   margin: auto;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   width: 50%;
 }
