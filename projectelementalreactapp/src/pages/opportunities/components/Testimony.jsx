@@ -1,7 +1,5 @@
 import React from 'react';
-
-// import Testimonial from './database/Testimony.json';
-// import '../database/TestimonyPic';
+import TestimonyDB from '../database/Testimony.json';
 
 // import TestimonyPreview from './components/TestimonyPreview';
 import styles from './Testimony.module.css';
@@ -23,7 +21,7 @@ function Testimony() {
       </p>
       <div className={styles.testimony__carousel}>
         <Carousel>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1500}>
             <img
               src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
               alt="Image One"
@@ -33,7 +31,7 @@ function Testimony() {
               <p>Sample Text for Image One</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1500}>
             <img
               src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
               alt="Image Two"

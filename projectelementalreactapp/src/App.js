@@ -30,10 +30,9 @@ import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 // import Opportunities from '../src/pages/opportunities/Opportunities';
 import Scholarship from '../src/pages/opportunities/Scholarship';
-// import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
-// import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
-// import Exchange from '../src/pages/opportunities/pages/ExchangeProgram';
-import CardScholarship from '../src/pages/opportunities/components/CardScholarship';
+import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
+import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
+import ExchangeProgram from '../src/pages/opportunities/pages/ExchangeProgram';
 import { setSlideshow } from './store/slideshow/slideshowSlice';
 // import Career from '../src/pages/career/Career';
 // import { FooterContainer } from "./layout/footer/footer";
@@ -68,26 +67,12 @@ function App() {
         <Route path="liveinoz/:id" element={<ReadMore />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="/opportunities/scholarship" element={<Scholarship />} />
-        <Route
-          path="/opportunities/scholarship/:options"
-          element={<CardScholarship />}
-        />
 
-        {/* temporarily 
-        <Route
-          path="/opportunities/scholarship/full-scholarship"
-          element={<FullScholarship />}
-        />
-        <Route
-          path="/opportunities/scholarship/partial-scholarship"
-          element={<PartialScholarship />}
-        />
-        <Route
-          path="/opportunities/scholarship/exchange"
-          element={<Exchange />}
-        />
-        */}
+        <Route path="opportunities/scholarship" element={<Scholarship />}>
+          <Route path="full-scholarship" element={<FullScholarship />} />
+          <Route path="partial-scholarship" element={<PartialScholarship />} />
+          <Route path="exchange" element={<ExchangeProgram />} />
+        </Route>
 
         <Route path="*" element={<PageUnavailable />} />
 

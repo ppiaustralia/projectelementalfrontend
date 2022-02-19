@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import 'CardScholarship.module.css';
 import {
   Link,
-  // useRouteMatch,
+  useRouteMatch,
   useMatch,
   Switch,
   Routes,
@@ -18,7 +18,7 @@ import styles from './CardScholarship.module.css';
 
 function CardScholarship() {
   // let { path, url } = useRouteMatch();
-  // const types = props.match.params.types; // copy link url
+  // const types = match.params; // copy link url
 
   // const [fullScholarship, setFullScholarship] = useState([]);
   // const [partialScholarship, setPartialScholarship] = useState([]);
@@ -73,29 +73,6 @@ function CardScholarship() {
           </p>
         </div>
       ))}
-
-      {/* <div>
-        <Link to={'${types}/full-scholarship'}>Read More</Link>
-        <Link to={'${types}/partial-scholarship'}>Read More</Link>
-        <Link to={'${types}/exchange'}>Read More</Link>
-      </div> */}
-
-      <div>
-        <Routes>
-          <Route
-            path={'/opportunities/scholarship/full-scholarship'}
-            element={<FullScholarship />}
-          />
-          <Route
-            path={'/opportunities/scholarship/partial-scholarship'}
-            element={<PartialScholarship />}
-          />
-          <Route
-            path={'/opportunities/scholarship/exchange'}
-            element={<Exchange />}
-          />
-        </Routes>
-      </div>
     </>
   );
 }
