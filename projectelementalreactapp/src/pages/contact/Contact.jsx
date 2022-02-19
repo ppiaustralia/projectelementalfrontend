@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+<<<<<<< HEAD
 import './Contact.css';
 import ContactDatabase from './ContactDatabase.json';
 import Embassy from './Embassy';
@@ -7,6 +8,15 @@ import ConsulatesCard from './ConsulatesCard';
 import PPIA from './PPIA';
 import axios from 'axios';
 import Loading from '../../components/Loading';
+=======
+import "./Contact.css"
+import Embassy from "./Embassy"
+import ConsulatesCard from "./ConsulatesCard"
+import PPIA from "./PPIA"
+import axios from "axios"
+import Loading from "../../components/Loading"
+import TestCard from "./TestCard"
+>>>>>>> erick-blog
 
 function Contact() {
   const [consulates, setConsulate] = useState([]);
@@ -40,6 +50,7 @@ function Contact() {
                 console.log(checkEmbassy);
                 console.log(checkConsulate);
                 */
+<<<<<<< HEAD
       });
   }, []);
   return (
@@ -47,6 +58,34 @@ function Contact() {
       <div className="container mt-3">
         <div>
           <PPIA />
+=======
+            })
+    },[])
+    return (
+        <div className="container ">
+            <div>
+                <PPIA />
+            </div>
+            <div>
+                <div>
+                    {
+                        embassies.length<1 ? (
+                            <>
+                                <Loading/>
+                            </>
+                        ):(
+                            <Embassy embassy = {embassies} emBaseLink = {baseURL} />
+                        )
+                    }
+                </div>
+                <div>
+                    {consulates.map((element) => {
+                        return <ConsulatesCard consulate={element} conBaseLink = {baseURL} />
+                    })}
+                </div>
+            </div>
+            {/* <TestCard /> */}
+>>>>>>> erick-blog
         </div>
         <div>
           <h3>
