@@ -16,12 +16,18 @@
   margin-left: 90px;
   /* margin-right: 100px; */
   /* margin-top: 30px; */
-  /* margin-bottom: 120px; */
+  margin-bottom: 75px;
 }
 .welcome > h2 {
   width: 730px;
   color: red;
   font-size: 65px;
+}
+
+.welcomeSubtitle {
+  font-style: italic;
+  font-size: 21px;
+  width: 65%;
 }
 
 .backgroundImage {
@@ -34,11 +40,7 @@
   z-index: 0;
   /* left: -1em; */
 }
-.welcomeSubtitle {
-  font-style: italic;
-  font-size: 18px;
-  width: 50%;
-}
+
 .containerCarousel {
   flex: 1;
   padding: 1em;
@@ -92,10 +94,11 @@
 }
 
 .buttons {
+  margin-left: -2em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 36%;
+  width: 55%;
 }
 .findOut {
   width: 40%;
