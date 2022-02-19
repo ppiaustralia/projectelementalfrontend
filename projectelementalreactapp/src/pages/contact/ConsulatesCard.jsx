@@ -17,33 +17,16 @@ function ConsulatesCard(data) {
 
   return (
     <div className="card">
-<<<<<<< HEAD
       <div className="imageContainer">
         <Image src={data.conBaseLink + image} className="logo" />
       </div>
       <div className="infoContainer">
-        <h3 className="m-2"> {name}</h3>
+        <h3> {name}</h3>
         <p>{`Address: ${address}`}</p>
         <p>{`Phone: ${phone}`}</p>
         <p>{`Website ${website}`}</p>
       </div>
     </div>
-=======
-            <div className = "imageContainer">
-                <Image
-                    src = {data.conBaseLink + image}
-                    className="logo"
-                />
-
-            </div>
-            <div className = "infoContainer">
-                <h3 > {name}</h3>
-                <p>{`Address: ${address}`}</p>
-                <p>{`Phone: ${phone}`}</p>
-                <p>{`Website ${website}`}</p>
-            </div>
-        </div>
->>>>>>> erick-blog
   );
 }
 

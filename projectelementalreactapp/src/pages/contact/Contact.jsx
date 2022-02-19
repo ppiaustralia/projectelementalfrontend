@@ -1,22 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-<<<<<<< HEAD
 import './Contact.css';
-import ContactDatabase from './ContactDatabase.json';
 import Embassy from './Embassy';
 import ConsulatesCard from './ConsulatesCard';
 import PPIA from './PPIA';
 import axios from 'axios';
 import Loading from '../../components/Loading';
-=======
-import "./Contact.css"
-import Embassy from "./Embassy"
-import ConsulatesCard from "./ConsulatesCard"
-import PPIA from "./PPIA"
-import axios from "axios"
-import Loading from "../../components/Loading"
-import TestCard from "./TestCard"
->>>>>>> erick-blog
+import TestCard from './TestCard';
+import ContactDatabase from './ContactDatabase.json';
 
 function Contact() {
   const [consulates, setConsulate] = useState([]);
@@ -50,7 +41,6 @@ function Contact() {
                 console.log(checkEmbassy);
                 console.log(checkConsulate);
                 */
-<<<<<<< HEAD
       });
   }, []);
   return (
@@ -58,62 +48,59 @@ function Contact() {
       <div className="container mt-3">
         <div>
           <PPIA />
-=======
-            })
-    },[])
-    return (
-        <div className="container ">
+          }) },[]) return (
+          <div className="container ">
             <div>
-                <PPIA />
+              <PPIA />
             </div>
             <div>
-                <div>
-                    {
-                        embassies.length<1 ? (
-                            <>
-                                <Loading/>
-                            </>
-                        ):(
-                            <Embassy embassy = {embassies} emBaseLink = {baseURL} />
-                        )
-                    }
-                </div>
-                <div>
-                    {consulates.map((element) => {
-                        return <ConsulatesCard consulate={element} conBaseLink = {baseURL} />
-                    })}
-                </div>
+              <div>
+                {embassies.length < 1 ? (
+                  <>
+                    <Loading />
+                  </>
+                ) : (
+                  <Embassy embassy={embassies} emBaseLink={baseURL} />
+                )}
+              </div>
+              <div>
+                {consulates.map((element) => {
+                  return (
+                    <ConsulatesCard consulate={element} conBaseLink={baseURL} />
+                  );
+                })}
+              </div>
             </div>
             {/* <TestCard /> */}
->>>>>>> erick-blog
+          </div>
+          <div>
+            <h3>
+              The information below are the lists of our embassy and consulates
+              that are located in Australia
+            </h3>
+            <div>
+              {embassies.length < 1 ? (
+                <>
+                  <Loading />
+                </>
+              ) : (
+                <Embassy embassy={embassies} emBaseLink={baseURL} />
+              )}
+            </div>
+            <div>
+              {consulates.map((element) => {
+                return (
+                  <ConsulatesCard consulate={element} conBaseLink={baseURL} />
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div>
-          <h3>
-            The information below are the lists of our embassy and consulates
-            that are located in Australia
-          </h3>
-          <div>
-            {embassies.length < 1 ? (
-              <>
-                <Loading />
-              </>
-            ) : (
-              <Embassy embassy={embassies} emBaseLink={baseURL} />
-            )}
-          </div>
-          <div>
-            {consulates.map((element) => {
-              return (
-                <ConsulatesCard consulate={element} conBaseLink={baseURL} />
-              );
-            })}
-          </div>
+          {contacts.Consulate.map((element) => {
+            return <ConsulatesCard data={element} />;
+          })}
         </div>
-      </div>
-      <div>
-        {contacts.Consulate.map((element) => {
-          return <ConsulatesCard data={element} />;
-        })}
       </div>
     </div>
   );

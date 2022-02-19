@@ -1,38 +1,36 @@
 /* eslint-disable */
 /* eslint-disable no-alert, no-console */
+{/* prettier-ignore */}
 
-import React, { useEffect } from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { useSelector, useDispatch } from "react-redux"
-import axios from "axios"
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import axios from 'axios';
 
-import Home from "../src/pages/home/Home"
-import Navbar from "./layout/navbar/Navbar"
-import Chapter from "../src/pages/chapter/Chapter"
-import About from "../src/pages/about/About"
-import Contact from "../src/pages/contact/Contact"
-import Liveinoz, { ReadMore } from "../src/pages/liveinoz/Liveinoz"
-import Blog from "../src/pages/blog/Blog"
-// import { FooterContainer } from "./layout/footer/footer";
-import Footer from "./layout/newFooter/Footer"
-import ScrollToTop from "./components/ScrollToTop"
-import {
-    setNews,
-    setLoadingTrue,
-    setLoadingFalse,
-} from "./store/news/newsSlice"
-import { setSlideshow } from "./store/slideshow/slideshowSlice"
-import { setChapters } from "./store/chapters/chaptersSlice"
+import Home from '../src/pages/home/Home';
+import Navbar from './layout/navbar/Navbar';
+import Chapter from '../src/pages/chapter/Chapter';
+import About from '../src/pages/about/About';
+import Contact from '../src/pages/contact/Contact';
+import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
+import Blog from '../src/pages/blog/Blog';
 
+// import Opportunities from '../src/pages/opportunities/Opportunities';
 import Scholarship from '../src/pages/opportunities/Scholarship';
 import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
 import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
 import ExchangeProgram from '../src/pages/opportunities/pages/ExchangeProgram';
-import { setSlideshow } from './store/slideshow/slideshowSlice';
-// import Career from '../src/pages/career/Career';
-// import { FooterContainer } from "./layout/footer/footer";
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
+// import { FooterContainer } from "./layout/footer/footer";
 import Footer from './layout/newFooter/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import {
+  setNews,
+  setLoadingTrue,
+  setLoadingFalse
+} from './store/news/newsSlice';
+import { setSlideshow } from './store/slideshow/slideshowSlice';
+import { setChapters } from './store/chapters/chaptersSlice';
 
 function App() {
   const dispatch = useDispatch();
@@ -50,11 +48,21 @@ function App() {
       dispatch(setSlideshow(data.data));
     });
   }, []);
+  useEffect(() => {
+    axios
+      .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+      .then((data) => {
+        dispatch(setChapters(data.data));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
-        <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="chapter/:statename" element={<Chapter />} />
@@ -70,16 +78,10 @@ function App() {
         </Route>
 
         <Route path="*" element={<PageUnavailable />} />
-
-        {/* 
-          previous router versions:
-          <Route component ={PageUnavailable} /> 
-          <Route path="/404" component={PageUnavailable} />
-          <Redirect to="/404" /> */}
       </Routes>
       <Footer />
     </Router>
   );
-export default App;
+}
 
-{/* prettier-ignore */}
+export default App;
