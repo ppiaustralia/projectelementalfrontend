@@ -17,9 +17,8 @@ import Blog from '../src/pages/blog/Blog';
 
 // import Opportunities from '../src/pages/opportunities/Opportunities';
 import Scholarship from '../src/pages/opportunities/Scholarship';
-import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
-import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
-import ExchangeProgram from '../src/pages/opportunities/pages/ExchangeProgram';
+import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
+
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from './layout/newFooter/Footer';
@@ -70,13 +69,14 @@ function App() {
         <Route path="liveinoz/:id" element={<ReadMore />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
-
         <Route path="opportunities/scholarship" element={<Scholarship />}>
-          <Route path="full-scholarship" element={<FullScholarship />} />
-          <Route path="partial-scholarship" element={<PartialScholarship />} />
-          <Route path="exchange" element={<ExchangeProgram />} />
+          <Route
+            path="opportunities/scholarship/:types"
+            element={<ScholarshipTypes />}
+          />
         </Route>
 
+        {/* if link doesnt exist or route is not connected, automatically go to this page */}
         <Route path="*" element={<PageUnavailable />} />
       </Routes>
       <Footer />

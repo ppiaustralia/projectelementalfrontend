@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import 'normalize.css'; i put it inside index.css
+import 'normalize.css'; // normalize
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

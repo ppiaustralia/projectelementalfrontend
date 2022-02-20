@@ -1,49 +1,36 @@
 import React, { useState, useEffect } from 'react';
-// import 'CardScholarship.module.css';
-import {
-  Link,
-  useRouteMatch,
-  useMatch,
-  Switch,
-  Routes,
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-import FullScholarship from '../pages/FullScholarship';
-import PartialScholarship from '../pages/PartialScholarship';
-import Exchange from '../pages/ExchangeProgram';
+import { Link, Routes, BrowserRouter as Router, Route } from 'react-router-dom';
+
+// import FullScholarship from '../pages/FullScholarship';
+// import PartialScholarship from '../pages/PartialScholarship';
+// import Exchange from '../pages/ExchangeProgram';
+import ScholarshipTypes from '../pages/ScholarshipTypes';
 
 import styles from './CardScholarship.module.css';
 
 function CardScholarship() {
-  // let { path, url } = useRouteMatch();
-  // const types = match.params; // copy link url
-
-  // const [fullScholarship, setFullScholarship] = useState([]);
-  // const [partialScholarship, setPartialScholarship] = useState([]);
-  // const [exchange, setExchange] = useState([]);
-
   const pages = [
     {
       id: 1,
       title: 'Full Scholarship',
-      path: '/opportunities/scholarship/full-scholarship',
-      component: FullScholarship
+      path: '/opportunities/scholarship/full-scholarship'
+      // component: FullScholarship
       // desc: 'lorem ipsum dolor site amet'
     },
     {
       id: 2,
       title: 'Partial Scholarship',
-      path: '/opportunities/scholarship/partial-scholarship',
-      component: PartialScholarship
+      path: '/opportunities/scholarship/partial-scholarship'
+      // component: PartialScholarship
       // desc: 'lorem ipsum dolor site amet'
     },
     {
       id: 3,
       title: 'Exchange Program',
-      path: '/opportunities/scholarship/exchange',
-      component: Exchange
+      path: '/opportunities/scholarship/exchange'
+      // component: Exchange
       // desc: 'lorem ipsum dolor site amet'
     }
   ];

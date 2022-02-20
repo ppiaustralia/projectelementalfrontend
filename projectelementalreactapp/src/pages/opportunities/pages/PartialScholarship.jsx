@@ -1,7 +1,9 @@
 import React from 'react';
 import PartialDB from '../database/PartialScholarship.json';
 
-function PartialScholarship() {
+function PartialScholarship(partial) {
+  // const partialLink = partial.PartialLink;
+
   return (
     <>
       <div>

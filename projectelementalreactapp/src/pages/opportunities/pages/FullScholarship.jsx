@@ -1,9 +1,9 @@
 import React from 'react';
 import FullDB from '../database/FullScholarship.json';
+import { Image } from 'react-bootstrap';
 
-function FullScholarship() {
-  // var test = FullDB.scholarship;
-  // console.log(test);
+function FullScholarship(full) {
+  // const ScholarshipLink = full.ScholarshipLink;
 
   return (
     <>

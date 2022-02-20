@@ -1,7 +1,9 @@
 import React from 'react';
 import ExchangeDB from '../database/Exchange.json';
 
-function ExchangeProgram() {
+function ExchangeProgram(exchange) {
+  // const exchangeLink = exchange.exchangeLink;
+
   return (
     <>
       <div>
