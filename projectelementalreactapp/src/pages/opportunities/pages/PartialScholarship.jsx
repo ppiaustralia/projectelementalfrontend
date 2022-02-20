@@ -1,8 +1,7 @@
 import React from 'react';
 import PartialDB from '../database/PartialScholarship.json';
-import { Image } from 'react-bootstrap';
-
 import styles from './ScholarshipTypes.module.css';
+import { Image } from 'react-bootstrap';
 
 function PartialScholarship(props) {
   // const partialLink = partial.PartialLink;
@@ -10,18 +9,23 @@ function PartialScholarship(props) {
   return (
     <>
       <h1>Partial Scholarship</h1>
-      <div>
-        {PartialDB.Partial.map((partial) => {
-          const { name, details, url } = partial;
-          return (
-            <div>
+      {PartialDB.Partial.map((partial) => {
+        const { name, details, url } = partial;
+        return (
+          <div className={`${styles['types']}`}>
+            {/* 
+            <div className={styles.imageContainer}>
+              <Image src={''} className={styles.logo} />
+            </div>
+               */}
+            <div className={styles.infoContainer}>
               <h1>{name}</h1>
               <p>Description: {details}</p>
               <p>Link: {url}</p>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </>
   );
 }
