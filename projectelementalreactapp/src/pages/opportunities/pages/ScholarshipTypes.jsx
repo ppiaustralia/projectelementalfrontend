@@ -7,7 +7,6 @@ import PartialScholarship from './PartialScholarship';
 import ExchangeProgram from './ExchangeProgram';
 
 import Loading from '../../../components/Loading';
-import styles from './ScholarshipTypes.module.css';
 
 function ScholarshipTypes(props) {
   const [full, setFull] = useState([]);
@@ -27,10 +26,10 @@ function ScholarshipTypes(props) {
             <Loading />
           </>
         ) : (
-          <FullScholarship props={props} />
+          <FullScholarship props={full} />
         )}
-        {partial.length < 1 ? <></> : <PartialScholarship props={props} />}
-        {exchange.length < 1 ? <></> : <ExchangeProgram props={props} />}
+        {partial.length < 1 ? <></> : <PartialScholarship props={partial} />}
+        {exchange.length < 1 ? <></> : <ExchangeProgram props={exchange} />}
       </div>
     </div>
   );

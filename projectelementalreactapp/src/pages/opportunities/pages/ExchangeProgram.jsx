@@ -7,15 +7,19 @@ function ExchangeProgram(props) {
 
   return (
     <>
+      <h1>Exchange Program</h1>
       <div>
-        {ExchangeDB.exchange.map((exchange) => (
-          <div>
-            <p>{exchange.name}</p>
-            <p>{exchange.description}</p>
-            <p>{exchange.link}</p>
-            <p>{exchange.youtube}</p>
-          </div>
-        ))}
+        {ExchangeDB.exchange.map((exchange) => {
+          const { name, description, link, youtube } = exchange;
+          return (
+            <div>
+              <h2>{name}</h2>
+              <p>Description: {description}</p>
+              <p>Link: {link}</p>
+              <p>Youtube: {youtube}</p>
+            </div>
+          );
+        })}
       </div>
     </>
   );

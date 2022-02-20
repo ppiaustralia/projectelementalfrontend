@@ -9,14 +9,18 @@ function PartialScholarship(props) {
 
   return (
     <>
+      <h1>Partial Scholarship</h1>
       <div>
-        {PartialDB.Partial.map((partial) => (
-          <div>
-            <p>{partial.name}</p>
-            <p>{partial.details}</p>
-            <p>{partial.url}</p>
-          </div>
-        ))}
+        {PartialDB.Partial.map((partial) => {
+          const { name, details, url } = partial;
+          return (
+            <div>
+              <h1>{name}</h1>
+              <p>Description: {details}</p>
+              <p>Link: {url}</p>
+            </div>
+          );
+        })}
       </div>
     </>
   );
