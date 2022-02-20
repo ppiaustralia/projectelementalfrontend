@@ -7,6 +7,7 @@ import PartialScholarship from './PartialScholarship';
 import ExchangeProgram from './ExchangeProgram';
 
 import Loading from '../../../components/Loading';
+import styles from './ScholarshipTypes.module.css';
 
 function ScholarshipTypes(props) {
   const [full, setFull] = useState([]);
@@ -15,6 +16,8 @@ function ScholarshipTypes(props) {
 
   // const types = match.params; // copy link url
   const { types } = useParams();
+
+  // aws below
 
   return (
     <div>
@@ -27,7 +30,7 @@ function ScholarshipTypes(props) {
           <FullScholarship props={props} />
         )}
         {partial.length < 1 ? <></> : <PartialScholarship props={props} />}
-        {exchange.length < 1 ? <></> : <PartialScholarship props={props} />}
+        {exchange.length < 1 ? <></> : <ExchangeProgram props={props} />}
       </div>
     </div>
   );

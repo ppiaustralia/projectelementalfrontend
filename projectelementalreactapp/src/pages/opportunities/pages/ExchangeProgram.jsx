@@ -1,18 +1,19 @@
 import React from 'react';
 import ExchangeDB from '../database/Exchange.json';
+import styles from './ScholarshipTypes.module.css';
 
-function ExchangeProgram(exchange) {
+function ExchangeProgram(props) {
   // const exchangeLink = exchange.exchangeLink;
 
   return (
     <>
       <div>
-        {ExchangeDB.exchange.map((data) => (
+        {ExchangeDB.exchange.map((exchange) => (
           <div>
-            <p>{data.name}</p>
-            <p>{data.description}</p>
-            <p>{data.link}</p>
-            <p>{data.youtube}</p>
+            <p>{exchange.name}</p>
+            <p>{exchange.description}</p>
+            <p>{exchange.link}</p>
+            <p>{exchange.youtube}</p>
           </div>
         ))}
       </div>

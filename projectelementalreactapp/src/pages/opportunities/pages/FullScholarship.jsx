@@ -1,18 +1,20 @@
 import React from 'react';
 import FullDB from '../database/FullScholarship.json';
 import { Image } from 'react-bootstrap';
+import styles from './ScholarshipTypes.module.css';
 
-function FullScholarship(full) {
+
+function FullScholarship(props) {
   // const ScholarshipLink = full.ScholarshipLink;
 
   return (
     <>
       <div>
-        {FullDB.Full.map((data) => (
+        {FullDB.Full.map((full) => (
           <div>
-            <p>{data.name}</p>
-            <p>{data.details}</p>
-            <p>{data.url}</p>
+            <p>{full.name}</p>
+            <p>{full.details}</p>
+            <p>{full.url}</p>
           </div>
         ))}
       </div>

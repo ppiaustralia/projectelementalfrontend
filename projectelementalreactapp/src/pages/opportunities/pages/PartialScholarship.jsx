@@ -1,17 +1,20 @@
 import React from 'react';
 import PartialDB from '../database/PartialScholarship.json';
+import { Image } from 'react-bootstrap';
 
-function PartialScholarship(partial) {
+import styles from './ScholarshipTypes.module.css';
+
+function PartialScholarship(props) {
   // const partialLink = partial.PartialLink;
 
   return (
     <>
       <div>
-        {PartialDB.Partial.map((data) => (
+        {PartialDB.Partial.map((partial) => (
           <div>
-            <p>{data.name}</p>
-            <p>{data.details}</p>
-            <p>{data.url}</p>
+            <p>{partial.name}</p>
+            <p>{partial.details}</p>
+            <p>{partial.url}</p>
           </div>
         ))}
       </div>
