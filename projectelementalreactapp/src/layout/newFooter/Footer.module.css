@@ -1,10 +1,14 @@
 .ft-PPIA {
     color: #000;
+    justify-content: center;
+    align-items: center;
 }
 
 .ft-logo{
     color: #fff;
     justify-self: start;
+    justify-content: center;
+    align-items: center;
 }
 .ppiaLogo{
     width: 150px;
@@ -23,13 +27,13 @@
 }
 .ft-link:hover {
     text-decoration: underline;
-    color: #ed1c24;
+    color: rgb(231, 179, 181);
     font-weight: 400;
 }
 .ft-body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(253, 188, 188);
+    background-color: rgb(233, 41, 48);
     color: #bbb;
     line-height: 1.5;
     justify-content: center;
@@ -50,7 +54,7 @@
 }
 .ft-a:hover {
     text-decoration: underline;
-    color: #ed1c24;
+    color: rgb(231, 179, 181);
     font-weight: 400;
 }
 
