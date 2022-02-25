@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import styles from "./Navbar.module.css"
 import Dropdown from "./Dropdown"
-import logo from "../../assets/images/cropped_ppia.jpg"
 
 function Navbar() {
     const [click, setclick] = useState(false)
@@ -32,8 +31,7 @@ function Navbar() {
             <nav className={styles.navbar}>
                 <Link to="/" className={styles["navbar-logo"]}>
                     <img
-                        // src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
-                        src = {logo}
+                        src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
                         alt="PPIA logo"
                         className={styles.ppiaLogo}
                     />

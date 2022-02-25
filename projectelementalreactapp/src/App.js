@@ -19,7 +19,6 @@ import {
     setLoadingFalse,
 } from "./store/news/newsSlice"
 import { setSlideshow } from "./store/slideshow/slideshowSlice"
-import { setChapters } from "./store/chapters/chaptersSlice"
 
 function App() {
     const dispatch = useDispatch()
@@ -37,16 +36,6 @@ function App() {
             .get(`https://ppia-backend.herokuapp.com/slideshow/`)
             .then((data) => {
                 dispatch(setSlideshow(data.data))
-            })
-    }, [])
-    useEffect(() => {
-        axios
-            .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
-            .then((data) => {
-                dispatch(setChapters(data.data))
-            })
-            .catch((err) => {
-                console.log(err)
             })
     }, [])
     return (

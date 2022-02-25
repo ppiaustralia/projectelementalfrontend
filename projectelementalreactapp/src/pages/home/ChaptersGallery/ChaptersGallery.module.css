@@ -6,14 +6,11 @@
 
 .img-gallery {
     flex-flow: row wrap;
+    padding: 40px;
 }
 
 .responsive-gallery {
     width: 180px;
     height: 180px;
     object-fit: contain;
-}
-.chaptersTitle {
-    margin-top: 1em;
-    font-size: 32px;
 }
