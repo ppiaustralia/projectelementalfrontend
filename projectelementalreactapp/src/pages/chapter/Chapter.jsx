@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import { useParams } from "react-router-dom"
+
 import "./Chapter.css"
 import Branch from "./Branch"
 import Twigs from "./Twigs"
@@ -13,7 +15,7 @@ function Chapter(props) {
     const chapterBaseLink = "https://chapterslogo.s3.us-east-2.amazonaws.com/"
 
     // get statename value form url
-    const statename = props.match.params.statename
+    let { statename } = useParams()
     //send get to backend
     useEffect(() => {
         //when statename changes, setBranch and twigs to empty to trigger loading icon

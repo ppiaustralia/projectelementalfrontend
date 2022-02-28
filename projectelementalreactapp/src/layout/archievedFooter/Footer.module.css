@@ -1,43 +1,19 @@
-.ft-PPIA {
-    color: #000;
-    justify-content: center;
-    align-items: center;
-}
-
-.ft-logo{
-    color: #fff;
-    justify-self: start;
-    justify-content: center;
-    align-items: center;
-}
-.ppiaLogo{
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-}
-
 .ft-title {
-    color: #000;
+    color: #ed1c24;
     font-size: 1.375rem;
-    /* padding-bottom: 0.625rem; */
+    padding-bottom: 0.625rem;
 }
-.ft-link {
-    text-decoration: none;
-    color: #000;
-}
-.ft-link:hover {
-    text-decoration: underline;
-    color: rgb(231, 179, 181);
-    font-weight: 400;
-}
+
 .ft-body {
     display: flex;
+    min-height: 40vh;
     flex-direction: column;
-    background-color: rgb(233, 41, 48);
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    background-color: #fff;
     color: #bbb;
     line-height: 1.5;
-    justify-content: center;
-    align-items: center;
 }
 .container {
     flex: 1; /* same as flex-grow: 1; */
@@ -54,8 +30,8 @@
 }
 .ft-a:hover {
     text-decoration: underline;
-    color: rgb(231, 179, 181);
-    font-weight: 400;
+    color: #ed1c24;
+    font-weight: 600;
 }
 
 .ft-ul {
@@ -112,11 +88,4 @@
 /* one before the last child */
 .ft-legal-list li:nth-last-child(2) {
     flex: 1; /* same as flex-grow: 1; */
-}
-
-.ft-vertical {
-    border-left: 2px solid black;
-    height: 200px;
-    position:absolute;
-    left: 30%;
 }
