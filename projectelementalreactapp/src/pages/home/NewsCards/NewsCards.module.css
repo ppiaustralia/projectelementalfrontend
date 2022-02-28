@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .background {
   background-color: #e9ecef;
   border-radius: 5px;
@@ -32,7 +31,8 @@
   width: auto;
   max-width: 100%;
   overflow: hidden;
-=======
+}
+
 .newsCardCont {
   display: flex;
   flex-direction: column;
@@ -77,6 +77,4 @@
     margin-right: 0.5em;
     object-fit: contain;
   }
->>>>>>> scholarship
 }
-
