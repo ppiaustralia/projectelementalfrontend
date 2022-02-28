@@ -7,7 +7,7 @@ import Branch from './Branch';
 import Twigs from './Twigs';
 import Loading from '../../components/Loading';
 // temporary Database
-// import ChapterDatabase from "./ChapterDatabase.json";
+import ChapterDatabase from './ChapterDatabase.json';
 
 function Chapter(props) {
   const [branch, setBranch] = useState([]);
