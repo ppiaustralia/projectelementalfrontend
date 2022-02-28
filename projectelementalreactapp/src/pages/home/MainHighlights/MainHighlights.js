@@ -4,6 +4,8 @@ import styles from './MainHighlights.module.css';
 
 import { Container, Row, Col } from 'react-bootstrap/';
 
+import ImageHeader from '../../../assets/images/1.jpg';
+
 export default function MainHighlights() {
   return (
     <div className={`${styles.background} ${styles['front-page']}`}>
@@ -11,10 +13,7 @@ export default function MainHighlights() {
         <Row>
           <Col xs={6}>
             <div>
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/5bfe7af2697a987cdd7bed47/1628170762772-M5V7TYN4SZQIOFVS8QEB/PPIA+Macquarie.jpg"
-                style={{ width: '95%', height: '100%' }}
-              />
+              <img src={ImageHeader} style={{ width: '95%', height: '100%' }} />
             </div>
           </Col>
 

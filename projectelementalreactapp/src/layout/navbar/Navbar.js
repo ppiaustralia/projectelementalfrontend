@@ -124,7 +124,7 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          <li
+          {/* <li
             className={styles['nav-item']}
             onMouseEnter={onMouseEnterOpportunities}
             onMouseLeave={onMouseLeaveOpportunities}
@@ -139,7 +139,7 @@ function Navbar() {
               </Link>
               {opportunitiesDropdown && <DropdownOpportunities />}
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

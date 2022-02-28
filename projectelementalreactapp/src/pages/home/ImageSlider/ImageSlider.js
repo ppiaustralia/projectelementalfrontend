@@ -9,7 +9,7 @@ import Loading from '../../../components/Loading';
 import { setChapters } from '../../../store/chapters/chaptersSlice';
 import { Link } from 'react-router-dom';
 
-import ImageHeader from './images/2.jpg';
+import ImageHeader from '../../../assets/images/2.jpg';
 export default function ImageSlider() {
   const slideshow = useSelector((state) => state.slideshow.slideshow);
   return (

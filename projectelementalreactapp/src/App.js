@@ -16,8 +16,8 @@ import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
 // import Opportunities from '../src/pages/opportunities/Opportunities';
-import Scholarship from '../src/pages/opportunities/Scholarship';
-import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
+// import Scholarship from '../src/pages/opportunities/Scholarship';
+// import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
 
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 // import { FooterContainer } from "./layout/footer/footer";
@@ -69,12 +69,12 @@ function App() {
         <Route path="liveinoz/:id" element={<ReadMore />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="opportunities/scholarship" element={<Scholarship />}>
+        {/* <Route path="opportunities/scholarship" element={<Scholarship />}>
           <Route
             path="opportunities/scholarship/:types"
             element={<ScholarshipTypes />}
           />
-        </Route>
+        </Route> */}
 
         {/* if link doesnt exist or route is not connected, automatically go to this page */}
         <Route path="*" element={<PageUnavailable />} />
