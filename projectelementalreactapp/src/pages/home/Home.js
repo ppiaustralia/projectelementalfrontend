@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <>
       <ImageSlider />
-      {/* <ChaptersGallery /> */}
+      <ChaptersGallery />
       <MainHighlights />
-      {/* <Membership /> */}
+      <Membership />
       <LatestUpdate />
       {/* <NewsCards /> */}
       <ContactUs />
