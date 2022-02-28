@@ -4,7 +4,7 @@ import ImageSlider from './ImageSlider/ImageSlider';
 import ChaptersGallery from './ChaptersGallery/ChaptersGallery';
 import MainHighlights from './MainHighlights/MainHighlights';
 import Membership from './Membership/Membership';
-import NewsCards from './NewsCards/NewsCards';
+// import NewsCards from './NewsCards/NewsCards';
 
 import { useSelector, useDispatch } from 'react-redux';
 import LatestUpdate from './latestUpdate/LatestUpdate';

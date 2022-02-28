@@ -6,6 +6,8 @@ import axios from 'axios';
 import { Container, Row, Col, Image } from 'react-bootstrap/';
 import { useSelector } from 'react-redux';
 
+import Loading from '../../../components/Loading';
+
 export default function ChaptersGallery() {
   const [branchList, setBranchList] = useState([]);
   const chapterBaseLink = 'https://chapterslogo.s3.us-east-2.amazonaws.com/';
@@ -36,17 +38,19 @@ export default function ChaptersGallery() {
           <Row className="justify-content-md-center">
             {branches.map((branch, i) => {
               return (
-                <Col md="auto">
-                  <Link to={`chapter/${branch.state}`}>
-                    <Image
-                      src={`${chapterBaseLink}${branch.image}`}
-                      className={`d-block ${styles['responsive-gallery']} mx-5`}
-                      // roundedCircle
-                      style={{ objectFit: 'contain' }}
-                    />
-                    <h5 className={styles.chaptersName}>{branch.name}</h5>
-                  </Link>
-                </Col>
+                <>
+                  <Col md="auto">
+                    <Link to={`chapter/${branch.state}`}>
+                      <Image
+                        src={`${chapterBaseLink}${branch.image}`}
+                        className={`d-block ${styles['responsive-gallery']} mx-5`}
+                        // roundedCircle
+                        style={{ objectFit: 'contain' }}
+                      />
+                      <h5 className={styles.chaptersName}>{branch.name}</h5>
+                    </Link>
+                  </Col>
+                </>
               );
             })}
           </Row>
