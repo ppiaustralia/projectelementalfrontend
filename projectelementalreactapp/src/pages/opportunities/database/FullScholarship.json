@@ -1,0 +1,37 @@
+{
+  "Full": [
+    {
+      "id": 1,
+      "name": "Australia Awards Scholarship (AAS)",
+      "details": [
+        "Australia Awards Scholarship is the largest and longest-running scholarship program offered by the Australian Government to any partner country.",
+        "For master’s degree and doctoral degree applicants",
+        "One must have completed a minimum of 18 years of age and must have the intention of adding to the development of your home country.",
+        "Be applying for courses that fall within the areas of development priority."
+      ],
+      "url": "https://www.australiaawardsindonesia.org/content/31/12/important-dates?sub=true"
+    },
+    {
+      "id": 2,
+      "name": "Lembaga Pengelola Dana Pendidikan (LPDP)",
+      "details": [
+        "PDP is a full-ride scholarship program from the Indonesian Ministry of Finance for all Indonesian citizens.",
+        "For master’s degree and doctoral degree applicants.",
+        "Other requirements depend on the scholarship categories the applicants choose (Afirmasi, Targeted, Umum)."
+      ],
+      "url": "https://www.lpdp.kemenkeu.go.id/in/page/Beasiswa2021"
+    },
+    {
+      "id": 3,
+      "name": "Adelaide International Research Scholarship",
+      "details": "The University of Adelaide offers a number of Adelaide Scholarships International to outstanding international graduates from any country to commence their education via a Masters or Doctorate degree by research. Awards are available in all Discipline areas.",
+      "url": "https://bit.ly/BeasiswaASI"
+    },
+    {
+      "id": 4,
+      "name": "MORA",
+      "details": "MORA is a fully-funded scholarship given by the Indonesian Ministry of Religion for those who want to continue their doctoral degree abroad, including in Australia.",
+      "url": "https://bit.ly/BeasiswaMORA"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ function ConsulatesCard(data) {
       </div>
       <div className="infoContainer">
         <h3 className="m-2"> {name}</h3>
+        {/* <h3> {name}</h3> */}
         <p>{`Address: ${address}`}</p>
         <p>{`Phone: ${phone}`}</p>
         <p>{`Website ${website}`}</p>

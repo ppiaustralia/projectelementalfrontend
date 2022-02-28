@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 import './Contact.css';
-import ContactDatabase from './ContactDatabase.json';
 import Embassy from './Embassy';
 import ConsulatesCard from './ConsulatesCard';
 import PPIA from './PPIA';
 import axios from 'axios';
 import Loading from '../../components/Loading';
+import TestCard from './TestCard';
+import ContactDatabase from './ContactDatabase.json';
 
 function Contact() {
   const [consulates, setConsulate] = useState([]);
   const [embassies, setEmbassies] = useState([]);
+  //   const [contact, setContact] = useState();
+  const contacts = ContactDatabase;
   var receivedEmbassy = false;
   var receivedConsulate = false;
 
@@ -41,27 +44,61 @@ function Contact() {
       });
   }, []);
   return (
-    <div className="container mt-3">
-      <div>
-        <PPIA />
-      </div>
-      <div>
-        <h3>
-          The information below are the lists of our embassy and consulates that
-          are located in Australia
-        </h3>
+    <div>
+      <div className="container mt-3">
         <div>
-          {embassies.length < 1 ? (
-            <>
-              <Loading />
-            </>
-          ) : (
-            <Embassy embassy={embassies} emBaseLink={baseURL} />
-          )}
+          <PPIA />
+          }) },[]) return (
+          <div className="container ">
+            <div>
+              <PPIA />
+            </div>
+            <div>
+              <div>
+                {embassies.length < 1 ? (
+                  <>
+                    <Loading />
+                  </>
+                ) : (
+                  <Embassy embassy={embassies} emBaseLink={baseURL} />
+                )}
+              </div>
+              <div>
+                {consulates.map((element) => {
+                  return (
+                    <ConsulatesCard consulate={element} conBaseLink={baseURL} />
+                  );
+                })}
+              </div>
+            </div>
+            {/* <TestCard /> */}
+          </div>
+          <div>
+            <h3>
+              The information below are the lists of our embassy and consulates
+              that are located in Australia
+            </h3>
+            <div>
+              {embassies.length < 1 ? (
+                <>
+                  <Loading />
+                </>
+              ) : (
+                <Embassy embassy={embassies} emBaseLink={baseURL} />
+              )}
+            </div>
+            <div>
+              {consulates.map((element) => {
+                return (
+                  <ConsulatesCard consulate={element} conBaseLink={baseURL} />
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div>
-          {consulates.map((element) => {
-            return <ConsulatesCard consulate={element} conBaseLink={baseURL} />;
+          {contacts.Consulate.map((element) => {
+            return <ConsulatesCard data={element} />;
           })}
         </div>
       </div>

@@ -1,44 +1,131 @@
 .container {
-    background-color: #e9ecef;
-    display: flex;
-    padding: 2em;
+  display: flex;
+  padding: 2em;
+  min-height: 50vh;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
 }
 .welcome {
-    flex: 1;
-    padding: 1em;
-    width: 80%;
+  flex: 1;
+  padding: 1em;
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  margin-left: 90px;
+  /* margin-right: 100px; */
+  /* margin-top: 30px; */
+  margin-bottom: 75px;
+}
+.welcome > h2 {
+  width: 730px;
+  color: red;
+  font-size: 65px;
 }
 
 .welcomeSubtitle {
-    font-style: italic;
+  font-style: italic;
+  font-size: 21px;
+  width: 65%;
 }
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/images/smallBatikPattern.jpg'); /* can use this for contact Us */
+  background-repeat: round;
+  opacity: 0.08;
+  z-index: 0;
+  /* left: -1em; */
+}
+
 .containerCarousel {
-    flex: 1;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 .responsive-carousel {
-    vertical-align: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
+  vertical-align: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
 }
 .imageContainer {
-    min-height: 300px;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 300px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.carouselImage {
-    height: 100%;
-    overflow: hidden;
-    object-fit: contain;
+
+.imageHeader {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* margin-left: 200px; */
 }
+
+/* .carouselImage {
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+} */
 .carousel {
-    max-width: 40vw;
+  max-width: 100%;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item {
+  max-height: 100vh;
+  min-width: 100%;
+}
+
+.buttons {
+  margin-left: -2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 55%;
+}
+.findOut {
+  width: 40%;
+  background-color: #ec2027;
+  margin: 0.5em;
+  padding: 1em 0.5em;
+  border-radius: 1.75em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+.findOut:hover {
+  color: black;
+}
+.contactUs {
+  width: 40%;
+  background-color: transparent;
+  color: black;
+  margin: 0.5em;
+  padding: 1em 0.5em;
+  border-radius: 1.75em;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.contactUs:hover {
+  color: #ec2027;
 }
