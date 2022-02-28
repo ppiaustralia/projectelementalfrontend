@@ -13,7 +13,15 @@ export default function MainHighlights() {
         <Row>
           <Col xs={6}>
             <div>
-              <img src={ImageHeader} style={{ width: '95%', height: '100%' }} />
+              <img
+                src={ImageHeader}
+                style={{
+                  width: '100%',
+                  paddingTop: '54px',
+                  justifyContent: 'center',
+                  alignItems: 'center'
+                }}
+              />
             </div>
           </Col>
 
