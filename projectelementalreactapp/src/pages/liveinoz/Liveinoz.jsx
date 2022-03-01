@@ -14,23 +14,25 @@ export default function Liveinoz() {
           <h1>Student Guide</h1>
         </div>
 
-        {section_data.map((section) => {
-          return (
-            <div>
-              <Subtitle section={section} />
-              {/* {this.render_subtitle(section)} */}
-              {section.entries.map((entry) => {
-                return (
-                  <div>
-                    <Entry entry={entry} />
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+        <div className={styles['box']}>
+          {section_data.map((section) => {
+            return (
+              <div>
+                <Subtitle section={section} />
+                {/* {this.render_subtitle(section)} */}
+                {section.entries.map((entry) => {
+                  return (
+                    <div>
+                      <Entry entry={entry} />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
 
-        <hr style={{ marginTop: '108px' }} />
+          <hr style={{ marginTop: '108px' }} />
+        </div>
       </div>
     </div>
   );
