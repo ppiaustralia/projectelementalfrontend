@@ -1,6 +1,14 @@
 .container {
-    min-height: 10vh;
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 10vh;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
 }
