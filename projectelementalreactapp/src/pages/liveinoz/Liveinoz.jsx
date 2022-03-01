@@ -14,7 +14,7 @@ export default function Liveinoz() {
           <h1>Student Guide</h1>
         </div>
 
-        <div className={styles['box']}>
+        <div>
           {section_data.map((section) => {
             return (
               <div>
