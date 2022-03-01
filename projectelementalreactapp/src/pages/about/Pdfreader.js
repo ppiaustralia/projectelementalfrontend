@@ -64,7 +64,7 @@ export default function SinglePage(props) {
                         >
                             <Page pageNumber={pageNumber} />
                         </Document>
-                        <div>
+                        {/* <div>
                             <p>
                                 Page {pageNumber || (numPages ? 1 : "--")} of{" "}
                                 {numPages || "--"}
@@ -83,7 +83,7 @@ export default function SinglePage(props) {
                             >
                                 Next
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
