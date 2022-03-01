@@ -48,7 +48,9 @@ export default function Membership() {
         </Row>
 
         <Row>
-          <p className={styles.sideNote}>*it's free to register</p>
+          <p className={styles.sideNote}>
+            <i>*it's free to register</i>
+          </p>
         </Row>
       </Container>
     </div>
