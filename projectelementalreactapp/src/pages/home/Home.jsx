@@ -7,7 +7,7 @@ import Membership from './Membership/Membership';
 // import NewsCards from './NewsCards/NewsCards';
 
 import { useSelector, useDispatch } from 'react-redux';
-import LatestUpdate from './latestUpdate/LatestUpdate';
+import LatestUpdate from './LatestUpdate/LatestUpdate';
 import ContactUs from './ContactUs/ContactUs';
 export default function Home() {
   const news = useSelector((state) => state.news.news);
