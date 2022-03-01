@@ -37,26 +37,26 @@ const source_arr = [
     {
         img: dummy1,
         name: "cat1",
-        position: 'IT Officer',
-        university: 'University of New South Wales'
+        position: "IT Officer",
+        university: "University of New South Wales",
     },
     {
         img: dummy2,
         name: "cat2",
-        position: 'Community Welfare Officer',
-        university: 'University of Sydney'
+        position: "Community Welfare Officer",
+        university: "University of Sydney",
     },
     {
         img: dummy3,
         name: "cat3",
-        position: 'IT Officer',
-        university: 'University of Melbourne'
+        position: "IT Officer",
+        university: "University of Melbourne",
     },
     {
         img: dummy1,
         name: "cat4",
-        position: 'IT Officer',
-        university: 'University of Technology Sydney'
+        position: "IT Officer",
+        university: "University of Technology Sydney",
     },
 ]
 
@@ -84,20 +84,22 @@ export function Division() {
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className={styles.cardContainer}>
-                {
-                    source_arr.map(member => {
-                        return <MemberCard member={member}/>
-                    })
-                }
+                {source_arr.map((member) => {
+                    return <MemberCard member={member} />
+                })}
             </div>
         </div>
     )
 }
 
-export function MemberCard({member}) {
+export function MemberCard({ member }) {
     return (
         <Card className={`${styles.memberCard} px-4 py-2`}>
-            <Image src={source_arr[0].img} className={`${styles.cardImage} fluid me-4 my-2`} roundedCircle />
+            <Image
+                src={source_arr[0].img}
+                className={`${styles.cardImage} fluid me-4 my-2`}
+                roundedCircle
+            />
             <Card.Body className={`ps-0`}>
                 <Card.Title>{member.name}</Card.Title>
                 <Card.Subtitle>{member.position}</Card.Subtitle>
