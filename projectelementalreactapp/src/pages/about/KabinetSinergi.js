@@ -170,7 +170,7 @@ export function Division(props) {
         <div className={styles.container}>
             <div className={styles.divisionContainer}>
                 <h3>{props.deptData.name}</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Officers List</p>
             </div>
             <div className={styles.cardContainer}>
                 <MemberCard deptData={props.deptData} />
