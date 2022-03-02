@@ -151,7 +151,6 @@ export default function KabinetSinergi() {
             <Carousel className="carousel-dark">
                 {deptList.length >= 1 ? (
                     deptList.map((eachDept, idx) => {
-                        console.log(eachDept)
                         return (
                             <Carousel.Item key={idx}>
                                 <Division deptData={eachDept} />
@@ -174,43 +173,39 @@ export function Division(props) {
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className={styles.cardContainer}>
-                {/* {source_arr.map((member) => {
-                    return <MemberCard member={member} />
-                })} */}
-            </div>
-        </div>
-    )
-}
-export function Division1() {
-    return (
-        <div className={styles.container}>
-            <div className={styles.divisionContainer}>
-                <h3>Not tech info</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className={styles.cardContainer}>
-                {source_arr.map((member) => {
-                    return <MemberCard member={member} />
-                })}
+                <MemberCard deptData={props.deptData} />
             </div>
         </div>
     )
 }
 
-export function MemberCard({ member }) {
+export function MemberCard(props) {
+    const deptData = props.deptData
+    const s3PhotoLink = "https://committeesphoto.s3.us-east-2.amazonaws.com/"
+    if (deptData.name === "Executive") {
+        for (const keys in deptData) {
+            if (keys != "name") {
+                console.log(`${deptData[keys].name}`)
+                console.log(`${deptData[keys].image}`)
+                return (
+                    <Card className={`${styles.memberCard} px-4 py-2`}>
+                        <Image
+                            src={`${s3PhotoLink}${deptData[keys].image}`}
+                            className={`${styles.cardImage} fluid me-4 my-2`}
+                            roundedCircle
+                        />
+                        <Card.Body className={`ps-0`}>
+                            <Card.Title>{`${deptData[keys].name}`}</Card.Title>
+                            <Card.Subtitle>{`${keys}`}</Card.Subtitle>
+                        </Card.Body>
+                    </Card>
+                )
+            }
+        }
+    }
     return (
-        <Card className={`${styles.memberCard} px-4 py-2`}>
-            <Image
-                src={source_arr[0].img}
-                className={`${styles.cardImage} fluid me-4 my-2`}
-                roundedCircle
-            />
-            <Card.Body className={`ps-0`}>
-                <Card.Title>{member.name}</Card.Title>
-                <Card.Subtitle>{member.position}</Card.Subtitle>
-                <Card.Text>{member.university}</Card.Text>
-            </Card.Body>
-        </Card>
+        //
+        <></>
     )
 }
 
