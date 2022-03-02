@@ -148,7 +148,7 @@ export default function KabinetSinergi() {
     return (
         <div>
             <h1 className={styles.heading1}>Our Committee</h1>
-            <Carousel className="carousel-dark">
+            <Carousel className="carousel-dark" fade>
                 {deptList.length >= 1 ? (
                     deptList.map((eachDept, idx) => {
                         return (
@@ -182,12 +182,14 @@ export function Division(props) {
 export function MemberCard(props) {
     const deptData = props.deptData
     const s3PhotoLink = "https://committeesphoto.s3.us-east-2.amazonaws.com/"
+    let cardList = []
+    // if the data passed in is Executive.
     if (deptData.name === "Executive") {
         for (const keys in deptData) {
             if (keys != "name") {
                 console.log(`${deptData[keys].name}`)
                 console.log(`${deptData[keys].image}`)
-                return (
+                cardList.push(
                     <Card className={`${styles.memberCard} px-4 py-2`}>
                         <Image
                             src={`${s3PhotoLink}${deptData[keys].image}`}
@@ -202,44 +204,45 @@ export function MemberCard(props) {
                 )
             }
         }
+    } else {
+        //case for all other dept
+        for (const keys in deptData) {
+            if (keys != "name") {
+                if (keys == "Committee") {
+                    //do committee with map or for each
+                    deptData[keys].forEach((each) => {
+                        cardList.push(
+                            <Card className={`${styles.memberCard} px-2 py-2`}>
+                                <Image
+                                    src={`${s3PhotoLink}${each.image}`}
+                                    className={`${styles.cardImage} fluid me-4 `}
+                                    roundedCircle
+                                />
+                                <Card.Body className={`ps-0`}>
+                                    <Card.Title>{`${each.name}`}</Card.Title>
+                                    <Card.Subtitle>{`${keys}`}</Card.Subtitle>
+                                </Card.Body>
+                            </Card>
+                        )
+                    })
+                } else {
+                    // for director and co director
+                    cardList.push(
+                        <Card className={`${styles.memberCard} px-4 py-2`}>
+                            <Image
+                                src={`${s3PhotoLink}${deptData[keys].image}`}
+                                className={`${styles.cardImage} fluid me-4 my-2`}
+                                roundedCircle
+                            />
+                            <Card.Body className={`ps-0`}>
+                                <Card.Title>{`${deptData[keys].name}`}</Card.Title>
+                                <Card.Subtitle>{`${keys}`}</Card.Subtitle>
+                            </Card.Body>
+                        </Card>
+                    )
+                }
+            }
+        }
     }
-    return (
-        //
-        <></>
-    )
+    return <>{cardList}</>
 }
-
-// export function ImageGallery() {
-//     return (
-//         <div className={styles["main-section"]}>
-//             <div className={styles["wrapper"]}>
-//                 <div className={styles["row"]}>
-//                     <div className={styles["column"]}></div>
-//                     <div className={styles["double-column"]}>
-//                         <div className={styles["front-page"]}>
-//                             <div className={styles["mt-5"]}>
-//                                 <h3>Information Technology</h3>
-//                             </div>
-//                             <div className={styles["img-gallery"]}>
-//                                 <Container>
-//                                     <Row className={styles["-center"]}>
-//                                         {source_arr.map((kabinet, i) => (
-//                                             <Col md={3}>
-//                                                 <Image
-//                                                     src={kabinet.img}
-//                                                     className={`d-block responsive-gallery img-fluid mx-4`}
-//                                                     roundedCircle
-//                                                 />
-//                                                 <h5>{kabinet.name} yo</h5>
-//                                             </Col>
-//                                         ))}
-//                                     </Row>
-//                                 </Container>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
