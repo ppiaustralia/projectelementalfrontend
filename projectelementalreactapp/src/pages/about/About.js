@@ -13,7 +13,7 @@ function About() {
         <div>
             <MissionVision />
             <KabinetSinergi />
-            <SinglePagePDFViewer pdf={samplePDF} />
+            {/* <SinglePagePDFViewer pdf={samplePDF} /> */}
         </div>
     )
 }
