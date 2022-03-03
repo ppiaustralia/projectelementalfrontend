@@ -9,11 +9,10 @@ export default function LatestUpdate() {
     const news = useSelector((state) => state.news.news)
     const loading = useSelector((state) => state.news.loading)
     const newsLatest = news.slice(0, 3)
-    console.log(newsLatest)
     return (
         <div className={`${styles.background} ${styles["front-page"]}`}>
             <div className={styles["news-title"]}>
-                <p>Latest Updates</p>
+                <p>Preview on PPIA Latest Updates</p>
             </div>
 
             <div className={styles.newsDeck}>
@@ -23,7 +22,7 @@ export default function LatestUpdate() {
             </div>
 
             <Link to="/blog" className={styles.moreButton}>
-                <span>Read More</span>
+                <span>Read PPIA News, Events, & Blogs</span>
             </Link>
         </div>
     )

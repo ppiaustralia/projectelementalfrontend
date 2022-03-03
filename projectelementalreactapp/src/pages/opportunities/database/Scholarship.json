@@ -1,0 +1,119 @@
+{
+  "scholarship": [
+    {
+      "Full": [
+        {
+          "id": 1,
+          "name": "Australia Awards Scholarship (AAS)",
+          "details": [
+            "Australia Awards Scholarship is the largest and longest-running scholarship program offered by the Australian Government to any partner country.",
+            "For master’s degree and doctoral degree applicants",
+            "One must have completed a minimum of 18 years of age and must have the intention of adding to the development of your home country.",
+            "Be applying for courses that fall within the areas of development priority."
+          ],
+          "url": "https://www.australiaawardsindonesia.org/content/31/12/important-dates?sub=true"
+        },
+        {
+          "id": 2,
+          "name": "Lembaga Pengelola Dana Pendidikan (LPDP)",
+          "details": [
+            "PDP is a full-ride scholarship program from the Indonesian Ministry of Finance for all Indonesian citizens.",
+            "For master’s degree and doctoral degree applicants.",
+            "Other requirements depend on the scholarship categories the applicants choose (Afirmasi, Targeted, Umum)."
+          ],
+          "url": "https://www.lpdp.kemenkeu.go.id/in/page/Beasiswa2021"
+        },
+        {
+          "id": 3,
+          "name": "Adelaide International Research Scholarship",
+          "details": "The University of Adelaide offers a number of Adelaide Scholarships International to outstanding international graduates from any country to commence their education via a Masters or Doctorate degree by research. Awards are available in all Discipline areas.",
+          "url": "https://bit.ly/BeasiswaASI"
+        },
+        {
+          "id": 4,
+          "name": "MORA",
+          "details": "MORA is a fully-funded scholarship given by the Indonesian Ministry of Religion for those who want to continue their doctoral degree abroad, including in Australia.",
+          "url": "https://bit.ly/BeasiswaMORA"
+        }
+      ],
+
+      "Partial": [
+        {
+          "id": 1,
+          "name": "Global Excellent Scholarship",
+          "details": [
+            "This significant scholarship will be awarded to high-achieving undergraduate and postgraduate students, from selected countries, who apply for particular courses at the University.",
+            "If you’re looking to study in Australia in 2022, undergraduate students can receive scholarships of up to AUD$48,000 over 4 years on eligible courses or AUD$36,000 over 3 years; postgraduate students can receive up to AUD$24,000 over two years on eligible courses.",
+            "The Scholarship is an annual tuition fee discount for the normal full-time duration of the awardee’s course as specified in their letter of offer."
+          ],
+          "url": "https://bit.ly/GlobalExcellenceScholarshipUWA"
+        },
+        {
+          "id": 2,
+          "name": "Go Beyond Scholarship",
+          "details": [
+            "Go Beyond the ordinary, is a partial scholarship offered by Flinders University for Undergraduate and Postgraduate studies.",
+            "You can receive a Flinders Go Beyond Scholarship, which provides a 25% reduction in tuition fees for the first two semesters of your degree program."
+          ],
+          "url": "https://bit.ly/GoBeyondFlinders"
+        },
+        {
+          "id": 3,
+          "name": "International Student Academic Excellence Scholarship",
+          "details": [
+            "Rewards outstanding international students applying for undergraduate and postgraduate coursework programs at Griffith University.",
+            "25% of tuition fees",
+            "Griffith University entry requirements apply"
+          ],
+          "url": "https://bit.ly/AcademicExcellenceScholarship"
+        },
+        {
+          "id": 4,
+          "name": "International Undergraduate Excellence Scholarship",
+          "details": [
+            "Currently completing high school, Completed high school and applying for undergraduate studies.",
+            "Have already received an offer from Bond University to commence an undergraduate degree.",
+            "Bond University offers high academic achievers applying to study at an undergraduate level for a bachelor's degree, with tuition remission scholarships.",
+            "International Undergraduate Excellence Scholarships are awarded on the basis of academic excellence and are a testament to Bond University’s commitment to quality and outstanding international students.",
+            "Bond will select the successful applicants on a competitive, merit-based process."
+          ],
+          "url": "https://bit.ly/BondIUES"
+        },
+        {
+          "id": 5,
+          "name": "University of Tasmania (UTAS) Scholarship",
+          "details": [
+            "The Tasmanian International Scholarship (TIS) provides commencing international students with a 25% reduction in registered tuition fees for the duration of their course (provided satisfactory grades are maintained).",
+            "All international students who submit an International Student Application to study in an undergraduate degree (with the exception of the Bachelor of Medicine and Bachelor of Surgery, Bachelor of Dementia Care and AMC Seafaring courses) will be automatically assessed for the TIS Scholarship by the Admissions Team.",
+            "TIS is also available to international students applying for postgraduate coursework degrees (with a few course exceptions)."
+          ],
+          "url": "https://bit.ly/BeasiswaUTAS"
+        },
+        {
+          "id": 6,
+          "name": "University of New South Wales (UNSW) Scholarship",
+          "details": "The extensive range of scholarships on offer include opportunities which are: Faculty or School based; industry linked; for rural students; for Indigenous Australians; for international students; and for high achieving students.",
+          "url": "https://www.scholarships.unsw.edu.au"
+        },
+        {
+          "id": 7,
+          "name": "University of New South Wales (UNSW) International Research Scholarship",
+          "details": "The extensive range of scholarships on offer include opportunities which are: Faculty or School based; industry linked; for rural students; for Indigenous Australians; for international students; and for high achieving students.",
+          "url": "https://research.unsw.edu.au/international-research-scholarships"
+        },
+        {
+          "id": 8,
+          "name": "University Queensland (UQ) Scholarship",
+          "details": "The University of Queensland offers a variety of scholarships that fellow Indonesians can apply for Undergraduate, Postgraduate, and Higher Degree programs. The following website would be helpful for those who are future students and current students.",
+          "url": "https://scholarships.uq.edu.au/"
+        },
+        {
+          "id": 9,
+          "name": "Indonesia Global Leaders Scholarship",
+          "details": "This scholarship offers every Indonesian a study experience at the University of Queensland’s Faculty of Business, Economics and Law. It is worth $5,000 - $10,000 of tuition fee scholarship. The duration of the scholarship is one semester, the first semester of study. This applies to undergraduate and postgraduate programs.",
+          "url": "https://scholarships.uq.edu.au/scholarship/indonesia-global-leaders-scholarship"
+        }
+      ]
+    }
+  ]
+}

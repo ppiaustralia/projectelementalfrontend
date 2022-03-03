@@ -1,0 +1,28 @@
+.testimony {
+  margin-top: 238px;
+  margin-bottom: 128px;
+}
+
+.testimony__carousel {
+  display: block;
+  position: relative;
+
+  margin-left: 450px;
+  margin-top: -250px;
+  /* right: 200px; */
+  /* margin-bottom: 300px; */
+
+  height: 512px;
+  width: 800px;
+
+  /* margin: 44px 0; */
+
+  /* background: black; */
+  border-radius: 8px;
+}
+
+img {
+  height: 512px;
+  width: 800px;
+  border-radius: 8px;
+}

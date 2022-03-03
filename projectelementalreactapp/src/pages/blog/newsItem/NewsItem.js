@@ -15,8 +15,8 @@ function NewsItem(props) {
             <div className={s.coverImageCont}>
                 <img
                     className={s.coverImage}
-                    src={`${image}`}
-                    alt={`${slug}`}
+                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+                    alt="Google logo"
                 />
             </div>
             <div className={s.newsText}>
@@ -24,14 +24,14 @@ function NewsItem(props) {
                 <div>{ReactHtmlParser(content)}</div>
                 <div className={s.newsInfo}>
                     <span className={s.newsDate}>{parsedDate}</span>
-                    <span className={s.tags}>Education Sport News</span>
+                    <span>Education Sport News</span>
                 </div>
-            </div>
-            <div className={s.newsFooter}>
-                <span>
-                    Read <i class="fas fa-arrow-right" />
-                </span>
-                <Social />
+                <div className={s.newsFooter}>
+                    <span>
+                        Read <i class="fas fa-arrow-right" />
+                    </span>
+                    <Social />
+                </div>
             </div>
         </div>
     )
