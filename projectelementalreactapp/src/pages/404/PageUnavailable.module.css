@@ -1,0 +1,55 @@
+.center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: inherit;
+
+  z-index: 20;
+  opacity: 1000;
+
+  /* width: 100%;
+    height: 100%;
+    background-position: center;
+  
+    z-index: -1000;
+    background-image: url('../../assets/images/smallBatikPattern.jpg');
+    opacity: 0.8; */
+
+  /* margin: auto; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* width: 50%; */
+}
+
+button {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* position: inline; */
+
+  background-color: red;
+  margin-bottom: 10rem;
+  padding: 10px 10px;
+  border: none;
+  text-decoration: none;
+  /* left: 46.5%; */
+  border-radius: 0.75em;
+
+  margin: auto;
+  margin-bottom: 12rem;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.seperator {
+  margin-top: 12rem;
+}
+
+/* 
+  h1 {
+    margin-top: 10rem;
+  }
+  
+  h5 {
+    margin-bottom: 4rem;
+  } */
