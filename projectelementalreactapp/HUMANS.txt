@@ -1,1 +1,31 @@
-You know what this is
+PPIA IT Website Contributors:
+
+2020 - 2021:
+
+Directors:
+1) Yudhi Hartawan, Director, Software Architect and Project Manager
+2) Denny Kurniawan, Co-Director, Project Manager
+
+Officers:
+1) Erick Hartawan, Full Stack Developer
+2) Herryanto, Front End Engineer and Web Designer
+3) Livia Laurensia Sugito, Back End Developer
+4) Daniel, Front End Engineer
+5) Ricky Felix, Front End Engineer
+
+----------------------------------------------------------------
+
+2021 - 2022
+
+Directors:
+1) Ricky Felix, Director, UIUX Designer, Full Stack Developer, Scrum Master
+2) Erick Hartawan, Co-Director, Full Stack Developer
+
+Officers:
+1) Gabriella Hartanto, Full Stack Developer
+2) William, Front End Engineer
+3) Livia Laurensia Sugito, Back End Developer
+4) Daniel Dewanto, Full Stack Developer
+5) Stella, Front End Developer
+
+----------------------------------------------------------------
