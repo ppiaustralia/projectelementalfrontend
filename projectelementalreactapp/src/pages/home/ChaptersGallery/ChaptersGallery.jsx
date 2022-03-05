@@ -40,7 +40,7 @@ export default function ChaptersGallery() {
               return (
                 <>
                   <Col md="auto">
-                    <Link to={`chapter/${branch.state}`}>
+                    <Link to={`alpha/chapter/${branch.state}`}>
                       <Image
                         src={`${chapterBaseLink}${branch.image}`}
                         className={`d-block ${styles['responsive-gallery']} mx-5`}

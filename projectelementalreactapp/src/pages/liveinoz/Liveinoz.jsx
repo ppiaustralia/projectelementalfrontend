@@ -118,7 +118,7 @@ export function ReadMore(props) {
       </div>
       <div className="breadcrumb page-content">
         <Breadcrumb aria-label="breadcrumb">
-          <Link to="/liveinoz">Live in Oz</Link>
+          <Link to="alpha/liveinoz">Live in Oz</Link>
           <div>/{obj.title}</div>
         </Breadcrumb>
       </div>

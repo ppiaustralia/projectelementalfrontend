@@ -11,7 +11,7 @@ function PageUnavailable() {
       <div className={style.center}>
         <h1 className={style.seperator}>404 not Found</h1>
         <p>The link you are looking for cannot be found.</p>
-        <Link to="/">
+        <Link to="/alpha">
           <button>Return to Home</button>
         </Link>
       </div>

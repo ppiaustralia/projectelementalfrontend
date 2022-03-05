@@ -21,7 +21,7 @@ export default function LatestUpdate() {
         ))}
       </div>
 
-      <Link to="/blog" className={styles.moreButton}>
+      <Link to="/alpha/blog" className={styles.moreButton}>
         <span>Read PPIA News, Events, & Blogs</span>
       </Link>
     </div>
