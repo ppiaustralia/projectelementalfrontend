@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { withRouter } from 'react-router';
-import Home from '../src/pages/home/Home';
-import Navbar from './layout/navbar/Navbar';
-
-=======
 /* eslint-disable */
 /* eslint-disable no-alert, no-console */
 {/* prettier-ignore */}
@@ -17,36 +9,11 @@ import axios from 'axios';
 
 import Home from '../src/pages/home/Home';
 import Navbar from './layout/navbar/Navbar';
->>>>>>> main
 import Chapter from '../src/pages/chapter/Chapter';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
-<<<<<<< HEAD
-// import { FooterContainer } from "./layout/footer/footer";
-import Footer from './layout/newFooter/Footer';
-
-// CI-CD below here
-
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route
-          path="/chapter/:statename"
-          exact
-          component={withRouter(Chapter)}
-        />
-        <Route path="/liveinoz" exact component={Liveinoz} />
-        <Route path="/liveinoz/:id" exact component={ReadMore} />
-        <Route path="/blog" exact component={Blog} />
-        <Route path="/contact" exact component={Contact} />
-      </Switch>
-=======
 
 // import Opportunities from '../src/pages/opportunities/Opportunities';
 // import Scholarship from '../src/pages/opportunities/Scholarship';
@@ -112,7 +79,6 @@ function App() {
         {/* if link doesnt exist or route is not connected, automatically go to this page */}
         <Route path="*" element={<PageUnavailable />} />
       </Routes>
->>>>>>> main
       <Footer />
     </Router>
   );
