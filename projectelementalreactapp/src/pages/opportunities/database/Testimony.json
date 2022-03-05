@@ -1,0 +1,44 @@
+{
+  "testimony": [
+    {
+      "id": 1,
+      "name": "Nisrina Ikbar W",
+      "testimony-name": "LPDP Afirmasi",
+      "university": "Monash University Australia",
+      "picture": "./TestimonyPic/1-Nisrina Ikbar.jpg",
+      "description": "Studying abroad and experienced international education was initially just a dream for me. However, with the LPDP scholarship, I finally could achieve that dream. Given the opportunity to continue my study at Monash University Australia with LPDP has widened my perspective, knowledge, and networking. Through LPDP, I could see many potentials that Indonesia has. I am also introduced to a variety of cultures and learned how to respond to diversities. Those make me a better person."
+    },
+    {
+      "id": 2,
+      "name": "Safitri Yosita Ratri",
+      "testimony-name": "Adelaide Scholarship International",
+      "university": "The University of Adelaide",
+      "picture": "./TestimonyPic/2-Yosita Ratri.jpg",
+      "description": "Beasiswa ASI ini tanpa interview dan motivation letter. Seleksi berdasarkan: Rekomendasi supervisor, IELTS overall band 7.0 with min all band 6.5, dan Publikasi Artikel. Keuntungan: Dapat Insurance kesehatan untuk keluarga dan tiket pesawat sekeluarga. Range living allowance hanya untuk awardee sekitar $28,000/year. "
+    },
+    {
+      "id": 3,
+      "name": "Fikriansyah",
+      "testimony-name": "Australia Awards Scholarship",
+      "university": "University of Melbourne",
+      "picture": "./TestimonyPic/3-Fikriansyah Bin Irman.jpg",
+      "description": "Australia Awards Scholarships provide opportunities to study and research so that the scholars could drive change and contribute to development in Indonesia. Administered by the Department of Foreign Affairs and Trade Australia, this scholarship offers benefits beyond imagination! From preparation, tuition, air travel, academic support, and even fieldwork; everything provided! As one of the prestige scholarship, you will gain an extensive networks and experiences. You will be the future leader that the world needs."
+    },
+    {
+      "id": 4,
+      "name": "Stiven Daniel",
+      "testimony-name": "Beasiswa LPDP Targeted ASN/TNI/Polri",
+      "university": "Monash University Australia",
+      "picture": "./TestimonyPic/4-Stiven Daniel.jpeg",
+      "description": "Sebagai ASN di Pemda yang jarang sekali mendapatkan akses ke informasi strategis terkait peluang untuk kuliah ke luar negeri, saya berusaha untuk mencari sendiri berbagai peluang untuk bisa kuliah ke negara impian saya sejak dulu: Australia. Beasiswa LPDP Targeted ASN/TNI/Polri memberikan saya kesempatan besar untuk melanjutkan pendidikan saya ke Universitas di Australia dan bisa merasakan suasana perkuliahan yang sama sekali baru buat saya. Beasiswa ini menanggung penuh secara at cost biaya kuliah yang dibebankan oleh kampus, dilengkapi  juga dengan fasilitas tiket pesawat PP, dana hidup bulanan, dana kedatangan, dana buku, dana asuransi kesehatan, dan juga dana penelitian dan publikasi."
+    },
+    {
+      "id": 5,
+      "name": "Denny Gunawan",
+      "testimony-name": "Tuition Fee Scholarship (TFS) plus a Research Stipend",
+      "university": "University of New South Wales (UNSW)",
+      "picture": "./TestimonyPic/5-Denny Gunawan.jpg",
+      "description": "Pursuing a postgraduate research degree overseas has been one of my biggest dreams since I graduated with a bachelor’s degree back in Indonesia. With a Tuition Fee Scholarship (TFS) plus a Research Stipend, I finally could pursue a PhD degree at UNSW Sydney. This fully-funded scholarship, which covers tuition fees and living expenses, has enabled me to improve my knowledge and skills. In addition, working together with world-class academics and other students from diverse backgrounds has provided a precious networking opportunity that is beneficial for my future career."
+    }
+  ]
+}

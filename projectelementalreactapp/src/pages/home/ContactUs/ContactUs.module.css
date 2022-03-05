@@ -1,0 +1,21 @@
+.container {
+  height: auto;
+  margin: 100px auto;
+
+  text-align: center;
+
+  padding: 30px;
+
+  width: 50%;
+}
+
+.email {
+  width: 23%;
+  height: 20%;
+  border-radius: 25px;
+
+  color: transparent;
+  background-color: transparent;
+  background: transparent;
+  border: black 1px solid;
+}

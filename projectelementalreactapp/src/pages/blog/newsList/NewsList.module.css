@@ -1,0 +1,9 @@
+.newsListCont {
+    display: flex;
+    flex-wrap: wrap;
+}
+.counter {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}

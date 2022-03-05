@@ -1,0 +1,91 @@
+.ft-title {
+    color: #ed1c24;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+.ft-body {
+    display: flex;
+    min-height: 40vh;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    background-color: #fff;
+    color: #bbb;
+    line-height: 1.5;
+}
+.container {
+    flex: 1; /* same as flex-grow: 1; */
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-a {
+    text-decoration: none;
+    color: #000;
+}
+.ft-a:hover {
+    text-decoration: underline;
+    color: #ed1c24;
+    font-weight: 600;
+}
+
+.ft-ul {
+    list-style: none;
+    padding-left: 0;
+}
+.ft-ul li {
+    padding: 0.25em;
+    padding-left: 0;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #a01218;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1; /* same as flex-grow: 1; */
+}

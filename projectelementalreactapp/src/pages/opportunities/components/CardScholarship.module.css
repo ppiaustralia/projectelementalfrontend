@@ -1,0 +1,60 @@
+.cardScholarship {
+  /* background: black; */
+  /* margin: 2rem 0; */
+  /* margin-left: 8rem; */
+  display: flex;
+  margin: auto;
+}
+
+.cardScholarshipLeft {
+  background: grey;
+
+  width: 400px;
+  height: 350px;
+}
+
+.cardScholarshipRight {
+  padding-left: 120px;
+
+  height: 350px;
+  width: 68%;
+
+  background: black;
+  color: white;
+}
+
+.cardScholarshipTitle {
+  font-size: 48px;
+  margin-top: 40px;
+  width: 650px;
+}
+
+.cardScholarshipSubtitle {
+  font-size: 22px;
+  width: 550px;
+  margin-top: 40px;
+}
+
+.cardBlog {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 376px;
+  height: 105px;
+  margin: 2rem;
+
+  justify-content: center;
+  justify-items: center;
+
+  background: lightgrey;
+}
+
+.cardBlogName {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.cardBlogButton {
+  font-size: 18px;
+  margin-left: 16px;
+}

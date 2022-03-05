@@ -1,0 +1,20 @@
+.blogContainer {
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: row;
+}
+.blogSidebar {
+    flex: 1;
+    width: 100%;
+    background-color: thistle;
+}
+
+.blogNews {
+    flex: 4;
+    width: 100%;
+}
