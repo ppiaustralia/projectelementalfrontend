@@ -1,12 +1,13 @@
 .container {
-  height: auto;
-  margin: 100px auto;
+  /* height: auto; */
+  margin: 5rem auto -7rem;
 
   text-align: center;
 
-  padding: 30px;
+  /* padding: 10px; */
 
   width: 50%;
+  /* left: 100%; */
 }
 
 .email {
