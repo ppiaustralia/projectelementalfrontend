@@ -30,7 +30,7 @@ export default function ChaptersGallery() {
   return (
     <div className={styles['front-page']}>
       <div className={styles.chaptersTitle}>
-        <p>Chapters</p>
+        <h2>Chapters</h2>
       </div>
 
       <div className={styles['img-gallery']}>
