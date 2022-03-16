@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 import FullScholarship from './FullScholarship';
@@ -17,6 +17,9 @@ function ScholarshipTypes(props) {
   const { types } = useParams();
 
   // aws below
+
+  // te best way to solve is to make sure that each page render first, then bring it up
+  
 
   return (
     <div>

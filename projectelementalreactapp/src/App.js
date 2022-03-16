@@ -15,11 +15,11 @@ import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
+import Scholarship from '../src/pages/opportunities/Scholarship';
 // import Opportunities from '../src/pages/opportunities/Opportunities';
-// import Scholarship from '../src/pages/opportunities/Scholarship';
 // import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
 
-import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
+import PageUnavailable from '../src/pages/404/PageUnavailable';
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from './layout/newFooter/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -62,16 +62,16 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/alpha" element={<Home />} />
-        <Route path="/alpha/about" element={<About />} />
-        <Route path="/alpha/chapter/:statename" element={<Chapter />} />
-        <Route path="/alpha/liveinoz" element={<Liveinoz />} />
-        <Route path="/alpha/liveinoz/:id" element={<ReadMore />} />
-        <Route path="/alpha/blog" element={<Blog />} />
-        <Route path="/alpha/contact" element={<Contact />} />
-        {/* <Route path="/alpha/opportunities/scholarship" element={<Scholarship />}>
-          <Route
-            path="/alpha/opportunities/scholarship/:types"
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/chapter/:statename" element={<Chapter />} />
+        <Route path="/liveinoz" element={<Liveinoz />} />
+        <Route path="/liveinoz/:id" element={<ReadMore />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/opportunities/scholarship" element={<Scholarship />} />
+        {/* <Route
+            path="/opportunities/scholarship/:types"
             element={<ScholarshipTypes />}
           />
         </Route> */}

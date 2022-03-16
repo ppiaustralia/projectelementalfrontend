@@ -5,6 +5,7 @@ import styles from './ScholarshipTypes.module.css';
 
 function FullScholarship(props) {
   // const ScholarshipLink = full.ScholarshipLink;
+  // confirm it is running
 
   return (
     <>
@@ -21,7 +22,10 @@ function FullScholarship(props) {
             <div className={styles.infoContainer}>
               <h2>{name}</h2>
               <p>Description: {details}</p>
-              <p>Link: {url}</p>
+              <p>
+                Link: &nbsp;
+                <a href={url}>{url}</a>
+              </p>
             </div>
           </div>
         );

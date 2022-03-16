@@ -7,6 +7,7 @@ function ExchangeProgram(props) {
   // const exchangeLink = exchange.exchangeLink;
 
   return (
+    // confirm running
     <>
       <h1>Exchange Program</h1>
       {ExchangeDB.exchange.map((exchange) => {
@@ -21,8 +22,14 @@ function ExchangeProgram(props) {
             <div className={styles.infoContainer}>
               <h2>{name}</h2>
               <p>Description: {description}</p>
-              <p>Link: {link}</p>
-              <p>Youtube: {youtube}</p>
+              <p>
+                Link: &nbsp;
+                <a href={link}>{link}</a>
+              </p>
+              <p>
+                Youtube: &nbsp;
+                <a href={youtube}>{youtube}</a>
+              </p>
             </div>
           </div>
         );

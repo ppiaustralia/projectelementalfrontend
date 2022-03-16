@@ -4,9 +4,10 @@ import styles from './ScholarshipTypes.module.css';
 import { Image } from 'react-bootstrap';
 
 function PartialScholarship(props) {
-  // const partialLink = partial.PartialLink;
+  // const partialurl = partial.Partialurl;
 
   return (
+    // confirm running
     <>
       <h1>Partial Scholarship</h1>
       {PartialDB.Partial.map((partial) => {
@@ -21,7 +22,10 @@ function PartialScholarship(props) {
             <div className={styles.infoContainer}>
               <h1>{name}</h1>
               <p>Description: {details}</p>
-              <p>Link: {url}</p>
+              <p>
+                Link: &nbsp;
+                <a href={url}>{url}</a>
+              </p>
             </div>
           </div>
         );
