@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 import { Link, Routes, BrowserRouter as Router, Route } from 'react-router-dom';
 
-// import FullScholarship from '../pages/FullScholarship';
-// import PartialScholarship from '../pages/PartialScholarship';
-// import Exchange from '../pages/ExchangeProgram';
-import ScholarshipTypes from '../pages/ScholarshipTypes';
+import styles from './ScholarshipPages.module.css';
 
-import styles from './CardScholarship.module.css';
+function ScholarshipPages(props) {
+  const [full, setFull] = useState([]);
+  const [partial, setPartial] = useState([]);
+  const [exchange, setExchange] = useState([]);
 
-function CardScholarship() {
+  // const types = match.params; // copy link url
+  const { types } = useParams();
+
   const pages = [
     {
       id: 1,
@@ -35,20 +38,22 @@ function CardScholarship() {
     }
   ];
 
+  // aws below
+
   return (
     <>
-      <div className={styles.cardScholarship}>
-        <div className={styles.cardScholarshipLeft}></div>
-        <div className={styles.cardScholarshipRight}>
-          <h1 className={styles.cardScholarshipTitle}>
-            Interested to study at Australia?
-          </h1>
-          <h2 className={styles.cardScholarshipSubtitle}>
-            Check out some of the options listed below. Alternatively, you can
-            download PPI Australia 2021-2022 Scholar Programs Booklet by
-            clicking <u>on the box on the left.</u>
-          </h2>
-        </div>
+      <div className={styles.ScholarshipPages}>
+        <h1 className={styles.ScholarshipPagesTitle}>
+          Interested to study at Australia?
+        </h1>
+        <h2 className={styles.ScholarshipPagesSubtitle}>
+          Check out some of the options listed below. Alternatively, you can
+          download PPI Australia 2021-2022 Scholar Programs Booklet by clicking
+          the button below
+        </h2>
+        <button>
+          <a href={'www.google.com'}>Download Module Book</a>
+        </button>
       </div>
 
       {pages.map((data) => (
@@ -56,7 +61,8 @@ function CardScholarship() {
           <h3 className={styles.cardBlogName}>{data.title}</h3>
           {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
           <p className={styles.cardBlogButton}>
-            <Link to={data.path}>Read More</Link>
+            <a href={data.path}>Read More</a>
+            {/* goes to correct route but doenst go to the component page */}
           </p>
         </div>
       ))}
@@ -64,8 +70,4 @@ function CardScholarship() {
   );
 }
 
-export default CardScholarship;
-
-// need to fix router
-
-// https://dev.to/mrpbennett/rendering-nav-links-with-map-in-react-51l5
+export default ScholarshipPages;

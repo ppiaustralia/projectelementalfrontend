@@ -1,6 +1,6 @@
 import React from 'react';
 import PartialDB from '../database/PartialScholarship.json';
-import styles from './ScholarshipTypes.module.css';
+import styles from './ScholarshipPages.module.css';
 import { Image } from 'react-bootstrap';
 
 function PartialScholarship(props) {

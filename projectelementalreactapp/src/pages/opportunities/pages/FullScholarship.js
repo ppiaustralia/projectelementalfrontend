@@ -1,7 +1,7 @@
 import React from 'react';
 import FullDB from '../database/FullScholarship.json';
 import { Image } from 'react-bootstrap';
-import styles from './ScholarshipTypes.module.css';
+import styles from './ScholarshipPages.module.css';
 
 function FullScholarship(props) {
   // const ScholarshipLink = full.ScholarshipLink;

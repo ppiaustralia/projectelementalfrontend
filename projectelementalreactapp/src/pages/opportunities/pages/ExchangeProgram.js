@@ -1,6 +1,6 @@
 import React from 'react';
 import ExchangeDB from '../database/Exchange.json';
-import styles from './ScholarshipTypes.module.css';
+import styles from './ScholarshipPages.module.css';
 import { Image } from 'react-bootstrap';
 
 function ExchangeProgram(props) {

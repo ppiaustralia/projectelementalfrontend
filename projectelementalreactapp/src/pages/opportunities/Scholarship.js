@@ -6,7 +6,7 @@ import React from 'react';
 // import ExchangeProgram from './pages/ExchangeProgram';
 
 import Testimony from './components/Testimony';
-import CardScholarship from './components/CardScholarship';
+import ScholarshipPages from './pages/ScholarshipPages';
 import SubmitScholarship from './components/SubmitScholarship';
 
 import styles from './Scholarship.module.css';
@@ -18,7 +18,7 @@ export default function Scholarship() {
     <div className={styles.containerScholarship}>
       {/* 1st layout -> 3 boxes */}
       <div>
-        <CardScholarship />
+        <ScholarshipPages />
       </div>
 
       {/* 2nd layout -> testimonies  */}
@@ -34,7 +34,7 @@ export default function Scholarship() {
   );
 }
 
-// create CardScholarship inside here
+// create ScholarshipPages inside here
 
 /*
   Scholarship

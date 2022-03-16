@@ -12,7 +12,7 @@ import { Provider } from 'react-redux';
 import FullScholarship from './pages/opportunities/pages/FullScholarship';
 import ExchangeProgram from './pages/opportunities/pages/ExchangeProgram';
 import PartialScholarship from './pages/opportunities/pages/PartialScholarship';
-import ScholarshipTypes from './pages/opportunities/pages/ScholarshipTypes';
+import ScholarshipPages from './pages/opportunities/pages/ScholarshipPages';
 // import Scholarship from './pages/opportunities/Scholarship';
 
 ReactDOM.render(
@@ -21,7 +21,7 @@ ReactDOM.render(
     {/* <FullScholarship /> */}
     {/* <PartialScholarship /> */}
     {/* <ExchangeProgram /> */}
-    <ScholarshipTypes />
+    <ScholarshipPages />
   </>,
   document.getElementById('root')
 );
