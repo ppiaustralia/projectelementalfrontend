@@ -9,11 +9,10 @@ import { GlobalStyles } from './global-styles';
 import store from './store/store';
 import { Provider } from 'react-redux';
 
-import FullScholarship from './pages/opportunities/pages/FullScholarship';
-import ExchangeProgram from './pages/opportunities/pages/ExchangeProgram';
-import PartialScholarship from './pages/opportunities/pages/PartialScholarship';
-import ScholarshipPages from './pages/opportunities/pages/ScholarshipPages';
-// import Scholarship from './pages/opportunities/Scholarship';
+// import Scholarship from '../src/pages/opportunities/scholarship/Scholarship';
+// import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
+// import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
+// import Exchange from '../src/pages/opportunities/pages/Exchange';
 
 ReactDOM.render(
   <>

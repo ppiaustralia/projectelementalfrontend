@@ -14,21 +14,23 @@ function FullScholarship() {
       {FullDB.Full.map((full) => {
         const { name, details, url } = full;
         return (
-          <div className={`${styles['types']}`}>
+          <div className={styles.infoContainer}>
             {/* 
             <div className={styles.imageContainer}>
               <Image src={''} className={styles.logo} />
             </div>
                */}
-            <div className={styles.infoContainer}>
+            <div className={styles.infoCard}>
               <h2>{name}</h2>
-              <p>{details}</p>
-              <ul>
-                <li>
-                  Link: &nbsp;
-                  <a href={url}>{url}</a>
-                </li>
-              </ul>
+              <div className={styles.infoCardText}>
+                <p>{details}</p>
+                <ul>
+                  <li>
+                    Link: &nbsp;
+                    <a href={url}>{url}</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         );

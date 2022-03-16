@@ -16,11 +16,10 @@ import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
 import Scholarship from '../src/pages/opportunities/scholarship/Scholarship';
-// import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
-// import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
-// import Exchange from '../src/pages/opportunities/pages/Exchange';
-import ScholarshipPages from '../src/pages/opportunities/scholarship/pages/ScholarshipPages.js';
+import DisplayScholarship from '../src/pages/opportunities/scholarship/components/DisplayScholarship';
+
 import PageUnavailable from '../src/pages/404/PageUnavailable';
+
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from './layout/newFooter/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -72,28 +71,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/opportunities/scholarship" element={<Scholarship />} />
         <Route
-          path="/opportunities/scholarship/:pages"
-          element={<ScholarshipPages />}
+          path="/opportunities/scholarship/:types"
+          element={<DisplayScholarship />}
         />
-        {/* <Route
-            path="/opportunities/scholarship/:pages"
-            element={<Scholarship />}
-          /> */}
-
-        {/* <Route
-            path="/opportunities/scholarship/full-scholarship"
-            element={<FullScholarship />}
-          />
-          <Route
-            path="/opportunities/scholarship/partial-scholarship"
-            element={<PartialScholarship />}
-          />
-          <Route
-            path="/opportunities/scholarship/exchange"
-            element={<Exchange />}
-          /> 
-          */}
-        {/* </Route> */}
 
         {/* if link doesnt exist or route is not connected, automatically go to this page */}
         <Route path="*" element={<PageUnavailable />} />

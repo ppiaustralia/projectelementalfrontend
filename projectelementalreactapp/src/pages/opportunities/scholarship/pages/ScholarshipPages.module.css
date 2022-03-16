@@ -1,7 +1,3 @@
-.types {
-  display: flex;
-  flex-direction: row;
-}
 .imageContainer {
   display: flex;
   flex: 1;
@@ -33,8 +29,8 @@
   padding: 0.5em;
 }
 
-.infoCard > p,
-ul {
+.infoCardText {
+  /* need to apply this */
   width: 70%;
   color: white;
 }

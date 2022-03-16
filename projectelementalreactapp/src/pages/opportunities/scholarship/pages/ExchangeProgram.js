@@ -14,15 +14,15 @@ function ExchangeProgram() {
       {ExchangeDB.exchange.map((exchange) => {
         const { name, description, link, youtube } = exchange;
         return (
-          <div className={`${styles['types']}`}>
+          <div className={styles.infoContainer}>
             {/* 
             <div className={styles.imageContainer}>
               <Image src={''} className={styles.logo} />
             </div>
                */}
-            <div className={styles.infoContainer}>
-              <div className={styles.infoCard}>
-                <h2>{name}</h2>
+            <div className={styles.infoCard}>
+              <h2>{name}</h2>
+              <div className={styles.infoCardText}>
                 <p>{description}</p>
                 <ul>
                   <li>

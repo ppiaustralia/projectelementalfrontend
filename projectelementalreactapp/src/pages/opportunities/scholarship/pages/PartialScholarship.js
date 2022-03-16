@@ -14,15 +14,15 @@ function PartialScholarship() {
       {PartialDB.Partial.map((partial) => {
         const { name, details, url } = partial;
         return (
-          <div className={`${styles['types']}`}>
+          <div className={styles.infoContainer}>
             {/* 
             <div className={styles.imageContainer}>
               <Image src={''} className={styles.logo} />
             </div>
                */}
-            <div className={styles.infoContainer}>
-              <div className={styles.infoCard}>
-                <h1>{name}</h1>
+            <div className={styles.infoCard}>
+              <h1>{name}</h1>
+              <div className={styles.infoCardText}>
                 <p>{details}</p>
                 <ul>
                   <li>

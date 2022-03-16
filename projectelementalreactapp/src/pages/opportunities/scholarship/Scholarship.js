@@ -1,52 +1,23 @@
 import React from 'react';
-// import {
-//   Link,
-//   Routes,
-//   BrowserRouter as Router,
-//   Route,
-//   useParams
-// } from 'react-router-dom';
-// import { useRouteMatch } from 'react-router-dom';
-
-// import FullScholarship from './pages/FullScholarship';
-// import PartialScholarship from './pages/PartialScholarship';
-// import Exchange from './pages/ExchangeProgram';
-
 import Testimony from './components/Testimony';
 import ScholarshipPages from './pages/ScholarshipPages';
 import SubmitScholarship from './components/SubmitScholarship';
 
 import styles from './Scholarship.module.css';
-export default function Scholarship() {
-  // let { path, url } = useMatch();
-  // const { pages } = useParams();
 
+export default function Scholarship() {
   return (
     <>
-      {/* <Route
-        path="/opportunities/scholarship/full-scholarship"
-        element={<FullScholarship />}
-      />
-      <Route
-        path="/opportunities/scholarship/partial-scholarship"
-        element={<PartialScholarship />}
-      />
-      <Route
-        path="/opportunities/scholarship/exchange"
-        element={<Exchange />}
-      /> */}
-
-      <div className={styles.containerScholarship}>
+      <div>
+        {/* <div> className={styles.containerScholarship}> */}
         {/* 1st layout -> hero */}
         <div>
           <ScholarshipPages />
         </div>
-
         {/* 2nd layout -> testimonies carousel  */}
         <div>
           <Testimony />
         </div>
-
         {/* 3rd layout -> submit interest */}
         <div>
           <SubmitScholarship />

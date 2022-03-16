@@ -7,50 +7,26 @@ import {
   useParams
 } from 'react-router-dom';
 
-import FullScholarship from './FullScholarship';
-import PartialScholarship from './PartialScholarship.js';
-import ExchangeProgram from './ExchangeProgram';
-// import ScholarshipRoute from '../ScholarshipRoute';
-
-// import axios from 'axios';
 import styles from './ScholarshipPages.module.css';
 
 function ScholarshipPages() {
-  const { pages } = useParams();
-  // const [pageType, setPageType] = useState(pages);
-
   const routes = [
     {
       title: 'Full Scholarship',
-      path: `${pages}/full-scholarship`,
-      component: FullScholarship
+      path: 'full-scholarship'
     },
     {
       title: 'Partial Scholarship',
-      path: `${pages}/partial-scholarship`,
-      component: PartialScholarship
+      path: 'partial-scholarship'
     },
     {
       title: 'Exchange Program',
-      path: `${pages}/exchange`,
-      component: ExchangeProgram
+      path: 'exchange'
     }
   ];
 
   return (
     <>
-      <Routes>
-        <Route
-          path={`${pages}/full-scholarship`}
-          element={<FullScholarship />}
-        />
-        <Route
-          path={`${pages}/partial-scholarship`}
-          element={<PartialScholarship />}
-        />
-        <Route path={`${pages}/exchange`} element={<ExchangeProgram />} />
-      </Routes>
-
       <div className={styles.container}>
         <div className={styles.hero}>
           <h1 className={styles.heroTitle}>
