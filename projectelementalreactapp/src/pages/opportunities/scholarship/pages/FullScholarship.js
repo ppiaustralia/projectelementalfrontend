@@ -3,9 +3,8 @@ import FullDB from '../database/FullScholarship.json';
 import { Image } from 'react-bootstrap';
 import styles from './ScholarshipPages.module.css';
 
-function FullScholarship(props) {
+function FullScholarship() {
   // const ScholarshipLink = full.ScholarshipLink;
-  // confirm it is running
 
   return (
     <>

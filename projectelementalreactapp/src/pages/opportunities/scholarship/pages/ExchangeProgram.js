@@ -1,19 +1,18 @@
 import React from 'react';
-import PartialDB from '../database/PartialScholarship.json';
+import ExchangeDB from '../database/Exchange.json';
 import styles from './ScholarshipPages.module.css';
 import { Image } from 'react-bootstrap';
 
-function PartialScholarship(props) {
-  // const partialurl = partial.Partialurl;
+function ExchangeProgram() {
+  // const exchangeLink = exchange.exchangeLink;
 
   return (
-    // confirm running
     <>
       <h1 style={{ textAlign: 'center', margin: '20px 0' }}>
-        Partial Scholarship
+        Exchange Program
       </h1>
-      {PartialDB.Partial.map((partial) => {
-        const { name, details, url } = partial;
+      {ExchangeDB.exchange.map((exchange) => {
+        const { name, description, link, youtube } = exchange;
         return (
           <div className={`${styles['types']}`}>
             {/* 
@@ -23,12 +22,16 @@ function PartialScholarship(props) {
                */}
             <div className={styles.infoContainer}>
               <div className={styles.infoCard}>
-                <h1>{name}</h1>
-                <p>{details}</p>
+                <h2>{name}</h2>
+                <p>{description}</p>
                 <ul>
                   <li>
                     Link: &nbsp;
-                    <a href={url}>{url}</a>
+                    <a href={link}>{link}</a>
+                  </li>
+                  <li>
+                    Youtube: &nbsp;
+                    <a href={youtube}>{youtube}</a>
                   </li>
                 </ul>
               </div>
@@ -40,4 +43,4 @@ function PartialScholarship(props) {
   );
 }
 
-export default PartialScholarship;
+export default ExchangeProgram;

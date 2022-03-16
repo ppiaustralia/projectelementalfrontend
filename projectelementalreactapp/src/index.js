@@ -17,11 +17,10 @@ import ScholarshipPages from './pages/opportunities/pages/ScholarshipPages';
 
 ReactDOM.render(
   <>
-    <GlobalStyles />
-    {/* <FullScholarship /> */}
-    {/* <PartialScholarship /> */}
-    <ExchangeProgram />
-    {/* <ScholarshipPages /> */}
+    <Provider store={store}>
+      <GlobalStyles />
+      <App />
+    </Provider>
   </>,
   document.getElementById('root')
 );

@@ -15,10 +15,11 @@ import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
-import Scholarship from '../src/pages/opportunities/Scholarship';
-// import Opportunities from '../src/pages/opportunities/Opportunities';
-// import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
-
+import Scholarship from '../src/pages/opportunities/scholarship/Scholarship';
+// import FullScholarship from '../src/pages/opportunities/pages/FullScholarship';
+// import PartialScholarship from '../src/pages/opportunities/pages/PartialScholarship';
+// import Exchange from '../src/pages/opportunities/pages/Exchange';
+import ScholarshipPages from '../src/pages/opportunities/scholarship/pages/ScholarshipPages.js';
 import PageUnavailable from '../src/pages/404/PageUnavailable';
 // import { FooterContainer } from "./layout/footer/footer";
 import Footer from './layout/newFooter/Footer';
@@ -70,11 +71,29 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/opportunities/scholarship" element={<Scholarship />} />
+        <Route
+          path="/opportunities/scholarship/:pages"
+          element={<ScholarshipPages />}
+        />
         {/* <Route
-            path="/opportunities/scholarship/:types"
-            element={<ScholarshipTypes />}
+            path="/opportunities/scholarship/:pages"
+            element={<Scholarship />}
+          /> */}
+
+        {/* <Route
+            path="/opportunities/scholarship/full-scholarship"
+            element={<FullScholarship />}
           />
-        </Route> */}
+          <Route
+            path="/opportunities/scholarship/partial-scholarship"
+            element={<PartialScholarship />}
+          />
+          <Route
+            path="/opportunities/scholarship/exchange"
+            element={<Exchange />}
+          /> 
+          */}
+        {/* </Route> */}
 
         {/* if link doesnt exist or route is not connected, automatically go to this page */}
         <Route path="*" element={<PageUnavailable />} />
