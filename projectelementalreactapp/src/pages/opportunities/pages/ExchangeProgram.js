@@ -9,7 +9,9 @@ function ExchangeProgram(props) {
   return (
     // confirm running
     <>
-      <h1>Exchange Program</h1>
+      <h1 style={{ textAlign: 'center', margin: '20px 0' }}>
+        Exchange Program
+      </h1>
       {ExchangeDB.exchange.map((exchange) => {
         const { name, description, link, youtube } = exchange;
         return (
@@ -20,16 +22,20 @@ function ExchangeProgram(props) {
             </div>
                */}
             <div className={styles.infoContainer}>
-              <h2>{name}</h2>
-              <p>Description: {description}</p>
-              <p>
-                Link: &nbsp;
-                <a href={link}>{link}</a>
-              </p>
-              <p>
-                Youtube: &nbsp;
-                <a href={youtube}>{youtube}</a>
-              </p>
+              <div className={styles.infoCard}>
+                <h2>{name}</h2>
+                <p>{description}</p>
+                <ul>
+                  <li>
+                    Link: &nbsp;
+                    <a href={link}>{link}</a>
+                  </li>
+                  <li>
+                    Youtube: &nbsp;
+                    <a href={youtube}>{youtube}</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         );

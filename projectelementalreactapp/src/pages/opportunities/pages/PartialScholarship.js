@@ -9,7 +9,9 @@ function PartialScholarship(props) {
   return (
     // confirm running
     <>
-      <h1>Partial Scholarship</h1>
+      <h1 style={{ textAlign: 'center', margin: '20px 0' }}>
+        Partial Scholarship
+      </h1>
       {PartialDB.Partial.map((partial) => {
         const { name, details, url } = partial;
         return (
@@ -20,12 +22,16 @@ function PartialScholarship(props) {
             </div>
                */}
             <div className={styles.infoContainer}>
-              <h1>{name}</h1>
-              <p>Description: {details}</p>
-              <p>
-                Link: &nbsp;
-                <a href={url}>{url}</a>
-              </p>
+              <div className={styles.infoCard}>
+                <h1>{name}</h1>
+                <p>{details}</p>
+                <ul>
+                  <li>
+                    Link: &nbsp;
+                    <a href={url}>{url}</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         );

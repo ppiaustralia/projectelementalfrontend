@@ -17,10 +17,26 @@
 }
 
 .infoContainer {
-  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex: 3; */
   flex-direction: row;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   padding: 0.5em;
+}
+
+.infoCard {
+  background: #f08080;
+  width: 75%;
+  padding: 0.5em;
+}
+
+.infoCard > p,
+ul {
+  width: 70%;
+  color: white;
 }
 
 .container {

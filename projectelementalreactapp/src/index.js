@@ -20,8 +20,8 @@ ReactDOM.render(
     <GlobalStyles />
     {/* <FullScholarship /> */}
     {/* <PartialScholarship /> */}
-    {/* <ExchangeProgram /> */}
-    <ScholarshipPages />
+    <ExchangeProgram />
+    {/* <ScholarshipPages /> */}
   </>,
   document.getElementById('root')
 );

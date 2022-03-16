@@ -9,7 +9,9 @@ function FullScholarship(props) {
 
   return (
     <>
-      <h1>Full Scholarship</h1>
+      <h1 style={{ textAlign: 'center', margin: '20px 0' }}>
+        Full Scholarship
+      </h1>
       {FullDB.Full.map((full) => {
         const { name, details, url } = full;
         return (
@@ -21,11 +23,13 @@ function FullScholarship(props) {
                */}
             <div className={styles.infoContainer}>
               <h2>{name}</h2>
-              <p>Description: {details}</p>
-              <p>
-                Link: &nbsp;
-                <a href={url}>{url}</a>
-              </p>
+              <p>{details}</p>
+              <ul>
+                <li>
+                  Link: &nbsp;
+                  <a href={url}>{url}</a>
+                </li>
+              </ul>
             </div>
           </div>
         );
