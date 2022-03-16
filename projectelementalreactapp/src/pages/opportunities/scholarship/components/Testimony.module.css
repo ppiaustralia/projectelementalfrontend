@@ -1,19 +1,27 @@
 .testimony {
-  margin-top: 238px;
-  margin-bottom: 128px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 250px;
+
+  /* margin-bottom: 128px; */
 }
 
-.testimony__carousel {
-  display: block;
-  position: relative;
+.description {
+  float: left;
+}
 
-  margin-left: 450px;
-  margin-top: -250px;
+.testimonyCarousel {
+  position: relative;
+  float: right;
+
+  /* margin-left: 450px; */
+  /* margin-top: -250px; */
   /* right: 200px; */
   /* margin-bottom: 300px; */
 
-  height: 512px;
-  width: 800px;
+  height: 800px;
+  width: 1200px;
 
   /* margin: 44px 0; */
 
@@ -22,7 +30,11 @@
 }
 
 img {
-  height: 512px;
-  width: 800px;
+  /* height: 512px; */
+  /* width: 800px; */
   border-radius: 8px;
+  object-fit: contain;
+  object-position: 100%;
+  width: 30%;
+  height: 30%;
 }
