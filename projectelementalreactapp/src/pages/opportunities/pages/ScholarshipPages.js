@@ -42,30 +42,46 @@ function ScholarshipPages(props) {
 
   return (
     <>
-      <div className={styles.ScholarshipPages}>
-        <h1 className={styles.ScholarshipPagesTitle}>
-          Interested to study at Australia?
-        </h1>
-        <h2 className={styles.ScholarshipPagesSubtitle}>
-          Check out some of the options listed below. Alternatively, you can
+      <div className={styles.container}>
+        <div className={styles.hero}>
+          <h1 className={styles.heroTitle}>
+            Interested to study at Australia?
+          </h1>
+          <h2 className={styles.heroSubtitle}>
+            Check out some of the options listed below
+            {/* Alternatively, you can
           download PPI Australia 2021-2022 Scholar Programs Booklet by clicking
-          the button below
-        </h2>
-        <button>
+          the button below */}
+          </h2>
+          {/* <button className={styles.heroButton}>
           <a href={'www.google.com'}>Download Module Book</a>
-        </button>
-      </div>
-
-      {pages.map((data) => (
-        <div className={styles.cardBlog} key={data.id}>
-          <h3 className={styles.cardBlogName}>{data.title}</h3>
-          {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
-          <p className={styles.cardBlogButton}>
-            <a href={data.path}>Read More</a>
-            {/* goes to correct route but doenst go to the component page */}
-          </p>
+        </button> */}
         </div>
-      ))}
+
+        <div className={styles.cardContainer}>
+          {pages.map((data) => (
+            <div className={styles.card}>
+              <div key={data.id}>
+                <h3 className={styles.cardTitle}>{data.title}</h3>
+                {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
+                <p className={styles.cardTertiary}>
+                  <a href={data.path}>Read More</a>
+                  {/* goes to correct route but doenst go to the component page */}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className={styles.hero}>
+          <h2 className={styles.heroAlternative}>
+            <i>
+              *Alternatively, you can download PPI Australia 2021-2022 Scholar
+              Programs Booklet by clicking &nbsp;
+            </i>
+            <a href="http://www.google.com">here</a>
+          </h2>
+        </div>
+      </div>
     </>
   );
 }

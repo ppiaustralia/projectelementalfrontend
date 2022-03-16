@@ -23,15 +23,28 @@
   padding: 0.5em;
 }
 
-.cardScholarship {
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero {
   /* background: black; */
   /* margin: 2rem 0; */
   /* margin-left: 8rem; */
-  display: flex;
-  margin: auto;
+  /* margin: auto; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  text-align: center;
 }
 
-.cardScholarshipLeft {
+/* reason to comment: change into simpler design
+.cardScholarshipLeft { 
   background: grey;
 
   width: 400px;
@@ -46,40 +59,57 @@
 
   background: black;
   color: white;
-}
+} */
 
-.cardScholarshipTitle {
+.heroTitle {
   font-size: 48px;
   margin-top: 40px;
   width: 650px;
+  margin-bottom: 25px;
 }
 
-.cardScholarshipSubtitle {
-  font-size: 22px;
-  width: 550px;
+.heroSubtitle {
+  font-size: 20px;
   margin-top: 40px;
+  width: 650px;
+  margin-bottom: 80px;
 }
 
-.cardBlog {
-  margin-top: 20px;
+.heroAlternative {
+  font-size: 12px;
+  margin-top: 40px;
+  width: auto;
+}
+
+.cardContainer {
   display: inline-flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.card {
+  margin-top: 20px;
   width: 376px;
   height: 105px;
   margin: 2rem;
 
-  justify-content: center;
-  justify-items: center;
-
   background: lightgrey;
+
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
-.cardBlogName {
+.cardTitle {
   font-size: 32px;
   margin-left: 20px;
 }
 
-.cardBlogButton {
+.cardTertiary {
   font-size: 18px;
   margin-left: 16px;
 }
