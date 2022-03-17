@@ -65,22 +65,22 @@ function Footer() {
                 </p>
                 <ul className={styles['ft-ul']}>
                   <li>
-                    <Link to="/alpha/about" className={styles['ft-link']}>
+                    <Link to="/about" className={styles['ft-link']}>
                       Kabinet PPIA 2021-2022
                     </Link>
                   </li>
                   <li>
-                    <Link to="/alpha/about" className={styles['ft-link']}>
+                    <Link to="/about" className={styles['ft-link']}>
                       AD/ART
                     </Link>
                   </li>
                   <li>
-                    <Link to="/alpha/contact" className={styles['ft-link']}>
+                    <Link to="/contact" className={styles['ft-link']}>
                       Konsulat Indonesia
                     </Link>
                   </li>
                   <li>
-                    <Link to="/alpha/about" className={styles['ft-link']}>
+                    <Link to="/about" className={styles['ft-link']}>
                       Events
                     </Link>
                   </li>
@@ -93,17 +93,17 @@ function Footer() {
                 </p>
                 <ul className={styles['ft-ul']}>
                   <li>
-                    <Link to="/alpha/contact" className={styles['ft-link']}>
+                    <Link to="/contact" className={styles['ft-link']}>
                       Embassy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/alpha/contact" className={styles['ft-link']}>
+                    <Link to="/contact" className={styles['ft-link']}>
                       Consulate
                     </Link>
                   </li>
                   <li>
-                    <Link to="/alpha/contact" className={styles['ft-link']}>
+                    <Link to="/contact" className={styles['ft-link']}>
                       Sponsorship
                     </Link>
                   </li>

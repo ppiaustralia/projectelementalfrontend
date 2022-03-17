@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import style from './PageUnavailable.module.css';
+import style from './PrivacyPolicy.module.css';
 // import Button from '../../components/Button';
 
-function PageUnavailable() {
+function PrivacyPolicy() {
   console.log('test');
 
   return (
@@ -19,4 +19,4 @@ function PageUnavailable() {
   );
 }
 
-export default PageUnavailable;
+export default PrivacyPolicy;

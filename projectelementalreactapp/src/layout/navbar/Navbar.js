@@ -45,7 +45,7 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <Link to="/alpha/" className={styles['navbar-logo']}>
+        <Link to="/" className={styles['navbar-logo']}>
           <img
             src={`https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA.png`}
             alt="PPIA logo"
@@ -64,7 +64,7 @@ function Navbar() {
         >
           <li className={styles['nav-item']}>
             <Link
-              to="/alpha"
+              to=""
               className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
@@ -73,7 +73,7 @@ function Navbar() {
           </li>
           <li className={styles['nav-item']}>
             <Link
-              to="/alpha/about"
+              to="/about"
               className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
@@ -88,7 +88,7 @@ function Navbar() {
             {/* changed from "Link" to "p" to prevent redirect to /chapter/ */}
             <div className={styles['nav-links']} onClick={closeMobileMenu}>
               <Link
-                to="/alpha/chapter/all"
+                to="/chapter/all"
                 className={styles['nav-links']}
                 onClick={closeMobileMenu}
               >
@@ -99,7 +99,7 @@ function Navbar() {
           </li>
           <li className={styles['nav-item']}>
             <Link
-              to="/alpha/liveinoz"
+              to="/liveinoz"
               className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
@@ -108,7 +108,7 @@ function Navbar() {
           </li>
           <li className={styles['nav-item']}>
             <Link
-              to="/alpha/blog"
+              to="/blog"
               className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
@@ -117,7 +117,7 @@ function Navbar() {
           </li>
           <li className={styles['nav-item']}>
             <Link
-              to="/alpha/contact"
+              to="/contact"
               className={styles['nav-links']}
               onClick={closeMobileMenu}
             >
@@ -131,7 +131,7 @@ function Navbar() {
           >
             <div className={styles['nav-links']} onClick={closeMobileMenu}>
               <Link
-                to="/alpha/opportunities"
+                to="/opportunities"
                 className={styles['nav-links']}
                 onClick={closeMobileMenu}
               >

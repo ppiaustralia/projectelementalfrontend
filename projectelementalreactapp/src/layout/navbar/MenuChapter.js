@@ -1,42 +1,42 @@
 const MenuChapter = [
   {
     title: 'Australia Capitol Territory',
-    path: '/alpha/chapter/act',
+    path: '/chapter/act',
     cName: 'dropdownLink'
   },
   {
     title: 'New South Wales',
-    path: '/alpha/chapter/nsw',
+    path: '/chapter/nsw',
     cName: 'dropdownLink'
   },
   {
     title: 'Northern Territory',
-    path: '/alpha/chapter/nt',
+    path: '/chapter/nt',
     cName: 'dropdownLink'
   },
   {
     title: 'Queensland',
-    path: '/alpha/chapter/qld',
+    path: '/chapter/qld',
     cName: 'dropdownLink'
   },
   {
     title: 'South Australia',
-    path: '/alpha/chapter/sa',
+    path: '/chapter/sa',
     cName: 'dropdownLink'
   },
   {
     title: 'Tasmania',
-    path: '/alpha/chapter/tas',
+    path: '/chapter/tas',
     cName: 'dropdownLink'
   },
   {
     title: 'Victoria',
-    path: '/alpha/chapter/vic',
+    path: '/chapter/vic',
     cName: 'dropdownLink'
   },
   {
     title: 'Western Australia',
-    path: '/alpha/chapter/wa',
+    path: '/chapter/wa',
     cName: 'dropdownLink'
   }
 ];

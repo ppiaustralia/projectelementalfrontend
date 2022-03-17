@@ -14,6 +14,8 @@ import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
+import PrivacyPolicy from '../src/pages/legal/privacy-policy/PrivacyPolicy';
+import TermsConditions from '../src/pages/legal/terms-conditions/TermsConditions';
 
 // import Opportunities from '../src/pages/opportunities/Opportunities';
 // import Scholarship from '../src/pages/opportunities/Scholarship';
@@ -62,16 +64,18 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/alpha" element={<Home />} />
-        <Route path="/alpha/about" element={<About />} />
-        <Route path="/alpha/chapter/:statename" element={<Chapter />} />
-        <Route path="/alpha/liveinoz" element={<Liveinoz />} />
-        <Route path="/alpha/liveinoz/:id" element={<ReadMore />} />
-        <Route path="/alpha/blog" element={<Blog />} />
-        <Route path="/alpha/contact" element={<Contact />} />
-        {/* <Route path="/alpha/opportunities/scholarship" element={<Scholarship />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/chapter/:statename" element={<Chapter />} />
+        <Route path="/liveinoz" element={<Liveinoz />} />
+        <Route path="/liveinoz/:id" element={<ReadMore />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        {/* <Route path="/opportunities/scholarship" element={<Scholarship />}>
           <Route
-            path="/alpha/opportunities/scholarship/:types"
+            path="/opportunities/scholarship/:types"
             element={<ScholarshipTypes />}
           />
         </Route> */}
