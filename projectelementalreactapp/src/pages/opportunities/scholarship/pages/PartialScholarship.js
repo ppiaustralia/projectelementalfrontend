@@ -26,7 +26,7 @@ function PartialScholarship() {
                 <p>{details}</p>
                 <ul>
                   <li>
-                    Link: &nbsp;
+                    Link:&nbsp;
                     <a href={url}>{url}</a>
                   </li>
                 </ul>

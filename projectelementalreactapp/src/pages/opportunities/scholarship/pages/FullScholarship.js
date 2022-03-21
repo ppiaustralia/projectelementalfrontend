@@ -26,7 +26,7 @@ function FullScholarship() {
                 <p>{details}</p>
                 <ul>
                   <li>
-                    Link: &nbsp;
+                    Learn More:&nbsp;
                     <a href={url}>{url}</a>
                   </li>
                 </ul>

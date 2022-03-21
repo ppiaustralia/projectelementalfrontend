@@ -18,15 +18,11 @@ function Testimony() {
         <h2>
           <b>Testimonies</b>
         </h2>
-        <p>
-          Check out how some of our associates
-          <br />
-          got their scholarship
-        </p>
+        <p>Check out how some of our officers got their scholarship</p>
       </div>
 
       <div className={styles.testimonyCarousel}>
-        <Carousel>
+        <Carousel centerMode={true} showThumbs={false} showStatus={false}>
           <div>
             <img src={cat} />
             <p className="legend">Cat 1</p>

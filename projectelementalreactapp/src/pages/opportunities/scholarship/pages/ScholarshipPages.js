@@ -7,6 +7,7 @@ import {
   useParams
 } from 'react-router-dom';
 
+import { BsArrowRightShort } from 'react-icons/bs';
 import styles from './ScholarshipPages.module.css';
 
 function ScholarshipPages() {
@@ -41,25 +42,19 @@ function ScholarshipPages() {
           {routes.map((data) => (
             <div className={styles.card}>
               <div key={data.id}>
-                <h3 className={styles.cardTitle}>{data.title}</h3>
-                {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
-                <p className={styles.cardTertiary}>
-                  <Link to={data.path}>Read More</Link>
-                  {/* <Link to={data.path}>Read More</Link> */}
-                  {/* goes to correct route but doenst go to the component page */}
-                </p>
+                <Link to={data.path} className={styles.cardLink}>
+                  <h3 className={styles.cardTitle}>{data.title}</h3>
+                  {/* <p className={styles.cardBlogDesc}>{data.desc}</p> */}
+                  <p className={styles.cardTertiary}>
+                    Read More
+                    <BsArrowRightShort />
+                    {/* <Link to={data.path}>Read More</Link> */}
+                    {/* goes to correct route but doenst go to the component page */}
+                  </p>
+                </Link>
               </div>
             </div>
           ))}
-        </div>
-        <div className={styles.hero}>
-          <h2 className={styles.heroAlternative}>
-            <i>
-              *Alternatively, you can download PPI Australia 2021-2022 Scholar
-              Programs Booklet by clicking &nbsp;
-            </i>
-            <a href="http://www.google.com">here</a>
-          </h2>
         </div>
       </div>
     </>

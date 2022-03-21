@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 180px;
 
   /* margin-bottom: 128px; */
 }
@@ -12,7 +12,7 @@
 }
 
 .testimonyCarousel {
-  position: relative;
+  /* position: relative; */
   float: right;
 
   /* margin-left: 450px; */
@@ -20,21 +20,17 @@
   /* right: 200px; */
   /* margin-bottom: 300px; */
 
-  height: 800px;
-  width: 1200px;
+  /* height: 700px; */
+  width: 1000px;
 
   /* margin: 44px 0; */
 
   /* background: black; */
-  border-radius: 8px;
-}
+  /* border-radius: 8px; */
 
-img {
   /* height: 512px; */
   /* width: 800px; */
   border-radius: 8px;
   object-fit: contain;
   object-position: 100%;
-  width: 30%;
-  height: 30%;
 }

@@ -26,11 +26,11 @@ function ExchangeProgram() {
                 <p>{description}</p>
                 <ul>
                   <li>
-                    Link: &nbsp;
+                    Learn More:&nbsp;
                     <a href={link}>{link}</a>
                   </li>
                   <li>
-                    Youtube: &nbsp;
+                    Youtube:&nbsp;
                     <a href={youtube}>{youtube}</a>
                   </li>
                 </ul>
