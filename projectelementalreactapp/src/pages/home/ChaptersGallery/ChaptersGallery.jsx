@@ -30,7 +30,7 @@ export default function ChaptersGallery() {
   return (
     <div className={styles['front-page']}>
       <div className={styles.chaptersTitle}>
-        <p>Chapters</p>
+        <h2>Chapters</h2>
       </div>
 
       <div className={styles['img-gallery']}>
@@ -40,7 +40,7 @@ export default function ChaptersGallery() {
               return (
                 <>
                   <Col md="auto">
-                    <Link to={`chapter/${branch.state}`}>
+                    <Link to={`alpha/chapter/${branch.state}`}>
                       <Image
                         src={`${chapterBaseLink}${branch.image}`}
                         className={`d-block ${styles['responsive-gallery']} mx-5`}

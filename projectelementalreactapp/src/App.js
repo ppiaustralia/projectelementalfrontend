@@ -62,16 +62,16 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="chapter/:statename" element={<Chapter />} />
-        <Route path="liveinoz" element={<Liveinoz />} />
-        <Route path="liveinoz/:id" element={<ReadMore />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="contact" element={<Contact />} />
-        {/* <Route path="opportunities/scholarship" element={<Scholarship />}>
+        <Route path="/alpha" element={<Home />} />
+        <Route path="/alpha/about" element={<About />} />
+        <Route path="/alpha/chapter/:statename" element={<Chapter />} />
+        <Route path="/alpha/liveinoz" element={<Liveinoz />} />
+        <Route path="/alpha/liveinoz/:id" element={<ReadMore />} />
+        <Route path="/alpha/blog" element={<Blog />} />
+        <Route path="/alpha/contact" element={<Contact />} />
+        {/* <Route path="/alpha/opportunities/scholarship" element={<Scholarship />}>
           <Route
-            path="opportunities/scholarship/:types"
+            path="/alpha/opportunities/scholarship/:types"
             element={<ScholarshipTypes />}
           />
         </Route> */}

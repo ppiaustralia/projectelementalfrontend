@@ -10,7 +10,7 @@ export default function ContactUs() {
         <h2>Do you have any questions?</h2>
         <p>Feel free to contact us by clicking this button below</p>
         <button className={styles.email}>
-          <a href="mailto:publicrelations@ppi-australia.org">Contact Us</a>
+          <a href="mailto:infotech@ppi-australia.org">Contact PPIA IT</a>
         </button>
       </div>
     </>
