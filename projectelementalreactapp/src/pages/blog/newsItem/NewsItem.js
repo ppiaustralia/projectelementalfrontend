@@ -24,7 +24,7 @@ function NewsItem(props) {
                 <div>{ReactHtmlParser(content)}</div>
                 <div className={s.newsInfo}>
                     <span className={s.newsDate}>{parsedDate}</span>
-                    <span className={s.tags}>Education Sport News</span>
+                    <span className={s.tags}>{tag}</span>
                 </div>
             </div>
             <div className={s.newsFooter}>
