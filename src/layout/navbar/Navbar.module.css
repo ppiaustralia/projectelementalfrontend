@@ -2,7 +2,7 @@
     background: #ec2027;
     height: 6vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
     position: -webkit-sticky; /* Safari */
@@ -14,7 +14,6 @@
 .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -83,13 +82,23 @@ fa-caret-down {
 }
 
 @media screen and (max-width: 960px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+        align-items: center;
+    }
     .fa-caret-down {
         display: none;
     }
     .NavbarItems {
         position: relative;
     }
-
+    .ppiaLogo {
+        width: 75px;
+        height: 75px;
+    }
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -123,19 +132,9 @@ fa-caret-down {
     }
 
     .navbar-logo {
-        position: absolute;
-        /* left: 0; */
-        transform: translate(25%, 50%);
     }
 
     .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
     }
 
     .fa-times {
@@ -205,16 +204,10 @@ fa-caret-down {
     }
 
     .navbar-logo {
-        position: absolute;
-        /* left: 0; */
     }
 
     .menu-icon {
         display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
     }
