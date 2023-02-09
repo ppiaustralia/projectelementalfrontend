@@ -1,7 +1,7 @@
 .dropdownMenu {
     width: 200px;
     position: absolute;
-    top: 80px;
+    top: 70px;
     list-style: none;
     text-align: start;
     z-index: 99;
@@ -9,19 +9,20 @@
     left: auto;
     border: 1px solid whitesmoke;
     border-radius: 0.25em;
-    background: #ff2020;
+    background: #fff;
     padding: 0.5em;
 }
 
 .dropdownMenu li.states {
-    background: #ff2020;
+    background: #fff;
+    color: #ec2027;
     cursor: pointer;
     padding: 0.25em;
     width: 100%;
 }
 
 .dropdownMenu li:hover {
-    background: salmon;
+    background: #ec2027;
     border-radius: 0.5em;
     color: #fff;
     text-decoration: none;
@@ -36,7 +37,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #fff;
+    color: #ec2027;
 }
 .dropdownLink:hover {
     color: #fff;
