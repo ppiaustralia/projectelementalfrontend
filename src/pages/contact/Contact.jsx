@@ -19,7 +19,7 @@ function Contact() {
     const baseURL = "https://ppiacontact.s3.us-east-2.amazonaws.com/"
     useEffect(() => {
         axios
-            .get("https://ppia-backend.herokuapp.com/external_contact/")
+            .get("https://elemental-backend.onrender.com/external_contact/")
             .then((data) => {
                 setEmbassies(
                     data.data.filter((eachData) =>
