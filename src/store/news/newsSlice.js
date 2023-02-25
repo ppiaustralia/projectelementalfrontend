@@ -8,7 +8,7 @@ import {
 // export const fetchNews = createAsyncThunk("setNews", async (_, thunkAPI) => {
 //     try {
 //         const response = await axios.get(
-//             `https://ppia-backend.herokuapp.com/feed/articles/`
+//             `https://elemental-backend.onrender.com/feed/articles/`
 //         )
 //         return await response.json()
 //     } catch (error) {
