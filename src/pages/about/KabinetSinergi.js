@@ -103,7 +103,7 @@ const iterateAllDept = (deptList, dataArr) => {
 const getAllDept = async () => {
   let deptList = [];
   await axios
-    .get('https://ppia-backend.herokuapp.com/user/committee/')
+    .get('https://elemental-backend.onrender.com/user/committee/')
     .then((data) => {
       //create Exec object
       const execArr = data.data.filter(

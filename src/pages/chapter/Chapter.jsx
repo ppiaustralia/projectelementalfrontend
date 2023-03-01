@@ -23,13 +23,13 @@ function Chapter(props) {
     setTwigs([]);
     if (statename == 'all') {
       axios
-        .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+        .get(`https://elemental-backend.onrender.com/user/ppia/`)
         .then((data) => {
           setBranch(data.data.filter((eachData) => eachData.level === 1));
         });
     } else {
       axios
-        .get(`https://ppia-backend.herokuapp.com/user/ppia/?state=${statename}`)
+        .get(`https://elemental-backend.onrender.com/user/ppia/?state=${statename}`)
         .then((data) => {
           setBranch(data.data.filter((eachData) => eachData.level === 1));
           setTwigs(data.data.filter((eachData) => eachData.level === 2));
