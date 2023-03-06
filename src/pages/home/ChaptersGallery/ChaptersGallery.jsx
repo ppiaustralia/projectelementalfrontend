@@ -17,7 +17,7 @@ export default function ChaptersGallery() {
 
   useEffect(() => {
     axios
-      .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+      .get(`https://elemental-backend.onrender.com/user/ppia/`)
       .then((data) => {
         setBranchList(
           data.data.filter((eachPPIAObj) => eachPPIAObj.level === 1)
@@ -25,7 +25,7 @@ export default function ChaptersGallery() {
       })
       .catch((err) => {
         console.log(err);
-      });
+      })
   }, []);
   return (
     <div className={styles['front-page']}>

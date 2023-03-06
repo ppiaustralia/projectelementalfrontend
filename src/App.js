@@ -36,20 +36,20 @@ function App() {
   useEffect(() => {
     dispatch(setLoadingTrue());
     axios
-      .get(`https://ppia-backend.herokuapp.com/feed/articles/`)
+      .get(`https://elemental-backend.onrender.com/feed/articles/`)
       .then((data) => {
         dispatch(setNews(data.data));
         dispatch(setLoadingFalse());
       });
   }, []);
   useEffect(() => {
-    axios.get(`https://ppia-backend.herokuapp.com/slideshow/`).then((data) => {
+    axios.get(`https://elemental-backend.onrender.com/slideshow/`).then((data) => {
       dispatch(setSlideshow(data.data));
     });
   }, []);
   useEffect(() => {
     axios
-      .get(`https://ppia-backend.herokuapp.com/user/ppia/`)
+      .get(`https://elemental-backend.onrender.com/user/ppia/`)
       .then((data) => {
         dispatch(setChapters(data.data));
       })
