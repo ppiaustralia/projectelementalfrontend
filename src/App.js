@@ -15,9 +15,6 @@ import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
-// import Opportunities from '../src/pages/opportunities/Opportunities';
-// import Scholarship from '../src/pages/opportunities/Scholarship';
-// import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
 
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 // import { FooterContainer } from "./layout/footer/footer";
@@ -33,15 +30,6 @@ import { setChapters } from './store/chapters/chaptersSlice';
 
 function App() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(setLoadingTrue());
-    axios
-      .get(`https://elemental-backend.onrender.com/feed/articles/`)
-      .then((data) => {
-        dispatch(setNews(data.data));
-        dispatch(setLoadingFalse());
-      });
-  }, []);
   useEffect(() => {
     axios.get(`https://elemental-backend.onrender.com/slideshow/`).then((data) => {
       dispatch(setSlideshow(data.data));

@@ -9,8 +9,8 @@ function RecentPost() {
     return (
         <div className={s.recentPostCont}>
             <strong> Recent Post</strong>
-            {newsLatest.map((eachItem) => (
-                <SmallNewsItem newsContent={eachItem} />
+            {newsLatest.map((eachItem,index) => (
+                <SmallNewsItem newsContent={eachItem} key={index} />
             ))}
         </div>
     )

@@ -9,7 +9,6 @@ function NewsItem(props) {
         props.newsContent
     const previewContent = content.slice(0, 100)
     const parsedDate = moment(publish_date).format("LLL")
-    console.log()
     return (
         <div className={s.newsItemCont}>
             <div className={s.coverImageCont}>
@@ -24,12 +23,12 @@ function NewsItem(props) {
                 <div>{ReactHtmlParser(content)}</div>
                 <div className={s.newsInfo}>
                     <span className={s.newsDate}>{parsedDate}</span>
-                    <span className={s.tags}>{tag}</span>
+                    <span className={s.tags}>{tag[0].name}</span>
                 </div>
             </div>
             <div className={s.newsFooter}>
                 <span>
-                    Read <i class="fas fa-arrow-right" />
+                    Read <i className="fas fa-arrow-right" />
                 </span>
                 <Social />
             </div>

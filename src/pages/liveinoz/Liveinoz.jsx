@@ -15,15 +15,15 @@ export default function Liveinoz() {
         </div>
 
         <div>
-          {section_data.map((section) => {
+          {section_data.map((section,index) => {
             return (
-              <div>
+              <div key={index}>
                 <Subtitle section={section} />
                 {/* {this.render_subtitle(section)} */}
-                {section.entries.map((entry) => {
+                {section.entries.map((entry,index) => {
                   return (
-                    <div>
-                      <Entry entry={entry} />
+                    <div key={index}>
+                      <Entry entry={entry}/>
                     </div>
                   );
                 })}
