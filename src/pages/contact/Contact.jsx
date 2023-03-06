@@ -6,7 +6,6 @@ import ConsulatesCard from "./ConsulatesCard"
 import PPIA from "./PPIA"
 import axios from "axios"
 import Loading from "../../components/Loading"
-import TestCard from "./TestCard"
 
 function Contact() {
     const [consulates, setConsulate] = useState([])

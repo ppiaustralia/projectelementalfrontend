@@ -16,8 +16,8 @@ export default function LatestUpdate() {
       </div>
 
       <div className={styles.newsDeck}>
-        {newsLatest.map((eachItem) => (
-          <NewsCards newsContent={eachItem} />
+        {newsLatest.map((eachItem,index) => (
+          <NewsCards newsContent={eachItem} key={index} />
         ))}
       </div>
 

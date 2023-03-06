@@ -19,8 +19,8 @@ function NewsList(props) {
     }
     return (
         <div className={s.newsListCont}>
-            {newsArray[currIdx].map((eachNews) => (
-                <NewsItem newsContent={eachNews} />
+            {newsArray[currIdx].map((eachNews,index) => (
+                <NewsItem newsContent={eachNews} key={index} />
             ))}
             <div className={s.counter}>
                 <Counter

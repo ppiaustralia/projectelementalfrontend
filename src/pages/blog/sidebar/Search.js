@@ -19,7 +19,7 @@ function Search() {
                     className={s.newsSearchBar}
                 />
                 <button type="submit" className={s.searchButton}>
-                    <i class="fas fa-search"></i>
+                    <i className="fas fa-search"></i>
                 </button>
             </form>
         </div>
