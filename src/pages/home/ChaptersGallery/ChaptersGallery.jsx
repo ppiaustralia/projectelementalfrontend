@@ -25,7 +25,7 @@ export default function ChaptersGallery() {
       })
       .catch((err) => {
         console.log(err);
-      });
+      })
   }, []);
   return (
     <div className={styles['front-page']}>

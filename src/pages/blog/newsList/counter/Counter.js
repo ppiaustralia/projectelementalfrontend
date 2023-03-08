@@ -17,9 +17,10 @@ function Counter(props) {
                 </div>
             )}
 
-            {counterArr.map((item) => {
+            {counterArr.map((item,index) => {
                 return (
                     <div
+                        key={index}
                         className={`${s.counterItem} ${
                             item == currIdx ? `${s.active}` : ""
                         }`}

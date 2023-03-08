@@ -52,10 +52,10 @@ export default function SinglePage(props) {
 
     return (
         <StyledSection>
-            <div class="wrapper">
-                <div class="row">
-                    <div class="column"></div>
-                    <div class="double-column">
+            <div className="wrapper">
+                <div className="row">
+                    <div className="column"></div>
+                    <div className="double-column">
                         <h1>AD / ART</h1>
                         <Document
                             file={pdf}
@@ -64,26 +64,7 @@ export default function SinglePage(props) {
                         >
                             <Page pageNumber={pageNumber} />
                         </Document>
-                        {/* <div>
-                            <p>
-                                Page {pageNumber || (numPages ? 1 : "--")} of{" "}
-                                {numPages || "--"}
-                            </p>
-                            <button
-                                type="button"
-                                disabled={pageNumber <= 1}
-                                onClick={previousPage}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                type="button"
-                                disabled={pageNumber >= numPages}
-                                onClick={nextPage}
-                            >
-                                Next
-                            </button>
-                        </div> */}
+
                     </div>
                 </div>
             </div>

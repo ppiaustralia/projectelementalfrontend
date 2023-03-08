@@ -51,5 +51,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Front-end repository for Project elemental",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppiaustralia/projectelementalfrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppiaustralia/projectelementalfrontend/issues"
   }
 }

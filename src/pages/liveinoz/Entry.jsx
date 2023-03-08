@@ -29,11 +29,11 @@ export default function Entry({entry}) {
             </div>
         </div>
         <div className={styles["share-icons"]}>
-            <i class="fas fa-share-alt-square" />
-            <i class="fab fa-facebook-square" />
-            <i class="fab fa-instagram-square" />
-            <i class="fab fa-youtube-square" />
-            <i class="fab fa-twitter-square" />
+            <i className="fas fa-share-alt-square" />
+            <i className="fab fa-facebook-square" />
+            <i className="fab fa-instagram-square" />
+            <i className="fab fa-youtube-square" />
+            <i className="fab fa-twitter-square" />
         </div>
     </div>
   );

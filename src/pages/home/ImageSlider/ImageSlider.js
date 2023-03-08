@@ -36,7 +36,7 @@ export default function ImageSlider() {
         </div>
       </div>
       <div>
-        <img src={ImageHeader} alt="ppia" class={styles.imageHeader} />
+        <img src={ImageHeader} alt="ppia" className={styles.imageHeader} />
       </div>
 
       {/* <div className={styles.containerCarousel}>

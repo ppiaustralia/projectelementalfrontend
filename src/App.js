@@ -34,15 +34,6 @@ import { setChapters } from './store/chapters/chaptersSlice';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(setLoadingTrue());
-    axios
-      .get(`https://elemental-backend.onrender.com/feed/articles/`)
-      .then((data) => {
-        dispatch(setNews(data.data));
-        dispatch(setLoadingFalse());
-      });
-  }, []);
-  useEffect(() => {
     axios.get(`https://elemental-backend.onrender.com/slideshow/`).then((data) => {
       dispatch(setSlideshow(data.data));
     });
