@@ -15,6 +15,9 @@ import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
 import Blog from '../src/pages/blog/Blog';
 
+// import Opportunities from '../src/pages/opportunities/Opportunities';
+// import Scholarship from '../src/pages/opportunities/Scholarship';
+// import ScholarshipTypes from '../src/pages/opportunities/pages/ScholarshipTypes';
 
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
 // import { FooterContainer } from "./layout/footer/footer";

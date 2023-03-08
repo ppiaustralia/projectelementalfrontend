@@ -18,7 +18,7 @@ function Footer() {
                 className={styles.ppiaLogo}
               />
             </Link>
-            <p>2010 - 2020</p>
+            <p>2010 - 2023</p>
             <li>
               <a
                 className={styles['ft-a']}
@@ -41,24 +41,6 @@ function Footer() {
           </Col>
           <Col>
             <section className={styles['ft-main']}>
-              <div className={styles['ft-main-item']}>
-                <p className={styles['ft-title']}>
-                  <b>PPI-Apps</b>
-                </p>
-                <ul className={styles['ft-ul']}>
-                  <li>
-                    <a className={styles['ft-a']} href="#">
-                      Apple App Store
-                    </a>
-                  </li>
-                  <li>
-                    <a className={styles['ft-a']} href="#">
-                      Android Play Store
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
               <div className={styles['ft-main-item']}>
                 <p className={styles['ft-title']}>
                   <b>Get To Know Us</b>
