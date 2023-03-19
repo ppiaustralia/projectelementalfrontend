@@ -1,12 +1,8 @@
 import React from 'react';
 
-import { image_data } from '../database_home';
 import styles from './ImageSlider.module.css';
 
-import { Carousel } from 'react-bootstrap/';
 import { useSelector } from 'react-redux';
-import Loading from '../../../components/Loading';
-import { setChapters } from '../../../store/chapters/chaptersSlice';
 import { Link } from 'react-router-dom';
 
 import ImageHeader from '../../../assets/images/2.jpg';
@@ -15,8 +11,8 @@ export default function ImageSlider() {
   return (
     <div className={styles.container}>
       <span className={styles.backgroundImage} />
-      <div className={styles.welcome}>
-        <h2>PPI-Australia (PPIA)</h2>
+      <div className=" text-lg basis-1/3 p-2 px-4">
+        <h2 className="text-5xl text-red-600 mb-2">PPI-Australia (PPIA)</h2>
         <p className={styles.welcomeSubtitle}>
           Perhimpunan Pelajar Indonesia Australia (PPIA) or Indonesian Students'
           Association of Australia. it has purpose to serve Indonesian students
@@ -35,29 +31,10 @@ export default function ImageSlider() {
           </a>
         </div>
       </div>
-      <div>
-        <img src={ImageHeader} alt="ppia" className={styles.imageHeader} />
+      <div className='basis-2/3'>
+        <img src={ImageHeader} alt="Synergy for Indonesia image" className='w-full h-full object-contain' />
       </div>
 
-      {/* <div className={styles.containerCarousel}>
-        <Carousel className={styles.carousel}>
-          {slideshow ? (
-            slideshow.map((item) => (
-              <Carousel.Item>
-                <div className={styles.imageContainer}>
-                  <img
-                    class={styles.carouselImage}
-                    src={`${item.image}`}
-                    alt="Fetching Carousel Images"
-                  />
-                </div>
-              </Carousel.Item>
-            ))
-          ) : (
-            <Loading />
-          )}
-        </Carousel>
-      </div> */}
     </div>
   );
 }

@@ -16,7 +16,6 @@ export default function Home() {
       <ImageSlider />
       <ChaptersGallery />
       <MainHighlights />
-      <Membership />
       <LatestUpdate />
       <ContactUs />
       {/* <div className="front-page bottompanel">UPCOMING EVENTS</div>; */}

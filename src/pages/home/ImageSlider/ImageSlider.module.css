@@ -37,7 +37,7 @@
   background-image: url('../../../assets/images/smallBatikPattern.jpg'); /* can use this for contact Us */
   background-repeat: round;
   opacity: 0.08;
-  z-index: 0;
+  z-index: -1;
   /* left: -1em; */
 }
 
@@ -94,7 +94,6 @@
 }
 
 .buttons {
-  margin-left: -2em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

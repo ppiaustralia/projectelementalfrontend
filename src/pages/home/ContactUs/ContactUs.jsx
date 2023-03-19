@@ -6,10 +6,10 @@ import styles from './ContactUs.module.css';
 export default function ContactUs() {
   return (
     <>
-      <div className={styles.container}>
+      <div className='w-full items-center justify-center flex flex-col mt-4'>
         <h2>Do you have any questions?</h2>
-        <p>Feel free to contact us by clicking this button below</p>
-        <button className={styles.email}>
+        <p className='mb-2'>Feel free to contact us by clicking this button below</p>
+        <button className='w-48 h-16 bg-white mb-4 rounded-lg'>
           <a href="mailto:infotech@ppi-australia.org">Contact PPIA IT</a>
         </button>
       </div>
