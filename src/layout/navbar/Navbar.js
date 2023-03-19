@@ -44,7 +44,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className={styles.navbar}>
+            <nav className='bg-primaryRed h-24 flex justify-around items-cener font-lg sticky top-0 z-20'>
                 <div>
                     <Link to="/alpha/" className={styles["navbar-logo"]}>
                         <img

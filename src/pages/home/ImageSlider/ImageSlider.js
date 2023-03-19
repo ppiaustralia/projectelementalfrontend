@@ -11,7 +11,7 @@ export default function ImageSlider() {
   return (
     <div className={styles.container}>
       <span className={styles.backgroundImage} />
-      <div className=" text-lg basis-1/3 p-2 px-4">
+      <div className=" flex flex-col text-lg basis-1/3 p-2 px-4  items-center">
         <h2 className="text-5xl text-red-600 mb-2">PPI-Australia (PPIA)</h2>
         <p className={styles.welcomeSubtitle}>
           Perhimpunan Pelajar Indonesia Australia (PPIA) or Indonesian Students'

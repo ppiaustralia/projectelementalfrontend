@@ -17,7 +17,7 @@ import Blog from '../src/pages/blog/Blog';
 
 
 import PageUnavailable from '../src/pages/404/PageUnavailable.jsx';
-import Footer from './layout/newFooter/Footer';
+import Footer from './layout/footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import {
   setNews,
