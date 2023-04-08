@@ -13,6 +13,7 @@ import Chapter from '../src/pages/chapter/Chapter';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
 import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
+import LiveInOz from '../src/pages/liveinoz/LiveInOz';
 import Blog from '../src/pages/blog/Blog';
 
 
@@ -52,7 +53,7 @@ function App() {
         <Route path="/alpha" element={<Home />} />
         <Route path="/alpha/about" element={<About />} />
         <Route path="/alpha/chapter/:statename" element={<Chapter />} />
-        <Route path="/alpha/liveinoz" element={<Liveinoz />} />
+        <Route path="/alpha/liveinoz" element={<LiveInOz />} />
         <Route path="/alpha/liveinoz/:id" element={<ReadMore />} />
         <Route path="/alpha/blog" element={<Blog />} />
         <Route path="/alpha/contact" element={<Contact />} />
