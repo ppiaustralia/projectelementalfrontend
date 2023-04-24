@@ -12,7 +12,7 @@ import Navbar from './layout/navbar/Navbar';
 import Chapter from '../src/pages/chapter/Chapter';
 import About from '../src/pages/about/About';
 import Contact from '../src/pages/contact/Contact';
-import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz';
+import Liveinoz, { ReadMore } from '../src/pages/liveinoz/Liveinoz.jsx';
 import LiveInOz from '../src/pages/liveinoz/LiveInOz';
 import Blog from '../src/pages/blog/Blog';
 

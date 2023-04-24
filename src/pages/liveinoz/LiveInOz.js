@@ -4,14 +4,15 @@ import LiveInOzItem  from './LiveInOzItem'
 
 function LiveInOz() {
     const [articles, setArticles]= useState([])
-    const [viewingContent, setViewingContent]= useState(false)
     const [contentBeingViewed, setContentBeingViewed] = useState({})
+    const [selectedArticle, setSelectedArticle] = useState(null)
 
     useEffect(() => {
         axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
             if(res.status == 200){
                 console.log(res.data)
                 setArticles(res.data)
+                setContentBeingViewed(res.data[0]);
             }
         }).catch(err => {
             console.error(err.message)
@@ -23,32 +24,29 @@ function LiveInOz() {
             setContentBeingViewed(content)
         }
         console.log('handleClickLink called')
-        setViewingContent(!viewingContent)
     }
 
     return (
-        <div className="flex flex-col w-full text-center bg-blue-200 justify-center ">
-            {!viewingContent ?
-
-                <div className="LiveInOzList">
-                    <ul>
-                        {articles.map(eachArticle => {
-                            return (
-                                <div className="LiveInOzItem flex flex-col bg-green-200 mb-2" onClick={(() => handleClickLink(eachArticle))}>
-                                    <h2> {eachArticle.title}</h2>
-                                </div>
-                            )
-                        })}
-                    </ul>
-                </div>
-
-                :
-
-                <div onClick={handleClickLink}>
+        <div className="w-full flex flex-col text-center justify-center">
+            <div className="flex flex-row">
+                <div className="LiveInOzList w-1/4 bg-primaryRed text-sm">
+                <ul>
+                    {articles.map(eachArticle => {
+                        return (
+                            <div className="LiveInOzItem flex flex-col cursor-pointer p-2 hover:bg-gray-600 text-white" onClick={(() => handleClickLink(eachArticle))}>
+                                <h2> {eachArticle.title}</h2>
+                            </div>
+                        )
+                    })}
+                </ul>
+            </div>
+            <div className="LiveInOzContent flex flex-col w-3/4 bg-gray-200">
+                {contentBeingViewed && (
                     <LiveInOzItem content={contentBeingViewed} />
-                </div>
-            }
-        </div>
+                )}
+            </div>
+      </div>
+    </div>
 
     )
 }
