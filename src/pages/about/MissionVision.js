@@ -11,7 +11,7 @@ const MissionVision = () => {
             <div className={styles.container}>
                 <h1 className={styles.heading1}>About Us</h1>
                 <div className={styles.imgCont}>
-                    <img src="https://media.istockphoto.com/photos/positive-group-of-young-friends-having-fun-at-public-park-picture-id1270415694?b=1&k=20&m=1270415694&s=170667a&w=0&h=lPS4kv4R9fz9mh1KLa9ZbJafxldI4lFmpiyipswwHeo=" />
+                    <img src="https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA_ALL.jpg" className='max-w-[70%] max-h-[50%]' />
                 </div>
                 <div className={styles.aboutCont}>
                     <p>
