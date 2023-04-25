@@ -10,6 +10,9 @@
 
 # logs
 .eslintcache
+/.vs
+/.vscode
+.DS_Store
 
 # production
 /build

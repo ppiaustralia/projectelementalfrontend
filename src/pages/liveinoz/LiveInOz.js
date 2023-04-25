@@ -5,7 +5,6 @@ import LiveInOzItem  from './LiveInOzItem'
 function LiveInOz() {
     const [articles, setArticles]= useState([])
     const [contentBeingViewed, setContentBeingViewed] = useState({})
-    const [selectedArticle, setSelectedArticle] = useState(null)
 
     useEffect(() => {
         axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
