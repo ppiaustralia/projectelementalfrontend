@@ -1,22 +1,34 @@
 import react, {useState ,useEffect}from 'react'
 import axios from 'axios'
 import LiveInOzItem  from './LiveInOzItem'
+import useSWR from 'swr'
 
 function LiveInOz() {
     const [articles, setArticles]= useState([])
     const [contentBeingViewed, setContentBeingViewed] = useState({})
 
+    const fetcher = (...args) => fetch(...args).then(res => res.json())
+    const { data, error, isLoading } = useSWR('https://elemental-backend.onrender.com/liveinoz/articles/', fetcher)
+    
     useEffect(() => {
-        axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
-            if(res.status == 200){
-                console.log(res.data)
-                setArticles(res.data)
-                setContentBeingViewed(res.data[0]);
-            }
-        }).catch(err => {
-            console.error(err.message)
-        })
-    },[])
+        if (data != undefined){
+            setArticles(data)
+            setContentBeingViewed(data[0])
+        }
+    }, [data])
+    
+    
+    // useEffect(() => {
+    //     axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
+    //         if(res.status == 200){
+    //             console.log(res.data)
+    //             setArticles(res.data)
+    //             setContentBeingViewed(res.data[0]);
+    //         }
+    //     }).catch(err => {
+    //         console.error(err.message)
+    //     })
+    // },[])
 
     const handleClickLink = (content) =>{
         if(content){
