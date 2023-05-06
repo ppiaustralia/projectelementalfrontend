@@ -23,7 +23,6 @@ function Chapter(props) {
   const chapterBaseLink = 'https://chapterslogo.s3.us-east-2.amazonaws.com/';
 
   const {data, errorAll, isLoadingAll } = usePage('https://elemental-backend.onrender.com/user/ppia/');
-  // const {dataACT, error} = usePage('https://elemental-backend.onrender.com/user/ppia/?state=ACT') 
 
   // get statename value form url
   let { statename } = useParams();
@@ -37,11 +36,6 @@ function Chapter(props) {
     if (statename === 'all' && data !== undefined) {
       setBranch(data.filter((eachData) => eachData.level === 1));
     } else if (statename !== 'all' && data !== undefined){
-        // axios.get(`https://elemental-backend.onrender.com/user/ppia/?state=${statename}`)
-        //   .then((data) => {
-        //     setBranch(data.data.filter((eachData) => eachData.level === 1));
-        //     setTwigs(data.data.filter((eachData) => eachData.level === 2));
-        //   });
         setBranch(data.filter((eachData) => eachData.level === 1 && eachData.state === statename.toUpperCase()));
         setTwigs(data.filter((eachData) => eachData.level === 2 && eachData.state === statename.toUpperCase()));
     }

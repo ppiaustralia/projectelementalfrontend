@@ -21,7 +21,6 @@ function Contact() {
     // const contacts = ContactDatabase
     const baseURL = "https://ppiacontact.s3.us-east-2.amazonaws.com/"
     useEffect(() => {
-        console.log(data)
         if (data !== undefined){
             setEmbassies(
                 data.filter((eachData) =>

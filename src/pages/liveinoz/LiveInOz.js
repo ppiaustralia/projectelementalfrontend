@@ -11,7 +11,7 @@ function LiveInOz() {
     const { data, error, isLoading } = useSWR('https://elemental-backend.onrender.com/liveinoz/articles/', fetcher)
     
     useEffect(() => {
-        if (data != undefined){
+        if (data !== undefined){
             setArticles(data)
             setContentBeingViewed(data[0])
         }
