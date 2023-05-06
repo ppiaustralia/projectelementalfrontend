@@ -42,7 +42,7 @@ function Contact() {
 
     useEffect(() => {
         console.log(data)
-        if (data != undefined){
+        if (data !== undefined){
             setEmbassies(
                 data.filter((eachData) =>
                     eachData.name.toUpperCase().includes("EMBASSY")
@@ -56,7 +56,7 @@ function Contact() {
                 (receivedConsulate = true)
             )
         }
-    }, [])
+    }, [data])
 
     return (
         <div>

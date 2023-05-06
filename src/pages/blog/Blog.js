@@ -10,23 +10,24 @@ import {
 import s from "./Blog.module.css"
 import NewsList from "./newsList/NewsList"
 import Sidebar from "./sidebar/Sidebar"
+import useSWR from "swr"
 
 function Blog() {
     const dispatch = useDispatch();
 
+    const fetcher = (...args) => fetch(...args).then(res => res.json());
+    const {data, error} = useSWR(`https://elemental-backend.onrender.com/feed/articles/`, fetcher);
+
     const fetchBlog = () =>{
         dispatch(setLoadingTrue());
-        axios
-            .get(`https://elemental-backend.onrender.com/feed/articles/`)
-            .then((data) => {
-                dispatch(setNews(data.data));
-                dispatch(setLoadingFalse());
-            });
-
+        if (data !== undefined){
+            dispatch(setNews(data));
+            dispatch(setLoadingFalse());
+        }
     }
     useEffect(() => {
         fetchBlog()
-    }, []);
+    }, [data]);
 
 
     const news = useSelector((state) => state.news.news)

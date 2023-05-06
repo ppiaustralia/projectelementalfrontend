@@ -12,8 +12,8 @@ import ChapterDatabase from './ChapterDatabase.json';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
-function useData2(){
-  const {data, error} = useSWR('//https://elemental-backend.onrender.com/user/ppia/', fetcher);
+function usePage(url){
+  const {data, error} = useSWR(url, fetcher);
   return {data, error};
 }
 
@@ -22,24 +22,28 @@ function Chapter(props) {
   const [twigs, setTwigs] = useState([]);
   const chapterBaseLink = 'https://chapterslogo.s3.us-east-2.amazonaws.com/';
 
-  const {data, errorAll, isLoadingAll } = useSWR('https://elemental-backend.onrender.com/user/ppia/', fetcher);
-  // const { data: data2, error: error2 } = useData2();
+  const {data, errorAll, isLoadingAll } = usePage('https://elemental-backend.onrender.com/user/ppia/');
 
   // get statename value form url
   let { statename } = useParams();
-  //send get to backend
+  
+  // send get to backend
   useEffect(() => {
+    console.log(data)
     // when statename changes, setBranch and twigs to empty to trigger loading icon
     setBranch([]);
     setTwigs([]);
-    if (statename === 'all' && data != undefined) {
+    if (statename === 'all' && data !== undefined) {
       setBranch(data.filter((eachData) => eachData.level === 1));
     } 
-    // else if (data2 != undefined) {
-    //   setBranch(data2.filter((eachData) => eachData.level === 1));
-    //   setTwigs(data2.filter((eachData) => eachData.level === 2));
+    // else if (statename !== 'all'){
+    //     axios.get(`//https://elemental-backend.onrender.com/user/ppia/`)
+    //       .then((data) => {
+    //         setBranch(data.data.filter((eachData) => eachData.level === 1));
+    //         setTwigs(data.data.filter((eachData) => eachData.level === 2));
+    //       });
     // }
-  }, [statename]);
+  }, [statename, data]);
 
   // const filteredData = receivedData.filter(data => data.parent = "ISA NSW")
   return (

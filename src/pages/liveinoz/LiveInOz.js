@@ -17,19 +17,6 @@ function LiveInOz() {
         }
     }, [data])
     
-    
-    // useEffect(() => {
-    //     axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
-    //         if(res.status == 200){
-    //             console.log(res.data)
-    //             setArticles(res.data)
-    //             setContentBeingViewed(res.data[0]);
-    //         }
-    //     }).catch(err => {
-    //         console.error(err.message)
-    //     })
-    // },[])
-
     const handleClickLink = (content) =>{
         if(content){
             setContentBeingViewed(content)
