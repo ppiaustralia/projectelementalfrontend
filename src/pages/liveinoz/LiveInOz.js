@@ -7,7 +7,7 @@ function LiveInOz() {
     const [articles, setArticles]= useState([])
     const [contentBeingViewed, setContentBeingViewed] = useState({})
 
-    const fetcher = (...args) => fetch(...args).then(res => res.json())
+    const fetcher = url => axios.get(url).then(res => res.data)
     const { data, error, isLoading } = useSWR('https://elemental-backend.onrender.com/liveinoz/articles/', fetcher)
     
     useEffect(() => {

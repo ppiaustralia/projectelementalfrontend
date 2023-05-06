@@ -15,31 +15,11 @@ function Contact() {
     var receivedEmbassy = false
     var receivedConsulate = false
 
-    const fetcher = (...args) => fetch(...args).then(res => res.json())
+    const fetcher = url => axios.get(url).then(res => res.data)
     const {data, error, isLoading } = useSWR('https://elemental-backend.onrender.com/external_contact/', fetcher)
 
     // const contacts = ContactDatabase
     const baseURL = "https://ppiacontact.s3.us-east-2.amazonaws.com/"
-    // useEffect(() => {
-    //     axios
-    //         .get("https://elemental-backend.onrender.com/external_contact/")
-    //         .then((data) => {
-    //             console.log(data.data)
-    //             setEmbassies(
-    //                 data.data.filter((eachData) =>
-    //                     eachData.name.toUpperCase().includes("EMBASSY")
-    //                 ),
-    //                 (receivedEmbassy = true)
-    //             )
-    //             setConsulate(
-    //                 data.data.filter((eachData) =>
-    //                     eachData.name.toUpperCase().includes("CONSULATE")
-    //                 ),
-    //                 (receivedConsulate = true)
-    //             )
-    //         })
-    // }, [])
-
     useEffect(() => {
         console.log(data)
         if (data !== undefined){

@@ -15,7 +15,7 @@ import useSWR from "swr"
 function Blog() {
     const dispatch = useDispatch();
 
-    const fetcher = (...args) => fetch(...args).then(res => res.json());
+    const fetcher = url => axios.get(url).then(res => res.data)
     const {data, error} = useSWR(`https://elemental-backend.onrender.com/feed/articles/`, fetcher);
 
     const fetchBlog = () =>{
