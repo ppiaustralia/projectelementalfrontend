@@ -1,26 +1,25 @@
 import react, {useState ,useEffect}from 'react'
 import axios from 'axios'
 import LiveInOzItem  from './LiveInOzItem'
+import useSWR from 'swr'
 import Loading from "../../components/Loading"
 
 function LiveInOz() {
     const [articles, setArticles]= useState([])
     const [contentBeingViewed, setContentBeingViewed] = useState({})
+
+    const fetcher = url => axios.get(url).then(res => res.data)
+    const { data, error, isLoading } = useSWR('https://elemental-backend.onrender.com/liveinoz/articles/', fetcher)
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        axios.get('https://elemental-backend.onrender.com/liveinoz/articles/').then(res => {
-            if(res.status === 200){
-                console.log(res.data)
-                setArticles(res.data)
-                setContentBeingViewed(res.data[0])
-                setCategories([...new Set(res.data.map(article => article.category))])
-            }
-        }).catch(err => {
-            console.error(err.message)
-        })
-    },[])
-
+        if (data !== undefined){
+            setArticles(data)
+            setContentBeingViewed(data[0])
+            setCategories([...new Set(data.map(article => article.category))])
+        }
+    }, [data])
+    
     const handleClickLink = (content) =>{
         if(content){
             setContentBeingViewed(content)

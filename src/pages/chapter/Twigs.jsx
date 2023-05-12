@@ -29,10 +29,7 @@ function Twigs(data) {
                         </div>
                         <div className={styles.infoContainer}>
                             <h2>{name} </h2>
-                            <p>
-                                Indonesian Student Association of New South
-                                Wales
-                            </p>
+                            <p>{parent}</p>
                             <p>President: {president}</p>
                             <p>Parent: {parent}</p>
                             <p>State: {state}</p>
