@@ -43,7 +43,7 @@ export default function ChaptersGallery() {
                     <Link to={`alpha/chapter/${branch.state}`}>
                       <Image
                         src={`${chapterBaseLink}${branch.image}`}
-                        className={`d-block ${styles['responsive-gallery']} mx-5`}
+                        className={`${styles['responsive-gallery']}`}
                         // roundedCircle
                         style={{ objectFit: 'contain' }}
                       />
