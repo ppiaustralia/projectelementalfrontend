@@ -6,6 +6,17 @@
   z-index: 5;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  .container {
+    display: block;
+  }
+  .buttons {
+    justify-content: space-evenly;
+  }
+} 
+
 .welcome {
   flex: 1;
   padding: 1em;
@@ -27,7 +38,6 @@
 .welcomeSubtitle {
   font-style: italic;
   font-size: 21px;
-  width: 65%;
 }
 
 .backgroundImage {
@@ -96,9 +106,10 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 55%;
+  /* justify-content: space-evenly; */
+  width: 100%;
 }
+
 .findOut {
   width: 40%;
   background-color: #ec2027;
