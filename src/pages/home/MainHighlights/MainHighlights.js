@@ -11,7 +11,7 @@ export default function MainHighlights() {
     <div className={`${styles.background} ${styles['front-page']}`}>
       <Container>
         <Row>
-          <Col xs={6}>
+          <Col lg={6} sm={12}>
             <div>
               <img
                 src={ImageHeader}
@@ -25,12 +25,11 @@ export default function MainHighlights() {
             </div>
           </Col>
 
-          <Col xs={6}>
+          <Col lg={6} sm={12}>
             <div className={styles.content}>
               <p style={{ fontSize: '18px' }}>
                 <b>2021 and 2022 is an interesting period for everyone</b>
               </p>
-
               <p>
                 Despite all that, we stick together and have becoe a wonderful
                 team. Below are some of the
