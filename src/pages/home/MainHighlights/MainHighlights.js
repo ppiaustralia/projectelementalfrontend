@@ -8,7 +8,7 @@ import ImageHeader from '../../../assets/images/1.jpg';
 
 export default function MainHighlights() {
   return (
-    <div className={`${styles.background} ${styles['front-page']}`}>
+    <div className="bg-[#e9ecef] rounded-[5px]">
       <Container>
         <Row>
           <Col lg={6} sm={12}>
@@ -26,7 +26,7 @@ export default function MainHighlights() {
           </Col>
 
           <Col lg={6} sm={12}>
-            <div className={styles.content}>
+            <div className="text-left p-[50px]">
               <p style={{ fontSize: '18px' }}>
                 <b>2021 and 2022 is an interesting period for everyone</b>
               </p>
@@ -36,21 +36,21 @@ export default function MainHighlights() {
                 <b>
                   <span style={{ color: 'red' }}> IMPACT</span>
                 </b>{' '}
-                our team brings this year.
+                our team brings this year:
               </p>
               <br />
-              <ul>
-                <li className={styles.text}>
+              <ul className='list-disc'>
+                <li className="mb-3">
                   Host of PPI Dunia Symposium Dunia
                 </li>
-                <li className={styles.text}>
+                <li className="mb-3">
                   Re-Launch of PPIA Career and organize Career Festival
                 </li>
-                <li className={styles.text}>
+                <li className="mb-3">
                   Public Release of PPI-Apps, PPIA Official Membership
                   Application
                 </li>
-                <li className={styles.text}>Re-imagined PPIA Website</li>
+                <li className="mb-3">Re-imagined PPIA Website</li>
               </ul>
               <h4>{/* <b>CREDITS TO @WILDWONDERINGWILLY</b> */}</h4>
             </div>

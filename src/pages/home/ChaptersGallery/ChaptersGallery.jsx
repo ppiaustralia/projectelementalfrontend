@@ -48,14 +48,14 @@ export default function ChaptersGallery() {
                         style={{ objectFit: 'contain' }}
                       />
                       <h5 className={styles.chaptersName}>{branch.name}</h5>
-                      {/* <h5 className="text-xs text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5> */}
+                      {/* <h5 className="display-inherit text-xs text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5> */}
                     </Link>
                   </Col>
                 </>
               );
             })}
           </Row>
-          <p className="text-lg w-6/12 mt-[70px] mb-[30px] m-auto">
+          <p className="text-lg w-6/12 !mt-[70px] !mb-[30px] m-auto">
             PPIA comprises of 8 state-level organisations
             <i>(or PPIA Chapters) </i>
             and <br /> 33 university-level organisations
