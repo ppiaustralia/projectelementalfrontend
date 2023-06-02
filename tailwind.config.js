@@ -7,7 +7,10 @@ module.exports = {
         primaryRed: '#e44434'
       },
       backgroundImage:{
-        'batik': "url('/src/assets/images/smallBatikPattern.jpg')"
+        batik: "url('/src/assets/images/smallBatikPattern.jpg')"
+      },
+      display:{
+        inherit: 'inherit'
       }
     },
   },
