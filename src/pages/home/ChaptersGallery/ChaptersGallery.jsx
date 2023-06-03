@@ -29,10 +29,7 @@ export default function ChaptersGallery() {
   }, []);
   return (
     <div className="flex flex-col justify-items-center items-center justify-evenly text-center">
-      <div className="text-[32px] mt-[1em]">
-        <h2>Chapters</h2>
-      </div>
-
+      <h2 className="text-[32px] mt-[1em]">Chapters</h2>
       <div className="inline-grid grid-cols-[repeat(4,auto)] grid-rows-[auto] mt-[30px]">
         <Container>
           <Row className="justify-content-md-center">
@@ -47,8 +44,8 @@ export default function ChaptersGallery() {
                         // roundedCircle
                         style={{ objectFit: 'contain' }}
                       />
-                      <h5 className={styles.chaptersName}>{branch.name}</h5>
-                      {/* <h5 className="display-inherit text-xs text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5> */}
+                      {/* <h5 className={styles.chaptersName}>{branch.name}</h5> */}
+                      <h5 className="contents text-xs text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5>
                     </Link>
                   </Col>
                 </>

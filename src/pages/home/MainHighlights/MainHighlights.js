@@ -15,26 +15,21 @@ export default function MainHighlights() {
             <div>
               <img
                 src={ImageHeader}
-                style={{
-                  width: '100%',
-                  paddingTop: '54px',
-                  justifyContent: 'center',
-                  alignItems: 'center'
-                }}
+                className='w-full pt-[54px] justify-center align-center'
               />
             </div>
           </Col>
 
           <Col lg={6} sm={12}>
             <div className="text-left p-[50px]">
-              <p style={{ fontSize: '18px' }}>
+              <p className='text-lg'>
                 <b>2021 and 2022 is an interesting period for everyone</b>
               </p>
               <p>
                 Despite all that, we stick together and have becoe a wonderful
                 team. Below are some of the
                 <b>
-                  <span style={{ color: 'red' }}> IMPACT</span>
+                  <span className='text-[red]'> IMPACT</span>
                 </b>{' '}
                 our team brings this year:
               </p>
