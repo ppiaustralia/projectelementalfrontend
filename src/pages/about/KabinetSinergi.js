@@ -142,7 +142,7 @@ export default function KabinetSinergi() {
 
   return (
     <div>
-      <h1 className={styles.heading1}>Our Committee</h1>
+      <h1 className="text-center text-[#ed1c24] mt-6">Our Committee</h1>
       <Carousel className="carousel-dark" fade>
         {deptList.length >= 1 ? (
           deptList.map((eachDept, idx) => {
@@ -154,7 +154,7 @@ export default function KabinetSinergi() {
           })
         ) : (
           <div>
-            <h2 className={styles.heading1}>Generating Images, Please Wait</h2>
+            <h2 className="text-center text-[#ed1c24] mt-6">Generating Images, Please Wait</h2>
           </div>
         )}
       </Carousel>
@@ -164,12 +164,12 @@ export default function KabinetSinergi() {
 
 export function Division(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.divisionContainer}>
+    <div className="mx-12 my-8 px-4 py-0">
+      <div className="flex flex-col items-center">
         <h3>{props.deptData.name}</h3>
         <p>Officers List</p>
       </div>
-      <div className={styles.cardContainer}>
+      <div className="flex flex-row flex-wrap justify-around mx-10 my-0 md:mx-40">
         <MemberCard deptData={props.deptData} />
       </div>
     </div>
@@ -187,10 +187,10 @@ export function MemberCard(props) {
         console.log(`${deptData[keys].name}`);
         console.log(`${deptData[keys].image}`);
         cardList.push(
-          <Card className={`${styles.memberCard} px-4 py-2`}>
+          <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-4 py-2`}>
             <Image
               src={`${s3PhotoLink}${deptData[keys].image}`}
-              className={`${styles.cardImage} fluid me-4 my-2`}
+              className={`w-20 h-20 object-cover fluid me-4 my-2`}
               roundedCircle
             />
             <Card.Body className={`ps-0`}>
@@ -209,10 +209,10 @@ export function MemberCard(props) {
           //do committee with map or for each
           deptData[keys].forEach((each) => {
             cardList.push(
-              <Card className={`${styles.memberCard} px-2 py-2`}>
+              <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-2 py-2`}>
                 <Image
                   src={`${s3PhotoLink}${each.image}`}
-                  className={`${styles.cardImage} fluid me-4 `}
+                  className={`w-20 h-20 object-cover fluid me-4 my-2`}
                   roundedCircle
                 />
                 <Card.Body className={`ps-0`}>
@@ -225,10 +225,10 @@ export function MemberCard(props) {
         } else {
           // for director and co director
           cardList.push(
-            <Card className={`${styles.memberCard} px-4 py-2`}>
+            <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-4 py-2`}>
               <Image
                 src={`${s3PhotoLink}${deptData[keys].image}`}
-                className={`${styles.cardImage} fluid me-4 my-2`}
+                className={`w-20 h-20 object-cover fluid me-4 my-2`}
                 roundedCircle
               />
               <Card.Body className={`ps-0`}>

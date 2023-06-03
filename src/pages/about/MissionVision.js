@@ -7,13 +7,12 @@ import SideMenu from "./SideMenu"
 const MissionVision = () => {
     return (
         <div>
-            
             <div className="mx-12 my-8 px-4 py-0">
                 <h1 className="text-center text-[#ed1c24] mt-6">About Us</h1>
                 <div className="flex flex-row justify-center m-6">
                     <img src="https://chapterslogo.s3.us-east-2.amazonaws.com/PPIA_ALL.jpg" className='max-w-[70%] max-h-[50%]' />
                 </div>
-                <div className="text-center my-0 mx-20 lg:mx-60">
+                <div className="text-center my-0 mx-10 lg:mx-60">
                     <p>
                         Perhimpunan Pelajar Indonesia Australia
                         (PPIA) or Indonesian Students’ Association
