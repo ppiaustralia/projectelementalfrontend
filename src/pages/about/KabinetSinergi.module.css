@@ -48,11 +48,12 @@
 }
 
 .memberCard {
-    width: 28rem;
+    width: 25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+    overflow: scroll;
 }
 
 .cardImage {

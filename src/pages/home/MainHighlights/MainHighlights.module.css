@@ -15,11 +15,3 @@
 .text {
   margin-bottom: 20px;
 }
-
-@media only screen and (max-width: 900px) {
-  /* For mobile phones: */
-  .imageHeader {
-    grid-column: span 12;
-  }
-} 
-

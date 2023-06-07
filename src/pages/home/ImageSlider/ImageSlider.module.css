@@ -10,7 +10,7 @@
 @media only screen and (max-width: 900px) {
   /* For mobile phones: */
   .container {
-    display: block;
+    flex-direction: column;
   }
   .buttons {
     justify-content: space-evenly;
@@ -50,6 +50,7 @@
   z-index: -1;
   /* left: -1em; */
 }
+
 
 .containerCarousel {
   flex: 1;
@@ -106,7 +107,6 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-evenly; */
   width: 100%;
 }
 
@@ -124,6 +124,7 @@
 .findOut:hover {
   color: black;
 }
+
 .contactUs {
   width: 40%;
   background-color: transparent;

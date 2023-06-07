@@ -6,10 +6,10 @@ import { Container, Row, Col, Button } from 'react-bootstrap/';
 
 export default function Membership() {
   return (
-    <div className={`${styles.background} ${styles['front-page']}`}>
+    <div className={`bg-white rounded-[5px] ${styles['front-page']}`}>
       <Container direction="horizontal">
         <Row>
-          <Col style={{ margin: 'auto' }}>
+          <Col className='m-auto'>
             <p className={styles.text}>
               <b>
                 Ready to be a <span style={{ color: 'red' }}>member*</span>
