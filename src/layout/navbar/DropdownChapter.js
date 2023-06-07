@@ -23,7 +23,7 @@ function DropdownChapter() {
           return (
             <li key={index} className={styles.states}>
               <Link
-                className={`${styles[itemStyle]}`}
+                className={`${styles[itemStyle]} w-full h-full p-2`}
                 to={item.path}
                 onClick={() => setClick(false)}
               >
