@@ -60,11 +60,11 @@ function Navbar() {
                 <ul
                     className={
                         click
-                            ? `flex list-none text-center w-[75vw] justify-center items-center mr-4 mb-0 h-full  bg-black left-0 opacity-100 z-50`
+                            ? `flex list-none text-center w-[75vw] justify-center items-center mr-4 mb-0 h-full bg-black left-0 opacity-100 z-50`
                             : `flex list-none text-center w-[75vw] justify-center items-center mr-4 mb-0 h-full`
                     }
                 >
-                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}>
+                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}>
                         <Link
                             to="/alpha"
                             className={`flex w-full h-full items-center justify-center text-white decoration-none px-6 py-2 h-full hover:!text-primaryRed`}
@@ -73,7 +73,7 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
-                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}>
+                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}>
                         <Link
                             to="/alpha/about"
                             className={`flex w-full h-full items-center justify-center text-white decoration-none px-6 py-2 h-full hover:!text-primaryRed`}
@@ -83,7 +83,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li
-                        className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}
+                        className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}
                         onMouseEnter={onMouseEnterChapter}
                         onMouseLeave={onMouseLeaveChapter}
                     >
@@ -102,7 +102,7 @@ function Navbar() {
                             {chapterDropdown && <DropdownChapter />}
                         </div>
                     </li>
-                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}>
+                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}>
                         <Link
                             to="/alpha/liveinoz"
                             className={`flex w-full h-full items-center justify-center text-white decoration-none px-6 py-2 h-full hover:!text-primaryRed`}
@@ -111,7 +111,7 @@ function Navbar() {
                             Live in OZ
                         </Link>
                     </li>
-                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}>
+                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}>
                         <Link
                             to="/alpha/blog"
                             className={`flex w-full h-full items-center justify-center text-white decoration-none px-6 py-2 h-full hover:!text-primaryRed`}
@@ -120,7 +120,7 @@ function Navbar() {
                             Blog
                         </Link>
                     </li>
-                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl transition-all hover:text-primaryRed`}>
+                    <li className={`flex justify-center pl-0 w-[18%] h-[50%] hover:bg-white hover:rounded-xl hover:text-primaryRed`}>
                         <Link
                             to="/alpha/contact"
                             className={`flex w-full h-full items-center justify-center text-white decoration-none px-6 py-2 h-full hover:!text-primaryRed`}
