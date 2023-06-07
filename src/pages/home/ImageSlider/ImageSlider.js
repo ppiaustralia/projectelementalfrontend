@@ -14,7 +14,7 @@ export default function ImageSlider() {
       <span className="absolute inset-0 w-full h-full bg-batik opacity-[0.08] z-[-1]"/>
       <div className="flex flex-col text-lg p-2 px-4 items-center leading-9">
         <h2 className="text-5xl text-red-600 mb-2">PPI-Australia (PPIA)</h2>
-        <p className="italic text-[21px] text-center lg:text-left">
+        <p className="italic text-[21px] text-center lg:!text-left">
           Perhimpunan Pelajar Indonesia Australia (PPIA) or Indonesian Students'
           Association of Australia. it has purpose to serve Indonesian students
           across Australia
