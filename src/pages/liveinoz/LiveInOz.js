@@ -41,7 +41,7 @@ function LiveInOz() {
     return (
         <div className="w-full flex flex-col text-center justify-center">
             <div className="flex flex-row">
-                <div className="LiveInOzList w-1/4 text-sm overflow-auto max-h-[110vh]">
+                <div className="LiveInOzList w-1/4 text-sm overflow-auto min-h-[125vh] max-h-[125vh]">
                     <ul>
                         {uniqueCategories.map((category, i) => {
                             const categoryCount = data.filter(content => content.category === category).length;
@@ -53,7 +53,7 @@ function LiveInOz() {
                         })}
                     </ul>
                 </div>
-                <div className="LiveInOzContent flex flex-col w-3/4 border-l-2 overflow-auto max-h-[110vh]">
+                <div className="LiveInOzContent flex flex-col w-3/4 border-l-2 overflow-auto min-h-[125vh] max-h-[125vh]">
                 {selectedContent ? (
                         <LiveInOzItem content={selectedContent} />
                     ) : (
