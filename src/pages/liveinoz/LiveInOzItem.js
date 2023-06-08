@@ -9,7 +9,7 @@ function LiveInOzItem(props){
     return(
         <div className="LiveInOzItemContainer ml-16">
             <div className=" mx-auto text-center p-4">
-                <h2>{title}</h2>
+                <h2 className="text-3xl font-bold mb-4">{title}</h2>
             </div>
             <div className="flex flex-col mx-auto text-center items-center p-4">
                 {typeof content === 'string' ? parse(content) :  <Loading />}
