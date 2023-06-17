@@ -18,11 +18,11 @@ function NewsList(props) {
         newsArray.push(pageNewsArr)
     }
     return (
-        <div className={s.newsListCont}>
+        <div className="flex flex-wrap justify-evenly">
             {newsArray[currIdx].map((eachNews,index) => (
                 <NewsItem newsContent={eachNews} key={index} />
             ))}
-            <div className={s.counter}>
+            <div className="w-full grid place-items-center">
                 <Counter
                     currIdx={currIdx}
                     length={newsArray.length}

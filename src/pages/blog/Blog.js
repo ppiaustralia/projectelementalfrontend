@@ -33,17 +33,16 @@ function Blog() {
     const news = useSelector((state) => state.news.news)
     let chunkSize = 6
     return (
-        <div className={s.blogContainer}>
+        <div className="flex flex-col p-[3em]">
             <div className={s.title}>
                 <h2>Welcome to PPIA Blog</h2>
             </div>
-            <div className={s.blogContent}>
-                <div className={s.blogSidebar}>
+            <div className="flex flex-col sm:flex-row">
+                <div className="flex-1 w-full bg-[thistle]">
                     <Sidebar />
                 </div>
-                <div className={s.blogNews}>
+                <div className="flex-[4] w-full mt-4 sm:!mt-0">
                     {news.length > 0 ? <NewsList news={news} chunkSize={chunkSize} />: <Loading /> }
-
                 </div>
             </div>
         </div>
