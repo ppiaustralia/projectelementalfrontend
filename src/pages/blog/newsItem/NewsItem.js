@@ -19,7 +19,8 @@ function NewsItem(props) {
                 />
             </div>
             {/* TO-DO: covert scroll to tailwind */}
-            <div className={s.newsText}>
+            {/* <div className={s.newsText}> */}
+            <div className="max-h-[25vh] overflow-scroll px-[0.5em] py-[1em] overflow-hidden">
                 <div className="text-2xl text-[#ff2020]">{title}</div>
                 <div>{parse(content)}</div>
                 <div className="flex flex-row justify-between mb-0 pb-0 border-b-[lightsteelblue] border-b border-solid">
