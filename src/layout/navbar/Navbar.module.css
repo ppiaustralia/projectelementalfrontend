@@ -1,5 +1,5 @@
 .navbar {
-    background: #ec2027;
+    background: #e44434;
     height: 8vh;
     display: flex;
     justify-content: space-around;
@@ -11,14 +11,6 @@
     z-index: 999;
 }
 
-.navbar-logo {
-    color: #fff;
-    justify-self: start;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    overflow: hidden;
-}
 
 .navbar-logo:hover {
     color: #fff;
@@ -37,7 +29,8 @@
     list-style: none;
     text-align: center;
     width: 75vw;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
     margin-right: 1rem;
     margin-bottom: 0;
     height: 100%;
@@ -49,14 +42,14 @@
     justify-content: center;
     padding-left: 0;
     width: 18%;
-    height: 90%;
+    height: 50%;
 }
 
 .nav-item:hover {
     background-color: white;
-    border-radius: 0.5em;
+    border-radius: 2em;
     transition: all 0.1s;
-    color: #ec2027;
+    color: #e44434;
 }
 .nav-links {
     display: flex;

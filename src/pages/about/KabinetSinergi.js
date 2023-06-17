@@ -1,87 +1,38 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Carousel,
-  Container,
-  Row,
-  Col,
   Image,
-  CardGroup,
   Card,
-  Button
 } from 'react-bootstrap';
 import axios from 'axios';
-import styles from './KabinetSinergi.module.css';
+import "./KabinetSinergi.css"
 
 import '../home/Home.css';
 
-import dummy1 from '../../assets/images/cat.jpg';
-import dummy2 from '../../assets/images/cat2.jpg';
-import dummy3 from '../../assets/images/cat3.jpg';
-import Loading from '../../components/Loading';
-
-const image_arr = [
-  <img
-    className="d-block mx-auto responsive-carousel img-fluid"
-    src={dummy1}
-  />,
-  <img
-    className="d-block mx-auto responsive-carousel img-fluid"
-    src={dummy2}
-  />,
-  <img className="d-block mx-auto responsive-carousel img-fluid" src={dummy3} />
-];
-
-const source_arr = [
-  {
-    img: dummy1,
-    name: 'cat1',
-    position: 'IT Officer',
-    university: 'University of New South Wales'
-  },
-  {
-    img: dummy2,
-    name: 'cat2',
-    position: 'Community Welfare Officer',
-    university: 'University of Sydney'
-  },
-  {
-    img: dummy3,
-    name: 'cat3',
-    position: 'IT Officer',
-    university: 'University of Melbourne'
-  },
-  {
-    img: dummy1,
-    name: 'cat4',
-    position: 'IT Officer',
-    university: 'University of Technology Sydney'
-  }
-];
-
 const execToObj = (array) => {
-  let execObj = new Object();
+  let execObj = {};
   execObj.name = 'Executive';
   for (let x of array) {
-    execObj[x.role] = new Object();
+    execObj[x.role] = {};
     execObj[x.role].name = x.name;
     execObj[x.role].image = x.image;
   }
   return execObj;
 };
 const oneDeptToObj = (array) => {
-  let deptObj = new Object();
+  let deptObj = {};
   //set name field for each dept
   deptObj.name = array[0].department;
   //will be an array of objects ( one commiittee one object)
   let commArr = [];
   for (let x of array) {
-    if (x.role == 'Committee') {
-      let comObj = new Object();
+    if (x.role === 'Committee') {
+      let comObj = {};
       comObj.name = x.name;
       comObj.image = x.image;
       commArr.push(comObj);
     } else {
-      deptObj[x.role] = new Object();
+      deptObj[x.role] = {};
       deptObj[x.role].name = x.name;
       deptObj[x.role].image = x.image;
     }
@@ -92,7 +43,7 @@ const oneDeptToObj = (array) => {
 
 const iterateAllDept = (deptList, dataArr) => {
   let final = [];
-  deptList.map((eachDept) => {
+  deptList.forEach((eachDept) => {
     const memberDepArr = dataArr.filter((item) => item.department === eachDept);
     const deptInObj = oneDeptToObj(memberDepArr);
     final.push(deptInObj);
@@ -107,7 +58,7 @@ const getAllDept = async () => {
     .then((data) => {
       //create Exec object
       const execArr = data.data.filter(
-        (item) => item.department == 'Executive Committee'
+        (item) => item.department === 'Executive Committee'
       );
       let execObj = execToObj(execArr);
       //Each available dept
@@ -187,7 +138,7 @@ export function MemberCard(props) {
         console.log(`${deptData[keys].name}`);
         console.log(`${deptData[keys].image}`);
         cardList.push(
-          <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-4 py-2`}>
+          <Card className={`individualCard w-[25rem] flex flex-row items-center overflow-hidden mt-4 px-4 py-2`}>
             <Image
               src={`${s3PhotoLink}${deptData[keys].image}`}
               className={`w-20 h-20 object-cover fluid me-4 my-2`}
@@ -209,10 +160,10 @@ export function MemberCard(props) {
           //do committee with map or for each
           deptData[keys].forEach((each) => {
             cardList.push(
-              <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-2 py-2`}>
+              <Card className={`w-[25rem] flex flex-row items-center overflow-hidden mt-4 px-2 py-2`}>
                 <Image
                   src={`${s3PhotoLink}${each.image}`}
-                  className={`w-20 h-20 object-cover fluid me-4 my-2`}
+                  className={` individualCard w-20 h-20 object-cover fluid me-4 my-2`}
                   roundedCircle
                 />
                 <Card.Body className={`ps-0`}>
@@ -225,7 +176,7 @@ export function MemberCard(props) {
         } else {
           // for director and co director
           cardList.push(
-            <Card className={`w-[25rem] flex flex-row items-center overflow-scroll mt-4 px-4 py-2`}>
+            <Card className={` w-[25rem] flex flex-row items-center overflow-hidden mt-4 px-4 py-2`}>
               <Image
                 src={`${s3PhotoLink}${deptData[keys].image}`}
                 className={`w-20 h-20 object-cover fluid me-4 my-2`}
