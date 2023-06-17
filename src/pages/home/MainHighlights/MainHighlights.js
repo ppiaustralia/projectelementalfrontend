@@ -21,7 +21,7 @@ export default function MainHighlights() {
           </Col>
 
           <Col lg={6} sm={12}>
-            <div className="text-left p-[50px]">
+            <div className="text-center p-[50px] lg:!text-left">
               <p className='text-lg'>
                 <b>Jumpa Perhimpunan Pelajar Indonesia di Australia dan Selandia Baru, Wamendag Jerry Dorong Para Pelajar Menjadi Duta Ekspor Indonesia</b>
               </p><br />

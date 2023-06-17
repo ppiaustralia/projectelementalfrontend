@@ -8,11 +8,12 @@ function NewsCards(props) {
   const parsedDate = moment(publish_date).format('LLL');
 
   return (
-    <div className={s.newsCardCont}>
-      <img className={s.cardImage} src={`${image}`} alt="title" />
-      <div className={s.verticalInfo}>
-        <div className={s.title}>{title}</div>
-        <div className={s.date}>
+    // <div className={s.newsCardCont}>
+    <div className="flex flex-col text-center bg-[white] mx-[1em] w-[50vw] mb-[2em] mt-[1em] md:w-[19vw] mb-[1em]">
+      <img className="w-full h-full" src={`${image}`} alt="title" />
+      <div className="flex flex-col justify-between px-0 py-[1em]">
+        <div className="max-h-[65%] font-bond text-lg md:text-base">{title}</div>
+        <div className="text-xs pt-[1em]">
           <u>
             Posted: <i>{parsedDate}</i>
           </u>
