@@ -10,23 +10,25 @@ function NewsItem(props) {
     const previewContent = content.slice(0, 100)
     const parsedDate = moment(publish_date).format("LLL")
     return (
-        <div className={s.newsItemCont}>
-            <div className={s.coverImageCont}>
+        <div className="border w-[90%] mb-[1em] p-[1em] border-solid border-[lightgrey] md:w-[45%]">
+            <div className="grid w-full place-items-center mb-[1em]">
                 <img
-                    className={s.coverImage}
+                    className="w-6/12 max-h-[25vh] object-contain"
                     src={`${image}`}
                     alt={`${slug}`}
                 />
             </div>
-            <div className={s.newsText}>
-                <div className={s.newsTitle}>{title}</div>
+            {/* TO-DO: covert scroll to tailwind */}
+            {/* <div className={s.newsText}> */}
+            <div className="max-h-[25vh] overflow-scroll px-[0.5em] py-[1em] overflow-hidden">
+                <div className="text-2xl text-[#ff2020]">{title}</div>
                 <div>{parse(content)}</div>
-                <div className={s.newsInfo}>
-                    <span className={s.newsDate}>{parsedDate}</span>
-                    <span className={s.tags}>{tag[0].name}</span>
+                <div className="flex flex-row justify-between mb-0 pb-0 border-b-[lightsteelblue] border-b border-solid">
+                    <span className="text-[10px]">{parsedDate}</span>
+                    <span className="text-[10px]">{tag[0].name}</span>
                 </div>
             </div>
-            <div className={s.newsFooter}>
+            <div className="flex flex-row justify-between pt-[0.5em]">
                 <span>
                     Read <i className="fas fa-arrow-right" />
                 </span>

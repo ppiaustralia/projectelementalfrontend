@@ -15,7 +15,7 @@ export default function LatestUpdate() {
         <h2>Preview on PPIA Latest Updates</h2>
       </div>
 
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         {newsLatest.map((eachItem,index) => (
           <NewsCards newsContent={eachItem} key={index} />
         ))}
