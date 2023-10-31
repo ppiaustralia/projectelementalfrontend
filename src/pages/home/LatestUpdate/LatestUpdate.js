@@ -21,8 +21,8 @@ export default function LatestUpdate() {
         ))}
       </div>
 
-      <Link to="/alpha/blog" className="flex justify-center text-[#ec2027] bg-[white] w-48 no-underline text-center !mb-[1em] m-0 px-[1em] py-[0.5em] rounded-[1em] hover:bg-[#ec2027] hover:text-[white]">
-        <span>Read PPIA News, Events, & Blogs</span>
+      <Link to="/alpha/blog" className="flex justify-center text-[#ec2027] bg-[white] border-2 border-grey w-48 no-underline text-center !mb-[1em] m-0 px-[1em] py-[0.5em] rounded-[1em] hover:bg-[#ec2027] hover:text-[white]">
+        Read PPIA News, Events, & Blogs
       </Link>
     </div>
   );
