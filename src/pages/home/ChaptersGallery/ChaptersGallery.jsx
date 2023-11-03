@@ -29,7 +29,7 @@ export default function ChaptersGallery() {
   }, []);
   return (
     <div className="flex flex-col justify-items-center items-center justify-evenly text-center">
-      <h2 className="text-[32px] mt-[1em]">Chapters</h2>
+      <h2 className="font-header text-6xl mt-[1.5em]">Chapters</h2>
       <div className="inline-grid grid-cols-[repeat(4,auto)] grid-rows-[auto] mt-[30px]">
         <Container>
           <Row className="justify-content-md-center">
