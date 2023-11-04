@@ -1,13 +1,34 @@
-import React from 'react';
+import {React, useState} from 'react';
 
 import styles from './ImageSlider.module.css';
 
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 
 import ImageHeader from '../../../assets/images/2.jpg';
+import Image2 from '../../../assets/images/1.jpg';
+
 export default function ImageSlider() {
+
   const slideshow = useSelector((state) => state.slideshow.slideshow);
+  const images = [
+    { url: ImageHeader},
+    { url: Image2}
+  ];
+
+  const [activeImageNum, setCurrent] = useState(0);
+  const length = images.length;
+  const nextSlide = () => {
+     setCurrent(activeImageNum === length - 1 ? 0 : activeImageNum + 1);
+  };
+  const prevSlide = () => {
+     setCurrent(activeImageNum === 0 ? length - 1 : activeImageNum - 1);
+  };
+  if (!Array.isArray(images) || images.length <= 0) {
+     return null;
+  }
+
   return (
     // <div className="flex min-h-[50vh] relative z-[5] overflow-hidden p-[2em]">
     <div className="flex flex-col min-h-[50vh] relative z-[5] overflow-hidden p-[2em] lg:flex-row">
@@ -28,10 +49,27 @@ export default function ImageSlider() {
           </Link>
         </div>
       </div>
-      <div className=''>
-        <img src={ImageHeader} alt="Synergy for Indonesia image" className='w-full h-full object-contain' />
+      <div className='min-h-[50vh] relative z-[5] p-[2em]'>
+        <section className='w-full relative'>
+            {/* <img src={ImageHeader} alt="Synergy for Indonesia image" className='w-full h-full object-contain' /> */}
+            <div className='absolute text-base text-[white] z-[5] cursor-pointer select-none left-[0.5rem] top-2/4 w-[35px] h-[35px] rounded-[50%] hover:bg-white hover:text-black' onClick={prevSlide}>
+              <AiOutlineArrowLeft className='mt-[9px] ml-[9px]'/>
+            </div>
+            <div className='absolute text-base text-[white] z-[5] cursor-pointer select-none right-[0.5rem] top-2/4 w-[35px] h-[35px] rounded-[50%] hover:bg-white hover:text-black' onClick={nextSlide}> 
+              <AiOutlineArrowRight className='mt-[9px] ml-[9px]'/>
+            </div>
+            {images.map((currentSlide, ind) => {
+               return (
+                  <div
+                     className={ind === activeImageNum ? "currentSlide active" : "currentSlide"}
+                     key={ind}
+                  >
+                     {ind === activeImageNum && <img src={currentSlide.url} className="image"/>}
+                  </div>
+               );
+            })}
+        </section>
       </div>
-
     </div>
   );
 }
