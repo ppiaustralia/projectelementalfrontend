@@ -45,7 +45,7 @@ export default function ChaptersGallery() {
                         style={{ objectFit: 'contain' }}
                       />
                       {/* <h5 className={styles.chaptersName}>{branch.name}</h5> */}
-                      <h5 className="contents text-xs text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5>
+                      <h5 className="font-body font-bold contents text-[15px] text-[black] w-[0.2px] mb-[50px]">{branch.name}</h5>
                     </Link>
                   </Col>
                 </>

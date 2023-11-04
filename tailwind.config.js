@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'header': ['"Playfair Display"'],
-      'body': []
+      'body': ['"Cambria"']
     },
     extend: {
       colors:{

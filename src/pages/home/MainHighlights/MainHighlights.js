@@ -21,7 +21,7 @@ export default function MainHighlights() {
           </Col>
 
           <Col lg={6} sm={12}>
-            <div className="text-center p-[50px] lg:!text-left">
+            <div className="text-center p-[1em] lg:!text-left">
               <a href='https://www.kemendag.go.id/berita/siaran-pers/jumpa-perhimpunan-pelajar-indonesia-di-australia-dan-selandia-baru-wamendag-jerry-dorong-para-pelajar-menjadi-duta-ekspor' className='text-lg' target="_blank">
                 <b className='font-header text-[1.5em]'>Jumpa Perhimpunan Pelajar Indonesia di Australia dan Selandia Baru, Wamendag Jerry Dorong Para Pelajar Menjadi Duta Ekspor Indonesia</b>
               </a><br/><br/>
