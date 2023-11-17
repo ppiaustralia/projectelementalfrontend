@@ -44,10 +44,9 @@ function LiveInOz() {
                 <div className="LiveInOzList w-1/4 text-sm overflow-auto min-h-[125vh] max-h-[125vh]">
                     <ul>
                         {uniqueCategories.map((category, i) => {
-                            const categoryCount = data.filter(content => content.category === category).length;
                             return (
-                                <li key={i} onClick={() => handleClickCategory(category)} className="cursor-pointer p-4 border-2 border-gray-400 rounded-lg m-4 hover:bg-gray-200 text-left">
-                                    {category} | {categoryCount}
+                                <li key={i} onClick={() => handleClickCategory(category)} className="cursor-pointer p-4 m-4 hover:bg-gray-200 text-left">
+                                    {category}
                                 </li>
                             )
                         })}
