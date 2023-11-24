@@ -3,6 +3,10 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
+    fontFamily: {
+      'header': ['"Playfair Display"'],
+      'body': ['"Cambria"']
+    },
     extend: {
       colors:{
         primaryRed: '#e44434'
